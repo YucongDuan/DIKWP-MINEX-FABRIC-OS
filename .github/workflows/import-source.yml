@@ -1,0 +1,41 @@
+name: Import packaged source
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Expand source archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          stage="$(mktemp -d)"
+          unzip -q source-archive.zip -d "$stage"
+          rm source-archive.zip
+          shopt -s dotglob nullglob
+          cp -a "$stage"/. .
+          find . -type d -name '__pycache__' -prune -exec rm -rf {} +
+          find . -type f -name '*.pyc' -delete
+          rm -rf .pytest_cache
+
+      - name: Commit imported source
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No source changes to commit."
+          else
+            git commit -m "Import complete project source"
+            git push
+          fi
