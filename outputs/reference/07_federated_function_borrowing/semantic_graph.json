@@ -1,0 +1,188 @@
+{
+  "allowed_route_kinds": [
+    "D->D",
+    "D->I",
+    "D->K",
+    "D->W",
+    "D->P",
+    "I->D",
+    "I->I",
+    "I->K",
+    "I->W",
+    "I->P",
+    "K->D",
+    "K->I",
+    "K->K",
+    "K->W",
+    "K->P",
+    "W->D",
+    "W->I",
+    "W->K",
+    "W->W",
+    "W->P",
+    "P->D",
+    "P->I",
+    "P->K",
+    "P->W",
+    "P->P"
+  ],
+  "protocol": "DIKWP multi-record, record-level routes, append-only lineage",
+  "records": [
+    {
+      "content": {
+        "inputs_present": [
+          "data"
+        ],
+        "operation": "data.hash.sha256",
+        "task_id": "07_federated_function_borrowing"
+      },
+      "kind": "D",
+      "provenance": "task_contract",
+      "record_id": "D.task"
+    },
+    {
+      "content": [
+        {
+          "capability_id": "cap.hash.federated",
+          "feasible": true,
+          "mode": "FEDERATED_NODE",
+          "resource_vector": {
+            "data_egress_bytes": 4096,
+            "evidence_class": "DECLARED_OR_MODELLED",
+            "expected_quality": 1.0,
+            "human_minutes": 0.0,
+            "irreversibility": 0,
+            "latency_ms": 90.2,
+            "monetary_cost": 0.001,
+            "physical_energy_j": 2.516288,
+            "privacy_risk": 0.25,
+            "reliability": 0.999,
+            "semantic_loss": 0
+          }
+        },
+        {
+          "capability_id": "cap.hash.local",
+          "feasible": false,
+          "mode": "LOCAL_API",
+          "resource_vector": {
+            "data_egress_bytes": 0,
+            "evidence_class": "DECLARED_OR_MODELLED",
+            "expected_quality": 1.0,
+            "human_minutes": 0.0,
+            "irreversibility": 0,
+            "latency_ms": 1.02,
+            "monetary_cost": 0.0,
+            "physical_energy_j": 0.802,
+            "privacy_risk": 0,
+            "reliability": 1.0,
+            "semantic_loss": 0
+          }
+        }
+      ],
+      "kind": "D",
+      "provenance": "planner_observation",
+      "record_id": "D.capabilities"
+    },
+    {
+      "content": {
+        "pareto_frontier": [
+          "cap.hash.federated"
+        ],
+        "rejections": {
+          "cap.hash.local": [
+            "mode_not_allowed",
+            "node_allowed",
+            "required_scopes_present"
+          ]
+        }
+      },
+      "kind": "I",
+      "provenance": "candidate_comparison",
+      "record_id": "I.route_differences"
+    },
+    {
+      "content": {
+        "selected_capability_id": "cap.hash.federated",
+        "selected_resource_vector": {
+          "data_egress_bytes": 4096,
+          "evidence_class": "DECLARED_OR_MODELLED",
+          "expected_quality": 1.0,
+          "human_minutes": 0.0,
+          "irreversibility": 0,
+          "latency_ms": 90.2,
+          "monetary_cost": 0.001,
+          "physical_energy_j": 2.516288,
+          "privacy_risk": 0.25,
+          "reliability": 0.999,
+          "semantic_loss": 0
+        },
+        "status": "ROUTE_SELECTED"
+      },
+      "kind": "K",
+      "provenance": "constraint_first_planning",
+      "record_id": "K.plan"
+    },
+    {
+      "content": {
+        "constraints": {
+          "allowed_modes": [
+            "FEDERATED_NODE"
+          ],
+          "max_cost": 0.1,
+          "max_privacy_risk": 0.3,
+          "min_quality": 1.0,
+          "min_reliability": 0.99
+        },
+        "noncompensatory": [
+          "authorization",
+          "quality",
+          "semantic_loss",
+          "privacy",
+          "irreversibility"
+        ],
+        "scalar_aggregate_used": false
+      },
+      "kind": "W",
+      "provenance": "task_contract",
+      "record_id": "W.boundaries"
+    },
+    {
+      "content": {
+        "automatic_external_action_authority": 0,
+        "input": "07_federated_function_borrowing",
+        "output": "cap.hash.federated",
+        "purpose": "Borrow a deterministic hashing capability from an authorized remote node when local execution is administratively unavailable."
+      },
+      "kind": "P",
+      "provenance": "executable_plan",
+      "record_id": "P.execution"
+    }
+  ],
+  "routes": [
+    {
+      "content": "task requirements distinguish execution routes",
+      "kind": "D->I",
+      "source": "D.task",
+      "target": "I.route_differences"
+    },
+    {
+      "content": "observed manifests support a bounded plan",
+      "kind": "D->K",
+      "source": "D.capabilities",
+      "target": "K.plan"
+    },
+    {
+      "content": "authorization and noncompensatory limits alter the executable route",
+      "kind": "W->P",
+      "source": "W.boundaries",
+      "target": "P.execution"
+    },
+    {
+      "content": "selected feasible plan becomes executable purpose",
+      "kind": "K->P",
+      "source": "K.plan",
+      "target": "P.execution"
+    }
+  ],
+  "translation_loss_required": true
+}

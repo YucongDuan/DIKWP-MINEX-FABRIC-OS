@@ -1,0 +1,100 @@
+{
+  "candidates": [
+    {
+      "authorization_checks": {
+        "data_class_allowed_by_auth": true,
+        "data_class_allowed_by_capability": true,
+        "lease_not_expired": true,
+        "node_allowed": true,
+        "paid_route_authorized": true,
+        "required_scopes_present": true
+      },
+      "capability_id": "cap.temperature.internalized",
+      "feasible": false,
+      "mode": "GENERATED_CODE",
+      "node_id": "local",
+      "operation": "unit.convert.temperature",
+      "provider_id": "local-owner",
+      "rejection_reasons": [
+        "mode_not_allowed"
+      ],
+      "resource_vector": {
+        "data_egress_bytes": 0,
+        "evidence_class": "DECLARED_OR_MODELLED",
+        "expected_quality": 1.0,
+        "human_minutes": 0.0,
+        "irreversibility": 0,
+        "latency_ms": 0.801,
+        "monetary_cost": 0.0,
+        "physical_energy_j": 0.7001,
+        "privacy_risk": 0,
+        "reliability": 0.9999,
+        "semantic_loss": 0
+      }
+    },
+    {
+      "authorization_checks": {
+        "data_class_allowed_by_auth": true,
+        "data_class_allowed_by_capability": true,
+        "lease_not_expired": true,
+        "node_allowed": true,
+        "paid_route_authorized": true,
+        "required_scopes_present": true
+      },
+      "capability_id": "cap.temperature.remote",
+      "feasible": true,
+      "mode": "REMOTE_API",
+      "node_id": "cloud-utils",
+      "operation": "unit.convert.temperature",
+      "provider_id": "open-utils-provider",
+      "rejection_reasons": [],
+      "resource_vector": {
+        "data_egress_bytes": 64,
+        "evidence_class": "DECLARED_OR_MODELLED",
+        "expected_quality": 1.0,
+        "human_minutes": 0.0,
+        "irreversibility": 0,
+        "latency_ms": 180.01,
+        "monetary_cost": 0.003,
+        "physical_energy_j": 10.001128,
+        "privacy_risk": 0.2,
+        "reliability": 0.995,
+        "semantic_loss": 0
+      }
+    }
+  ],
+  "pareto_frontier": [
+    "cap.temperature.remote"
+  ],
+  "permission_bypass_attempted": false,
+  "rationale": [
+    "Hard authorization and quality/risk constraints were applied before resource optimization.",
+    "Non-dominated routes were retained on a Pareto frontier.",
+    "The selected route minimizes the declared lexicographic order; physical energy is first by default.",
+    "No permission, privacy, semantic-loss, or irreversibility deficit was traded away for lower energy."
+  ],
+  "scalar_aggregate_used": false,
+  "selected_capability_id": "cap.temperature.remote",
+  "selected_resource_vector": {
+    "data_egress_bytes": 64,
+    "evidence_class": "DECLARED_OR_MODELLED",
+    "expected_quality": 1.0,
+    "human_minutes": 0.0,
+    "irreversibility": 0,
+    "latency_ms": 180.01,
+    "monetary_cost": 0.003,
+    "physical_energy_j": 10.001128,
+    "privacy_risk": 0.2,
+    "reliability": 0.995,
+    "semantic_loss": 0
+  },
+  "selection_order": [
+    "physical_energy_j",
+    "monetary_cost",
+    "latency_ms",
+    "human_minutes",
+    "data_egress_bytes"
+  ],
+  "status": "ROUTE_SELECTED",
+  "task_id": "05_pre_internalization_remote_only"
+}

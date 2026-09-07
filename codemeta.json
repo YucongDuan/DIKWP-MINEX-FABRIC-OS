@@ -1,0 +1,11 @@
+{
+  "@context": "https://codemeta.github.io/terms/",
+  "@type": "SoftwareSourceCode",
+  "name": "DIKWP-MINEX-FABRIC-OS",
+  "version": "1.0.0",
+  "author": [{"@type": "Person", "givenName": "Yucong", "familyName": "Duan"}],
+  "programmingLanguage": "Python",
+  "runtimePlatform": "Python 3.10+",
+  "license": "https://spdx.org/licenses/Apache-2.0.html",
+  "description": "Minimum-energy capability routing, permitted function internalization, federated borrowing, and metered exchange runtime."
+}

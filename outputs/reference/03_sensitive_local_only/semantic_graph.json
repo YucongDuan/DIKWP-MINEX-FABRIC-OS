@@ -1,0 +1,239 @@
+{
+  "allowed_route_kinds": [
+    "D->D",
+    "D->I",
+    "D->K",
+    "D->W",
+    "D->P",
+    "I->D",
+    "I->I",
+    "I->K",
+    "I->W",
+    "I->P",
+    "K->D",
+    "K->I",
+    "K->K",
+    "K->W",
+    "K->P",
+    "W->D",
+    "W->I",
+    "W->K",
+    "W->W",
+    "W->P",
+    "P->D",
+    "P->I",
+    "P->K",
+    "P->W",
+    "P->P"
+  ],
+  "protocol": "DIKWP multi-record, record-level routes, append-only lineage",
+  "records": [
+    {
+      "content": {
+        "inputs_present": [
+          "sentences",
+          "text"
+        ],
+        "operation": "text.summarize.extractive",
+        "task_id": "03_sensitive_local_only"
+      },
+      "kind": "D",
+      "provenance": "task_contract",
+      "record_id": "D.task"
+    },
+    {
+      "content": [
+        {
+          "capability_id": "cap.summary.generated-local",
+          "feasible": true,
+          "mode": "GENERATED_CODE",
+          "resource_vector": {
+            "data_egress_bytes": 0,
+            "evidence_class": "DECLARED_OR_MODELLED",
+            "expected_quality": 0.83,
+            "human_minutes": 0.0,
+            "irreversibility": 0.0,
+            "latency_ms": 41.0,
+            "monetary_cost": 0.0,
+            "physical_energy_j": 5.0,
+            "privacy_risk": 0.01,
+            "reliability": 0.995,
+            "semantic_loss": 0.14
+          }
+        },
+        {
+          "capability_id": "cap.summary.model-native",
+          "feasible": false,
+          "mode": "MODEL_NATIVE",
+          "resource_vector": {
+            "data_egress_bytes": 0,
+            "evidence_class": "DECLARED_OR_MODELLED",
+            "expected_quality": 0.89,
+            "human_minutes": 0.0,
+            "irreversibility": 0.0,
+            "latency_ms": 750.0,
+            "monetary_cost": 0.004,
+            "physical_energy_j": 61.0,
+            "privacy_risk": 0.05,
+            "reliability": 0.94,
+            "semantic_loss": 0.08
+          }
+        },
+        {
+          "capability_id": "cap.summary.office-gui",
+          "feasible": false,
+          "mode": "GUI",
+          "resource_vector": {
+            "data_egress_bytes": 0,
+            "evidence_class": "DECLARED_OR_MODELLED",
+            "expected_quality": 0.91,
+            "human_minutes": 0.4,
+            "irreversibility": 0.03,
+            "latency_ms": 9800.0,
+            "monetary_cost": 0.0,
+            "physical_energy_j": 202.0,
+            "privacy_risk": 0.18,
+            "reliability": 0.88,
+            "semantic_loss": 0.06
+          }
+        },
+        {
+          "capability_id": "cap.summary.remote-premium",
+          "feasible": false,
+          "mode": "REMOTE_API",
+          "resource_vector": {
+            "data_egress_bytes": 12000,
+            "evidence_class": "DECLARED_OR_MODELLED",
+            "expected_quality": 0.97,
+            "human_minutes": 0.0,
+            "irreversibility": 0.02,
+            "latency_ms": 540.0,
+            "monetary_cost": 0.06,
+            "physical_energy_j": 21.648,
+            "privacy_risk": 0.42,
+            "reliability": 0.985,
+            "semantic_loss": 0.03
+          }
+        }
+      ],
+      "kind": "D",
+      "provenance": "planner_observation",
+      "record_id": "D.capabilities"
+    },
+    {
+      "content": {
+        "pareto_frontier": [
+          "cap.summary.generated-local"
+        ],
+        "rejections": {
+          "cap.summary.model-native": [
+            "lease_payment_limit_exceeded",
+            "paid_route_authorized"
+          ],
+          "cap.summary.office-gui": [
+            "data_class_allowed_by_capability",
+            "energy_budget_exceeded",
+            "privacy_risk_above_maximum",
+            "reliability_below_minimum",
+            "required_scopes_present"
+          ],
+          "cap.summary.remote-premium": [
+            "data_class_allowed_by_capability",
+            "lease_payment_limit_exceeded",
+            "local_execution_required",
+            "node_allowed",
+            "paid_route_authorized",
+            "privacy_risk_above_maximum",
+            "required_scopes_present"
+          ]
+        }
+      },
+      "kind": "I",
+      "provenance": "candidate_comparison",
+      "record_id": "I.route_differences"
+    },
+    {
+      "content": {
+        "selected_capability_id": "cap.summary.generated-local",
+        "selected_resource_vector": {
+          "data_egress_bytes": 0,
+          "evidence_class": "DECLARED_OR_MODELLED",
+          "expected_quality": 0.83,
+          "human_minutes": 0.0,
+          "irreversibility": 0.0,
+          "latency_ms": 41.0,
+          "monetary_cost": 0.0,
+          "physical_energy_j": 5.0,
+          "privacy_risk": 0.01,
+          "reliability": 0.995,
+          "semantic_loss": 0.14
+        },
+        "status": "ROUTE_SELECTED"
+      },
+      "kind": "K",
+      "provenance": "constraint_first_planning",
+      "record_id": "K.plan"
+    },
+    {
+      "content": {
+        "constraints": {
+          "max_energy_j": 150,
+          "max_privacy_risk": 0.08,
+          "max_semantic_loss": 0.15,
+          "min_quality": 0.82,
+          "min_reliability": 0.93,
+          "require_local": true
+        },
+        "noncompensatory": [
+          "authorization",
+          "quality",
+          "semantic_loss",
+          "privacy",
+          "irreversibility"
+        ],
+        "scalar_aggregate_used": false
+      },
+      "kind": "W",
+      "provenance": "task_contract",
+      "record_id": "W.boundaries"
+    },
+    {
+      "content": {
+        "automatic_external_action_authority": 0,
+        "input": "03_sensitive_local_only",
+        "output": "cap.summary.generated-local",
+        "purpose": "Summarize sensitive material without data egress."
+      },
+      "kind": "P",
+      "provenance": "executable_plan",
+      "record_id": "P.execution"
+    }
+  ],
+  "routes": [
+    {
+      "content": "task requirements distinguish execution routes",
+      "kind": "D->I",
+      "source": "D.task",
+      "target": "I.route_differences"
+    },
+    {
+      "content": "observed manifests support a bounded plan",
+      "kind": "D->K",
+      "source": "D.capabilities",
+      "target": "K.plan"
+    },
+    {
+      "content": "authorization and noncompensatory limits alter the executable route",
+      "kind": "W->P",
+      "source": "W.boundaries",
+      "target": "P.execution"
+    },
+    {
+      "content": "selected feasible plan becomes executable purpose",
+      "kind": "K->P",
+      "source": "K.plan",
+      "target": "P.execution"
+    }
+  ],
+  "translation_loss_required": true
+}

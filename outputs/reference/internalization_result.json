@@ -1,0 +1,108 @@
+{
+  "manifest": {
+    "allowed_data_classes": [
+      "PUBLIC",
+      "INTERNAL",
+      "SENSITIVE"
+    ],
+    "base_energy_j": 0.5,
+    "base_latency_ms": 0.5,
+    "capability_id": "cap.temperature.internalized.generated",
+    "description": "Function internalized from an open specification, not from proprietary weights or hidden API behavior.",
+    "enabled": true,
+    "endpoint": null,
+    "energy_per_work_unit_j": 0.0001,
+    "executor": "dry_run",
+    "expected_quality": 1.0,
+    "human_minutes_base": 0.0,
+    "input_schema": {},
+    "internalizable": false,
+    "irreversibility": 0.0,
+    "latency_per_work_unit_ms": 0.0,
+    "license": "CC0-SPEC + Apache-2.0 implementation",
+    "lineage": {
+      "conformance_test_count": 6,
+      "expression": "x * 9 / 5 + 32",
+      "license_permission_confirmed": true,
+      "recipe_type": "SAFE_EXPRESSION",
+      "source_capability_id": "cap.temperature.remote"
+    },
+    "mode": "GENERATED_CODE",
+    "monetary_cost_base": 0.0,
+    "monetary_cost_per_unit": 0.0,
+    "name": "Conformance-tested local Celsius-to-Fahrenheit function",
+    "network_energy_per_mb_j": 0.0,
+    "node_id": "local",
+    "operation": "unit.convert.temperature",
+    "output_schema": {},
+    "privacy_risk": 0.0,
+    "provider_id": "local-owner",
+    "reliability": 0.9999,
+    "required_scopes": [
+      "code:allowlisted"
+    ],
+    "semantic_loss": 0.0,
+    "tags": [
+      "internalized",
+      "conformance-tested"
+    ],
+    "version": "1.0.0"
+  },
+  "status": "INTERNALIZED_WITHIN_TEST_SCOPE",
+  "tests": [
+    {
+      "actual": 32.0,
+      "expected": 32.0,
+      "index": 0,
+      "passed": true,
+      "variables": {
+        "x": 0.0
+      }
+    },
+    {
+      "actual": 212.0,
+      "expected": 212.0,
+      "index": 1,
+      "passed": true,
+      "variables": {
+        "x": 100.0
+      }
+    },
+    {
+      "actual": -40.0,
+      "expected": -40.0,
+      "index": 2,
+      "passed": true,
+      "variables": {
+        "x": -40.0
+      }
+    },
+    {
+      "actual": 98.6,
+      "expected": 98.6,
+      "index": 3,
+      "passed": true,
+      "variables": {
+        "x": 37.0
+      }
+    },
+    {
+      "actual": -459.66999999999996,
+      "expected": -459.67,
+      "index": 4,
+      "passed": true,
+      "variables": {
+        "x": -273.15
+      }
+    },
+    {
+      "actual": 68.0,
+      "expected": 68.0,
+      "index": 5,
+      "passed": true,
+      "variables": {
+        "x": 20.0
+      }
+    }
+  ]
+}

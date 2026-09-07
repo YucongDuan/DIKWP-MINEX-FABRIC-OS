@@ -1,0 +1,20 @@
+{
+  "english_report": {
+    "pages": 12,
+    "all_pages_rendered": true,
+    "all_pages_visually_inspected": true,
+    "remaining_layout_defects": 0,
+    "a11y_high": 0,
+    "a11y_medium": 0,
+    "a11y_low": 0
+  },
+  "chinese_report": {
+    "pages": 11,
+    "all_pages_rendered": true,
+    "all_pages_visually_inspected": true,
+    "remaining_layout_defects": 0,
+    "a11y_high": 0,
+    "a11y_medium": 0,
+    "a11y_low": 0
+  }
+}

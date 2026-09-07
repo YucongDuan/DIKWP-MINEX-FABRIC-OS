@@ -1,0 +1,102 @@
+{
+  "candidates": [
+    {
+      "authorization_checks": {
+        "data_class_allowed_by_auth": true,
+        "data_class_allowed_by_capability": true,
+        "lease_not_expired": true,
+        "node_allowed": true,
+        "paid_route_authorized": true,
+        "required_scopes_present": true
+      },
+      "capability_id": "cap.hash.federated",
+      "feasible": true,
+      "mode": "FEDERATED_NODE",
+      "node_id": "node-utility",
+      "operation": "data.hash.sha256",
+      "provider_id": "utility-node",
+      "rejection_reasons": [],
+      "resource_vector": {
+        "data_egress_bytes": 4096,
+        "evidence_class": "DECLARED_OR_MODELLED",
+        "expected_quality": 1.0,
+        "human_minutes": 0.0,
+        "irreversibility": 0,
+        "latency_ms": 90.2,
+        "monetary_cost": 0.001,
+        "physical_energy_j": 2.516288,
+        "privacy_risk": 0.25,
+        "reliability": 0.999,
+        "semantic_loss": 0
+      }
+    },
+    {
+      "authorization_checks": {
+        "data_class_allowed_by_auth": true,
+        "data_class_allowed_by_capability": true,
+        "lease_not_expired": true,
+        "node_allowed": false,
+        "paid_route_authorized": true,
+        "required_scopes_present": false
+      },
+      "capability_id": "cap.hash.local",
+      "feasible": false,
+      "mode": "LOCAL_API",
+      "node_id": "local",
+      "operation": "data.hash.sha256",
+      "provider_id": "local-owner",
+      "rejection_reasons": [
+        "mode_not_allowed",
+        "node_allowed",
+        "required_scopes_present"
+      ],
+      "resource_vector": {
+        "data_egress_bytes": 0,
+        "evidence_class": "DECLARED_OR_MODELLED",
+        "expected_quality": 1.0,
+        "human_minutes": 0.0,
+        "irreversibility": 0,
+        "latency_ms": 1.02,
+        "monetary_cost": 0.0,
+        "physical_energy_j": 0.802,
+        "privacy_risk": 0,
+        "reliability": 1.0,
+        "semantic_loss": 0
+      }
+    }
+  ],
+  "pareto_frontier": [
+    "cap.hash.federated"
+  ],
+  "permission_bypass_attempted": false,
+  "rationale": [
+    "Hard authorization and quality/risk constraints were applied before resource optimization.",
+    "Non-dominated routes were retained on a Pareto frontier.",
+    "The selected route minimizes the declared lexicographic order; physical energy is first by default.",
+    "No permission, privacy, semantic-loss, or irreversibility deficit was traded away for lower energy."
+  ],
+  "scalar_aggregate_used": false,
+  "selected_capability_id": "cap.hash.federated",
+  "selected_resource_vector": {
+    "data_egress_bytes": 4096,
+    "evidence_class": "DECLARED_OR_MODELLED",
+    "expected_quality": 1.0,
+    "human_minutes": 0.0,
+    "irreversibility": 0,
+    "latency_ms": 90.2,
+    "monetary_cost": 0.001,
+    "physical_energy_j": 2.516288,
+    "privacy_risk": 0.25,
+    "reliability": 0.999,
+    "semantic_loss": 0
+  },
+  "selection_order": [
+    "physical_energy_j",
+    "monetary_cost",
+    "latency_ms",
+    "human_minutes",
+    "data_egress_bytes"
+  ],
+  "status": "ROUTE_SELECTED",
+  "task_id": "07_federated_function_borrowing"
+}

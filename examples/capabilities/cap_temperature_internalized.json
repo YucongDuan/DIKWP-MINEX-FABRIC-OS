@@ -1,0 +1,39 @@
+{
+  "capability_id": "cap.temperature.internalized",
+  "name": "Internalized local temperature conversion",
+  "operation": "unit.convert.temperature",
+  "mode": "GENERATED_CODE",
+  "provider_id": "local-owner",
+  "node_id": "local",
+  "version": "1.0.0",
+  "description": "Locally implemented, conformance-tested open-spec function.",
+  "required_scopes": [
+    "code:allowlisted"
+  ],
+  "allowed_data_classes": [
+    "PUBLIC",
+    "INTERNAL",
+    "SENSITIVE"
+  ],
+  "base_energy_j": 0.7,
+  "energy_per_work_unit_j": 0.0001,
+  "base_latency_ms": 0.8,
+  "latency_per_work_unit_ms": 0.001,
+  "expected_quality": 1.0,
+  "reliability": 0.9999,
+  "semantic_loss": 0,
+  "privacy_risk": 0,
+  "irreversibility": 0,
+  "internalizable": false,
+  "license": "Apache-2.0",
+  "executor": "builtin",
+  "tags": [
+    "internalized",
+    "local"
+  ],
+  "lineage": {
+    "source_capability_id": "cap.temperature.remote",
+    "conformance_tests": 6,
+    "license_permission_confirmed": true
+  }
+}

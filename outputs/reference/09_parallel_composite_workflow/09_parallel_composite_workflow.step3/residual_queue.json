@@ -1,0 +1,6 @@
+[
+  {
+    "next_action": "measure energy on the actual hardware and update the manifest lineage",
+    "type": "ENERGY_CALIBRATION_DEBT"
+  }
+]

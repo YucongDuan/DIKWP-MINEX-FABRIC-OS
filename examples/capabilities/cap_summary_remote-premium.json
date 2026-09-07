@@ -1,0 +1,37 @@
+{
+  "capability_id": "cap.summary.remote-premium",
+  "name": "Remote premium summarization API",
+  "operation": "text.summarize.extractive",
+  "mode": "REMOTE_API",
+  "provider_id": "provider-premium-ai",
+  "node_id": "cloud-premium",
+  "version": "2026.09",
+  "description": "High-quality remote path; demo execution is local and does not call a network.",
+  "required_scopes": [
+    "network:remote-ai",
+    "billing:paid"
+  ],
+  "allowed_data_classes": [
+    "PUBLIC",
+    "INTERNAL"
+  ],
+  "base_energy_j": 18,
+  "energy_per_work_unit_j": 0.009,
+  "network_energy_per_mb_j": 4.0,
+  "base_latency_ms": 480,
+  "latency_per_work_unit_ms": 0.15,
+  "monetary_cost_base": 0.02,
+  "monetary_cost_per_unit": 0.0001,
+  "expected_quality": 0.97,
+  "reliability": 0.985,
+  "semantic_loss": 0.03,
+  "privacy_risk": 0.42,
+  "irreversibility": 0.02,
+  "internalizable": false,
+  "license": "COMMERCIAL-API",
+  "executor": "builtin",
+  "tags": [
+    "remote",
+    "paid"
+  ]
+}

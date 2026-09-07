@@ -1,0 +1,64 @@
+{
+  "automatic_external_action_authority": 0,
+  "claim_boundary": "The certificate proves only the declared planner/executor run. It does not certify an external model, software vendor, energy meter, or market.",
+  "execution_result": {
+    "capability_id": "cap.translate.remote-expert",
+    "execution_state": "DRY_RUN_ONLY",
+    "external_action_performed": false,
+    "measured_wall_time_ms": 0.001918,
+    "mode": "FEDERATED_NODE",
+    "operation": "text.translate.demo",
+    "output": {
+      "endpoint": null,
+      "message": "External execution was not performed. This is a dry-run plan.",
+      "mode": "FEDERATED_NODE",
+      "planned_operation": "text.translate.demo"
+    }
+  },
+  "ledger_head_hash": "3ca6a298d7cd5894a1f09c966b866169d52bfee99db8ddc0f964c126027eabe6",
+  "ledger_valid": true,
+  "non_energy_costs_not_silently_converted_to_joules": true,
+  "permission_preserved": true,
+  "physical_energy_is_first_class": true,
+  "real_payment_performed": false,
+  "residuals": [
+    {
+      "next_action": "measure energy on the actual hardware and update the manifest lineage",
+      "type": "ENERGY_CALIBRATION_DEBT"
+    },
+    {
+      "next_action": "obtain named authority and execute through a verified adapter",
+      "type": "REAL_EXECUTION_NOT_PERFORMED"
+    }
+  ],
+  "scalar_aggregate_used": false,
+  "selected_capability_id": "cap.translate.remote-expert",
+  "selected_resource_vector": {
+    "data_egress_bytes": 8000,
+    "evidence_class": "DECLARED_OR_MODELLED",
+    "expected_quality": 0.985,
+    "human_minutes": 0.0,
+    "irreversibility": 0.01,
+    "latency_ms": 664.0,
+    "monetary_cost": 0.18,
+    "physical_energy_j": 29.64,
+    "privacy_risk": 0.38,
+    "reliability": 0.99,
+    "semantic_loss": 0.018
+  },
+  "settlement": {
+    "amount": 0.18,
+    "currency": "USD",
+    "output_hash": "30f55dd50f3eb7393b7fa7d54a89c57b7da42591714ab347c7331192a2794ec9",
+    "payment_state": "DRY_RUN_SETTLED",
+    "quote_id": "quote-98e7cf15acb7e08c",
+    "real_funds_moved": false,
+    "settlement_hash": "3883a8f3cb62da128990f93abbe485664164ae80eb5035fa72a47dde2fbe4905",
+    "success": true,
+    "terms_hash": "98e7cf15acb7e08c5f751523d50b579cd5a462a9ef54212db7640f42185f222e"
+  },
+  "status": "ROUTE_SELECTED",
+  "system": "DIKWP-MINEX-FABRIC-OS",
+  "task_id": "02_high_quality_paid_translation",
+  "version": "1.0.0"
+}

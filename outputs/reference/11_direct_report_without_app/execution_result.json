@@ -1,0 +1,12 @@
+{
+  "capability_id": "cap.report.local",
+  "execution_state": "EXECUTED_LOCALLY",
+  "external_action_performed": false,
+  "measured_wall_time_ms": 0.008159,
+  "mode": "GENERATED_CODE",
+  "operation": "report.compose.markdown",
+  "output": {
+    "markdown": "# Capability Fabric Result\n\n## Decision\n\nA direct function route was selected.\n\n## Boundary\n\nNo external action or payment occurred.\n",
+    "section_count": 2
+  }
+}

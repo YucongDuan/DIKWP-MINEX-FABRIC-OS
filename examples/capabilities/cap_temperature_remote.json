@@ -1,0 +1,35 @@
+{
+  "capability_id": "cap.temperature.remote",
+  "name": "Remote temperature conversion API",
+  "operation": "unit.convert.temperature",
+  "mode": "REMOTE_API",
+  "provider_id": "open-utils-provider",
+  "node_id": "cloud-utils",
+  "version": "1.0.0",
+  "description": "Remote reference capability used before permitted local internalization.",
+  "required_scopes": [
+    "network:open-utils"
+  ],
+  "allowed_data_classes": [
+    "PUBLIC",
+    "INTERNAL"
+  ],
+  "base_energy_j": 10,
+  "energy_per_work_unit_j": 0.001,
+  "network_energy_per_mb_j": 2,
+  "base_latency_ms": 180,
+  "latency_per_work_unit_ms": 0.01,
+  "monetary_cost_base": 0.003,
+  "expected_quality": 1.0,
+  "reliability": 0.995,
+  "semantic_loss": 0,
+  "privacy_risk": 0.2,
+  "irreversibility": 0,
+  "internalizable": true,
+  "license": "CC0-SPEC",
+  "executor": "builtin",
+  "tags": [
+    "remote",
+    "internalizable"
+  ]
+}

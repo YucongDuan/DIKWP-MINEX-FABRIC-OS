@@ -1,0 +1,33 @@
+{
+  "capability_id": "cap.translate.browser",
+  "name": "Browser-based translation interface",
+  "operation": "text.translate.demo",
+  "mode": "BROWSER",
+  "provider_id": "browser-service",
+  "node_id": "workstation-a",
+  "version": "1.0.0",
+  "description": "Browser interaction fallback.",
+  "required_scopes": [
+    "browser:control",
+    "network:web"
+  ],
+  "allowed_data_classes": [
+    "PUBLIC"
+  ],
+  "base_energy_j": 125,
+  "energy_per_work_unit_j": 0.025,
+  "network_energy_per_mb_j": 8,
+  "base_latency_ms": 5500,
+  "latency_per_work_unit_ms": 0.8,
+  "expected_quality": 0.92,
+  "reliability": 0.86,
+  "semantic_loss": 0.07,
+  "privacy_risk": 0.62,
+  "irreversibility": 0.03,
+  "license": "WEB-TERMS",
+  "executor": "dry_run",
+  "tags": [
+    "browser",
+    "fallback"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "capability_id": "cap.summary.model-native",
+  "name": "Model-native concise summarization",
+  "operation": "text.summarize.extractive",
+  "mode": "MODEL_NATIVE",
+  "provider_id": "local-model-owner",
+  "node_id": "local",
+  "version": "1.0.0",
+  "description": "Direct model-side summarization path represented by an allowlisted deterministic demo executor.",
+  "required_scopes": [
+    "model:invoke"
+  ],
+  "allowed_data_classes": [
+    "PUBLIC",
+    "INTERNAL",
+    "SENSITIVE"
+  ],
+  "base_energy_j": 55,
+  "energy_per_work_unit_j": 0.015,
+  "base_latency_ms": 650,
+  "latency_per_work_unit_ms": 0.25,
+  "monetary_cost_base": 0.004,
+  "expected_quality": 0.89,
+  "reliability": 0.94,
+  "semantic_loss": 0.08,
+  "privacy_risk": 0.05,
+  "irreversibility": 0.0,
+  "internalizable": false,
+  "license": "MODEL-PROVIDER-TERMS",
+  "executor": "builtin",
+  "tags": [
+    "model-native",
+    "local"
+  ]
+}

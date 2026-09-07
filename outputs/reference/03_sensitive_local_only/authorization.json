@@ -1,0 +1,23 @@
+{
+  "allow_paid": false,
+  "allowed_data_classes": [
+    "SENSITIVE",
+    "INTERNAL",
+    "PUBLIC"
+  ],
+  "allowed_nodes": [
+    "local",
+    "workstation-a"
+  ],
+  "expires_at_epoch": 4102444800,
+  "lease_id": "private-local",
+  "max_calls": 100,
+  "max_payment": 0,
+  "principal": "research-owner",
+  "scopes": [
+    "model:invoke",
+    "code:allowlisted",
+    "api:analytics",
+    "crypto:hash"
+  ]
+}

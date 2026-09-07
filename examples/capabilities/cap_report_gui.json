@@ -1,0 +1,33 @@
+{
+  "capability_id": "cap.report.gui",
+  "name": "Desktop word-processor report workflow",
+  "operation": "report.compose.markdown",
+  "mode": "GUI",
+  "provider_id": "desktop-owner",
+  "node_id": "workstation-a",
+  "version": "1.0.0",
+  "description": "GUI report construction fallback; dry-run only.",
+  "required_scopes": [
+    "gui:office",
+    "desktop:control"
+  ],
+  "allowed_data_classes": [
+    "PUBLIC",
+    "INTERNAL"
+  ],
+  "base_energy_j": 260,
+  "energy_per_work_unit_j": 0.05,
+  "base_latency_ms": 14000,
+  "latency_per_work_unit_ms": 1.2,
+  "human_minutes_base": 1,
+  "expected_quality": 0.96,
+  "reliability": 0.87,
+  "semantic_loss": 0.02,
+  "privacy_risk": 0.15,
+  "irreversibility": 0.04,
+  "license": "DESKTOP-SOFTWARE-EULA",
+  "executor": "dry_run",
+  "tags": [
+    "gui"
+  ]
+}

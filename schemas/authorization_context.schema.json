@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/minex/authorization_context.schema.json",
+  "title": "MINEX Authorization Context",
+  "type": "object",
+  "required": ["principal", "scopes", "allowed_nodes", "allowed_data_classes", "expires_at_epoch"],
+  "properties": {
+    "principal": {"type": "string"},
+    "scopes": {"type": "array", "items": {"type": "string"}},
+    "allowed_nodes": {"type": "array", "items": {"type": "string"}},
+    "allowed_data_classes": {"type": "array", "items": {"type": "string"}},
+    "expires_at_epoch": {"type": "integer"},
+    "max_calls": {"type": "integer", "minimum": 0},
+    "allow_paid": {"type": "boolean"},
+    "max_payment": {"type": "number", "minimum": 0}
+  },
+  "additionalProperties": false
+}

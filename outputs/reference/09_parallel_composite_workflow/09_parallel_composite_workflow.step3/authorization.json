@@ -1,0 +1,17 @@
+{
+  "allow_paid": true,
+  "allowed_data_classes": [
+    "*"
+  ],
+  "allowed_nodes": [
+    "*"
+  ],
+  "expires_at_epoch": 4102444800,
+  "lease_id": "demo-all",
+  "max_calls": 1000,
+  "max_payment": 100.0,
+  "principal": "demo-owner",
+  "scopes": [
+    "*"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "task_id": "04_permission_wall_preserved",
+  "purpose": "Profile a dataset without granting GUI or desktop control permissions.",
+  "operation": "csv.profile",
+  "work_units": 40,
+  "input_bytes": 2000,
+  "input_data_class": "INTERNAL",
+  "inputs": {
+    "csv_text": "a,b\n1,2\n3,4\n"
+  },
+  "constraints": {
+    "min_quality": 0.97,
+    "min_reliability": 0.98,
+    "max_privacy_risk": 0.1
+  },
+  "requester": "analyst",
+  "_authorization": {
+    "principal": "analyst",
+    "scopes": [
+      "code:allowlisted",
+      "api:analytics",
+      "model:invoke"
+    ],
+    "allowed_nodes": [
+      "local",
+      "workstation-a"
+    ],
+    "allowed_data_classes": [
+      "PUBLIC",
+      "INTERNAL"
+    ],
+    "expires_at_epoch": 4102444800,
+    "max_calls": 100,
+    "allow_paid": false,
+    "max_payment": 0,
+    "lease_id": "no-gui"
+  }
+}

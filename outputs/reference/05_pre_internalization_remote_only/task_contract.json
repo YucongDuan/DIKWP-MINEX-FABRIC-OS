@@ -1,0 +1,32 @@
+{
+  "constraints": {
+    "allowed_modes": [
+      "REMOTE_API"
+    ],
+    "max_cost": 0.01,
+    "max_semantic_loss": 0,
+    "min_quality": 1.0
+  },
+  "input_bytes": 64,
+  "input_data_class": "PUBLIC",
+  "inputs": {
+    "from": "C",
+    "to": "F",
+    "value": 100
+  },
+  "operation": "unit.convert.temperature",
+  "output_requirements": {},
+  "parallel_group": null,
+  "purpose": "Use the licensed remote reference function before a local implementation is admitted.",
+  "requester": "demo-owner",
+  "selection_order": [
+    "physical_energy_j",
+    "monetary_cost",
+    "latency_ms",
+    "human_minutes",
+    "data_egress_bytes"
+  ],
+  "subtasks": [],
+  "task_id": "05_pre_internalization_remote_only",
+  "work_units": 1
+}

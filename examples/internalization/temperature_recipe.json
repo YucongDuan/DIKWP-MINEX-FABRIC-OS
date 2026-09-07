@@ -1,0 +1,56 @@
+{
+  "capability_id": "cap.temperature.internalized.generated",
+  "name": "Conformance-tested local Celsius-to-Fahrenheit function",
+  "operation": "unit.convert.temperature",
+  "source_capability_id": "cap.temperature.remote",
+  "provider_id": "local-owner",
+  "node_id": "local",
+  "version": "1.0.0",
+  "description": "Function internalized from an open specification, not from proprietary weights or hidden API behavior.",
+  "expression": "x * 9 / 5 + 32",
+  "input_var": "x",
+  "tolerance": 1e-09,
+  "license_permission_confirmed": true,
+  "license": "CC0-SPEC + Apache-2.0 implementation",
+  "base_energy_j": 0.5,
+  "energy_per_work_unit_j": 0.0001,
+  "base_latency_ms": 0.5,
+  "expected_quality": 1.0,
+  "reliability": 0.9999,
+  "semantic_loss": 0,
+  "privacy_risk": 0,
+  "required_scopes": [
+    "code:allowlisted"
+  ],
+  "allowed_data_classes": [
+    "PUBLIC",
+    "INTERNAL",
+    "SENSITIVE"
+  ],
+  "tests": [
+    {
+      "x": 0,
+      "expected": 32
+    },
+    {
+      "x": 100,
+      "expected": 212
+    },
+    {
+      "x": -40,
+      "expected": -40
+    },
+    {
+      "x": 37,
+      "expected": 98.6
+    },
+    {
+      "x": -273.15,
+      "expected": -459.67
+    },
+    {
+      "x": 20,
+      "expected": 68
+    }
+  ]
+}

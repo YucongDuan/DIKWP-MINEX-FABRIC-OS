@@ -1,0 +1,14 @@
+{
+  "capability_id": "cap.translate.remote-expert",
+  "execution_state": "DRY_RUN_ONLY",
+  "external_action_performed": false,
+  "measured_wall_time_ms": 0.001918,
+  "mode": "FEDERATED_NODE",
+  "operation": "text.translate.demo",
+  "output": {
+    "endpoint": null,
+    "message": "External execution was not performed. This is a dry-run plan.",
+    "mode": "FEDERATED_NODE",
+    "planned_operation": "text.translate.demo"
+  }
+}

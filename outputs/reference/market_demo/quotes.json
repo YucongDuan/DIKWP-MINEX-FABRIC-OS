@@ -1,0 +1,78 @@
+{
+  "quotes": [
+    {
+      "capability_id": "cap.translate.browser",
+      "currency": "USD",
+      "expires_at_epoch": 1800000300,
+      "node_id": "workstation-a",
+      "price": 0.0,
+      "provider_id": "browser-service",
+      "quote_id": "quote-ea9f6f5e09573e46",
+      "resource_vector": {
+        "data_egress_bytes": 8000,
+        "evidence_class": "DECLARED_OR_MODELLED",
+        "expected_quality": 0.92,
+        "human_minutes": 0.0,
+        "irreversibility": 0.03,
+        "latency_ms": 6140.0,
+        "monetary_cost": 0.0,
+        "physical_energy_j": 145.064,
+        "privacy_risk": 0.62,
+        "reliability": 0.86,
+        "semantic_loss": 0.07
+      },
+      "task_id": "02_high_quality_paid_translation",
+      "terms_hash": "ea9f6f5e09573e4608dd28dc8387be9ec6f85f11c76b1df337d4a9391677cc94"
+    },
+    {
+      "capability_id": "cap.translate.model-native",
+      "currency": "USD",
+      "expires_at_epoch": 1800000300,
+      "node_id": "local",
+      "price": 0.0,
+      "provider_id": "local-model-owner",
+      "quote_id": "quote-00aafaf5417d78ba",
+      "resource_vector": {
+        "data_egress_bytes": 0,
+        "evidence_class": "DECLARED_OR_MODELLED",
+        "expected_quality": 0.9,
+        "human_minutes": 0.0,
+        "irreversibility": 0,
+        "latency_ms": 960.0,
+        "monetary_cost": 0.0,
+        "physical_energy_j": 84.0,
+        "privacy_risk": 0.05,
+        "reliability": 0.94,
+        "semantic_loss": 0.09
+      },
+      "task_id": "02_high_quality_paid_translation",
+      "terms_hash": "00aafaf5417d78baa7217416c6a51e84397a4d7d157e551d47f6fdea7108dc75"
+    },
+    {
+      "capability_id": "cap.translate.remote-expert",
+      "currency": "USD",
+      "expires_at_epoch": 1800000300,
+      "node_id": "node-lingua",
+      "price": 0.18,
+      "provider_id": "lingua-node",
+      "quote_id": "quote-98e7cf15acb7e08c",
+      "resource_vector": {
+        "data_egress_bytes": 8000,
+        "evidence_class": "DECLARED_OR_MODELLED",
+        "expected_quality": 0.985,
+        "human_minutes": 0.0,
+        "irreversibility": 0.01,
+        "latency_ms": 664.0,
+        "monetary_cost": 0.18,
+        "physical_energy_j": 29.64,
+        "privacy_risk": 0.38,
+        "reliability": 0.99,
+        "semantic_loss": 0.018
+      },
+      "task_id": "02_high_quality_paid_translation",
+      "terms_hash": "98e7cf15acb7e08c5f751523d50b579cd5a462a9ef54212db7640f42185f222e"
+    }
+  ],
+  "real_funds_moved": false,
+  "task_id": "02_high_quality_paid_translation"
+}

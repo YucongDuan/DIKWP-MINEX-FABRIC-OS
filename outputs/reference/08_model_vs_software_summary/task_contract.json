@@ -1,0 +1,33 @@
+{
+  "constraints": {
+    "allowed_modes": [
+      "MODEL_NATIVE",
+      "GUI"
+    ],
+    "max_privacy_risk": 0.5,
+    "max_semantic_loss": 0.1,
+    "min_quality": 0.86,
+    "min_reliability": 0.9
+  },
+  "input_bytes": 9000,
+  "input_data_class": "PUBLIC",
+  "inputs": {
+    "sentences": 2,
+    "text": "Models can sometimes complete the function directly. APIs can be preferable when stable and authorized. GUI interaction remains a fallback. The selected route should preserve permission and quality while minimizing energy."
+  },
+  "operation": "text.summarize.extractive",
+  "output_requirements": {},
+  "parallel_group": null,
+  "purpose": "Choose whether the model should directly summarize or launch conventional software.",
+  "requester": "demo-owner",
+  "selection_order": [
+    "physical_energy_j",
+    "monetary_cost",
+    "latency_ms",
+    "human_minutes",
+    "data_egress_bytes"
+  ],
+  "subtasks": [],
+  "task_id": "08_model_vs_software_summary",
+  "work_units": 220
+}

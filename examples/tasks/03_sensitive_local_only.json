@@ -1,0 +1,44 @@
+{
+  "task_id": "03_sensitive_local_only",
+  "purpose": "Summarize sensitive material without data egress.",
+  "operation": "text.summarize.extractive",
+  "work_units": 400,
+  "input_bytes": 12000,
+  "input_data_class": "SENSITIVE",
+  "inputs": {
+    "text": "Sensitive project context. The material must remain local. The goal is a bounded extractive summary with no external transfer.",
+    "sentences": 2
+  },
+  "constraints": {
+    "require_local": true,
+    "min_quality": 0.82,
+    "min_reliability": 0.93,
+    "max_semantic_loss": 0.15,
+    "max_privacy_risk": 0.08,
+    "max_energy_j": 150
+  },
+  "requester": "research-owner",
+  "_authorization": {
+    "principal": "research-owner",
+    "scopes": [
+      "model:invoke",
+      "code:allowlisted",
+      "api:analytics",
+      "crypto:hash"
+    ],
+    "allowed_nodes": [
+      "local",
+      "workstation-a"
+    ],
+    "allowed_data_classes": [
+      "SENSITIVE",
+      "INTERNAL",
+      "PUBLIC"
+    ],
+    "expires_at_epoch": 4102444800,
+    "max_calls": 100,
+    "allow_paid": false,
+    "max_payment": 0,
+    "lease_id": "private-local"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "constraints": {
+    "max_cost": 0.5,
+    "max_energy_j": 200,
+    "max_latency_ms": 10000,
+    "max_privacy_risk": 0.5,
+    "max_semantic_loss": 0.03,
+    "min_quality": 0.97,
+    "min_reliability": 0.98
+  },
+  "input_bytes": 8000,
+  "input_data_class": "INTERNAL",
+  "inputs": {
+    "from": "en",
+    "text": "A fictional technical passage for a controlled translation benchmark.",
+    "to": "zh"
+  },
+  "operation": "text.translate.demo",
+  "output_requirements": {},
+  "parallel_group": null,
+  "purpose": "Obtain a high-quality translation through an authorized paid capability when local routes do not meet quality.",
+  "requester": "federated-client",
+  "selection_order": [
+    "physical_energy_j",
+    "monetary_cost",
+    "latency_ms",
+    "human_minutes",
+    "data_egress_bytes"
+  ],
+  "subtasks": [],
+  "task_id": "02_high_quality_paid_translation",
+  "work_units": 800
+}

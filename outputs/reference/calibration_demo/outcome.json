@@ -1,0 +1,8 @@
+{
+  "measured_energy_j": 62.5,
+  "measured_latency_ms": 690,
+  "measured_quality": 0.91,
+  "measurement_source": "synthetic reference observation",
+  "new_version": "1.0.1-calibrated",
+  "success": true
+}

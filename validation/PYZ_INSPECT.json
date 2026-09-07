@@ -1,0 +1,30 @@
+{
+  "system": "DIKWP-MINEX-FABRIC-OS",
+  "version": "1.0.0",
+  "purpose": "route a declared purpose to an authorized capability with minimum physical energy and minimum effective expenditure",
+  "execution_modes": [
+    "MODEL_NATIVE",
+    "GENERATED_CODE",
+    "LOCAL_API",
+    "REMOTE_API",
+    "BROWSER",
+    "GUI",
+    "FEDERATED_NODE",
+    "HUMAN"
+  ],
+  "hard_gates": [
+    "authorization",
+    "data_class",
+    "quality",
+    "reliability",
+    "semantic_loss",
+    "privacy",
+    "irreversibility",
+    "budget",
+    "deadline"
+  ],
+  "selection": "Pareto frontier plus declared lexicographic order; physical energy first by default",
+  "automatic_external_action_authority": 0,
+  "real_payment_adapter": "not included",
+  "arbitrary_shell_execution": "prohibited"
+}

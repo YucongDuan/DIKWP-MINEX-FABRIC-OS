@@ -1,0 +1,31 @@
+{
+  "constraints": {
+    "max_energy_j": 150,
+    "max_privacy_risk": 0.08,
+    "max_semantic_loss": 0.15,
+    "min_quality": 0.82,
+    "min_reliability": 0.93,
+    "require_local": true
+  },
+  "input_bytes": 12000,
+  "input_data_class": "SENSITIVE",
+  "inputs": {
+    "sentences": 2,
+    "text": "Sensitive project context. The material must remain local. The goal is a bounded extractive summary with no external transfer."
+  },
+  "operation": "text.summarize.extractive",
+  "output_requirements": {},
+  "parallel_group": null,
+  "purpose": "Summarize sensitive material without data egress.",
+  "requester": "research-owner",
+  "selection_order": [
+    "physical_energy_j",
+    "monetary_cost",
+    "latency_ms",
+    "human_minutes",
+    "data_egress_bytes"
+  ],
+  "subtasks": [],
+  "task_id": "03_sensitive_local_only",
+  "work_units": 400
+}

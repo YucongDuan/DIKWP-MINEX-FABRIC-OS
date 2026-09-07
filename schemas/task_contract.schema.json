@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/minex/task_contract.schema.json",
+  "title": "MINEX Task Contract",
+  "type": "object",
+  "required": ["task_id", "purpose", "operation"],
+  "properties": {
+    "task_id": {"type": "string", "minLength": 1},
+    "purpose": {"type": "string", "minLength": 1},
+    "operation": {"type": "string", "minLength": 1},
+    "work_units": {"type": "number", "minimum": 0},
+    "input_bytes": {"type": "integer", "minimum": 0},
+    "input_data_class": {"type": "string"},
+    "inputs": {"type": "object"},
+    "constraints": {"type": "object"},
+    "selection_order": {"type": "array", "items": {"type": "string"}},
+    "subtasks": {"type": "array", "items": {"type": "object"}}
+  },
+  "additionalProperties": true
+}

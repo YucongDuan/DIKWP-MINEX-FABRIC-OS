@@ -1,0 +1,85 @@
+{
+  "system": "DIKWP-MINEX-FABRIC-OS",
+  "version": "1.0.0",
+  "name_en": "Minimum-Energy and Minimum-Effective-Expenditure Capability Routing, Function Internalization, Federated Borrowing, and Metered Exchange Runtime",
+  "name_zh": "最小能耗与最小有效付出能力路由、功能内化、联邦借用和计量交换运行时",
+  "generated_at_utc": "2026-09-07T01:46:39Z",
+  "overall_verified": true,
+  "release_inventory": {
+    "capability_manifests": 19,
+    "reference_tasks": 12,
+    "execution_modes": 8,
+    "json_schemas": 5,
+    "automated_tests_passed": 66,
+    "runtime_third_party_dependencies": 0,
+    "source_distribution_files_excluding_manifest_and_verification": 248
+  },
+  "functional_verification": {
+    "reference_scenarios": 12,
+    "route_selected": 10,
+    "composite_plans": 1,
+    "intentional_no_feasible_routes": 1,
+    "reference_ledgers_checked": 14,
+    "all_reference_ledgers_valid": true,
+    "licensed_internalization_status": "INTERNALIZED_WITHIN_TEST_SCOPE",
+    "licensed_internalization_tests_passed": 6,
+    "localhost_federation_health": "ok",
+    "localhost_federation_execution_state": "EXECUTED_LOCALLY",
+    "localhost_federation_receipt_present": true
+  },
+  "reference_resource_model": {
+    "evidence_boundary": "Declared or modelled reference values; not independent hardware measurements.",
+    "pre_internalization_energy_j": 10.001128,
+    "post_internalization_energy_j": 0.7001,
+    "modelled_energy_reduction_percent": 92.9998,
+    "pre_internalization_latency_ms": 180.01,
+    "post_internalization_latency_ms": 0.801,
+    "modelled_latency_reduction_percent": 99.555
+  },
+  "document_verification": {
+    "english_report": {
+      "pages": 12,
+      "all_pages_rendered": true,
+      "all_pages_visually_inspected": true,
+      "remaining_layout_defects": 0,
+      "a11y_high": 0,
+      "a11y_medium": 0,
+      "a11y_low": 0
+    },
+    "chinese_report": {
+      "pages": 11,
+      "all_pages_rendered": true,
+      "all_pages_visually_inspected": true,
+      "remaining_layout_defects": 0,
+      "a11y_high": 0,
+      "a11y_medium": 0,
+      "a11y_low": 0
+    }
+  },
+  "dashboard_verification": {
+    "external_script_tags": 0,
+    "embedded_script_blocks": 1,
+    "javascript_syntax_valid": true,
+    "errors": []
+  },
+  "safety_boundaries": {
+    "automatic_external_action_authority": 0,
+    "permission_bypass": false,
+    "arbitrary_shell_execution": false,
+    "unrestricted_generated_code_execution": false,
+    "proprietary_function_extraction": false,
+    "real_funds_moved": false,
+    "internet_grade_federation_certified": false,
+    "scalar_value_laundering": false
+  },
+  "integrity": {
+    "hash_algorithm": "SHA-256",
+    "source_tree_merkle_root": "fdda9234ba41ccb7ccfce2437328d5b53aacf2be1608822339db33a13ca5298b",
+    "zipapp_sha256": "4992a76efd0879b2b046378754b560131eba6a264af499df2450854a03733299",
+    "english_report_sha256": "75bf4d19e852df29e24277846900c1b4a5851ba3d8b78ec6de15298991f3cca3",
+    "chinese_report_sha256": "d84486321b033ace15c4c2fb1f8132ae1281cbc6b7d2922775e8cc491e23b19c",
+    "dashboard_sha256": "a4f54f417edec299db9c23c5d216cfaf49ad690203bc9b0a34e04d08e62ec245",
+    "sbom_sha256": "3af6dea33ec64a1465909a40ce54e1e216623bd02f54324ed59208449e2bf1ca"
+  },
+  "claim_boundary": "Verification establishes deterministic reference operation, file integrity, ledger validity, document rendering, and a localhost federation protocol demo. It does not certify a named frontier model, vendor benchmark, production energy profile, public-internet security, legal compliance, or real payment rail."
+}

@@ -1,0 +1,48 @@
+{
+  "automatic_external_action_authority": 0,
+  "claim_boundary": "The certificate proves only the declared planner/executor run. It does not certify an external model, software vendor, energy meter, or market.",
+  "execution_result": {
+    "capability_id": "cap.hash.local",
+    "execution_state": "EXECUTED_LOCALLY",
+    "external_action_performed": false,
+    "measured_wall_time_ms": 0.005977,
+    "mode": "LOCAL_API",
+    "operation": "data.hash.sha256",
+    "output": {
+      "bytes": 17,
+      "sha256": "8e16d72574204b0f2c751b6853109b80a35ee26d93439f5f50b270883c173120"
+    }
+  },
+  "ledger_head_hash": "0662b118f2ee609e11c5c502a4ef1fedc11e5f72d309facf1498e16a22285f0d",
+  "ledger_valid": true,
+  "non_energy_costs_not_silently_converted_to_joules": true,
+  "permission_preserved": true,
+  "physical_energy_is_first_class": true,
+  "real_payment_performed": false,
+  "residuals": [
+    {
+      "next_action": "measure energy on the actual hardware and update the manifest lineage",
+      "type": "ENERGY_CALIBRATION_DEBT"
+    }
+  ],
+  "scalar_aggregate_used": false,
+  "selected_capability_id": "cap.hash.local",
+  "selected_resource_vector": {
+    "data_egress_bytes": 0,
+    "evidence_class": "DECLARED_OR_MODELLED",
+    "expected_quality": 1.0,
+    "human_minutes": 0.0,
+    "irreversibility": 0,
+    "latency_ms": 1.005,
+    "monetary_cost": 0.0,
+    "physical_energy_j": 0.8005,
+    "privacy_risk": 0,
+    "reliability": 1.0,
+    "semantic_loss": 0
+  },
+  "settlement": null,
+  "status": "ROUTE_SELECTED",
+  "system": "DIKWP-MINEX-FABRIC-OS",
+  "task_id": "09_parallel_composite_workflow.step2",
+  "version": "1.0.0"
+}

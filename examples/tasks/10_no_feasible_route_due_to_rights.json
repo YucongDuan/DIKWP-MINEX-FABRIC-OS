@@ -1,0 +1,44 @@
+{
+  "task_id": "10_no_feasible_route_due_to_rights",
+  "purpose": "Demonstrate that low-energy optimization cannot override authorization and privacy boundaries.",
+  "operation": "text.translate.demo",
+  "work_units": 100,
+  "input_bytes": 5000,
+  "input_data_class": "SENSITIVE",
+  "inputs": {
+    "text": "Private material",
+    "from": "en",
+    "to": "zh"
+  },
+  "constraints": {
+    "min_quality": 0.98,
+    "max_privacy_risk": 0.1,
+    "max_semantic_loss": 0.02,
+    "allowed_modes": [
+      "FEDERATED_NODE",
+      "REMOTE_API"
+    ]
+  },
+  "requester": "analyst",
+  "_authorization": {
+    "principal": "analyst",
+    "scopes": [
+      "code:allowlisted",
+      "api:analytics",
+      "model:invoke"
+    ],
+    "allowed_nodes": [
+      "local",
+      "workstation-a"
+    ],
+    "allowed_data_classes": [
+      "PUBLIC",
+      "INTERNAL"
+    ],
+    "expires_at_epoch": 4102444800,
+    "max_calls": 100,
+    "allow_paid": false,
+    "max_payment": 0,
+    "lease_id": "no-gui"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "policy_id": "MINEX_DEFAULT_CONSTRAINT_FIRST",
+  "hard_gates": [
+    "authorization",
+    "data_class",
+    "minimum_quality",
+    "minimum_reliability",
+    "maximum_semantic_loss",
+    "maximum_privacy_risk",
+    "maximum_irreversibility",
+    "maximum_energy",
+    "maximum_monetary_cost",
+    "maximum_latency"
+  ],
+  "selection_order": [
+    "physical_energy_j",
+    "monetary_cost",
+    "latency_ms",
+    "human_minutes",
+    "data_egress_bytes"
+  ],
+  "scalar_aggregate_used": false,
+  "automatic_external_action_authority": 0,
+  "real_payment_enabled": false,
+  "arbitrary_shell_enabled": false
+}

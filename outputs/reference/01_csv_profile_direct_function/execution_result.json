@@ -1,0 +1,56 @@
+{
+  "capability_id": "cap.csv.generated-local",
+  "execution_state": "EXECUTED_LOCALLY",
+  "external_action_performed": false,
+  "measured_wall_time_ms": 0.216267,
+  "mode": "GENERATED_CODE",
+  "operation": "csv.profile",
+  "output": {
+    "column_profiles": {
+      "orders": {
+        "max": 4.0,
+        "mean": 2.75,
+        "min": 2.0,
+        "missing": 0,
+        "nonempty": 4,
+        "type": "numeric",
+        "unique": 3
+      },
+      "region": {
+        "missing": 0,
+        "nonempty": 4,
+        "top_values": [
+          [
+            "North",
+            2
+          ],
+          [
+            "South",
+            1
+          ],
+          [
+            "West",
+            1
+          ]
+        ],
+        "type": "text",
+        "unique": 3
+      },
+      "revenue": {
+        "max": 150.0,
+        "mean": 110.0,
+        "min": 80.0,
+        "missing": 0,
+        "nonempty": 4,
+        "type": "numeric",
+        "unique": 4
+      }
+    },
+    "columns": [
+      "region",
+      "revenue",
+      "orders"
+    ],
+    "rows": 4
+  }
+}

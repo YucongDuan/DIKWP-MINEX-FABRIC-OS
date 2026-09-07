@@ -1,0 +1,233 @@
+{
+  "metrics": {
+    "all_ledgers_valid": true,
+    "composite": 1,
+    "energy_reduction_percent": 92.9998,
+    "latency_reduction_percent": 99.555,
+    "no_feasible_route": 1,
+    "post_internalization_energy_j": 0.7001,
+    "post_internalization_latency_ms": 0.801,
+    "pre_internalization_energy_j": 10.001128,
+    "pre_internalization_latency_ms": 180.01,
+    "reference_scenarios": 12,
+    "route_selected": 10
+  },
+  "results": [
+    {
+      "ledger_valid": true,
+      "resource_vector": {
+        "data_egress_bytes": 0,
+        "evidence_class": "DECLARED_OR_MODELLED",
+        "expected_quality": 0.997,
+        "human_minutes": 0.0,
+        "irreversibility": 0.0,
+        "latency_ms": 20.4,
+        "monetary_cost": 0.0,
+        "physical_energy_j": 3.62,
+        "privacy_risk": 0.01,
+        "reliability": 0.998,
+        "semantic_loss": 0.0
+      },
+      "selected": "cap.csv.generated-local",
+      "status": "ROUTE_SELECTED",
+      "task_id": "01_csv_profile_direct_function"
+    },
+    {
+      "ledger_valid": true,
+      "resource_vector": {
+        "data_egress_bytes": 8000,
+        "evidence_class": "DECLARED_OR_MODELLED",
+        "expected_quality": 0.985,
+        "human_minutes": 0.0,
+        "irreversibility": 0.01,
+        "latency_ms": 664.0,
+        "monetary_cost": 0.18,
+        "physical_energy_j": 29.64,
+        "privacy_risk": 0.38,
+        "reliability": 0.99,
+        "semantic_loss": 0.018
+      },
+      "selected": "cap.translate.remote-expert",
+      "status": "ROUTE_SELECTED",
+      "task_id": "02_high_quality_paid_translation"
+    },
+    {
+      "ledger_valid": true,
+      "resource_vector": {
+        "data_egress_bytes": 0,
+        "evidence_class": "DECLARED_OR_MODELLED",
+        "expected_quality": 0.83,
+        "human_minutes": 0.0,
+        "irreversibility": 0.0,
+        "latency_ms": 41.0,
+        "monetary_cost": 0.0,
+        "physical_energy_j": 5.0,
+        "privacy_risk": 0.01,
+        "reliability": 0.995,
+        "semantic_loss": 0.14
+      },
+      "selected": "cap.summary.generated-local",
+      "status": "ROUTE_SELECTED",
+      "task_id": "03_sensitive_local_only"
+    },
+    {
+      "ledger_valid": true,
+      "resource_vector": {
+        "data_egress_bytes": 0,
+        "evidence_class": "DECLARED_OR_MODELLED",
+        "expected_quality": 0.997,
+        "human_minutes": 0.0,
+        "irreversibility": 0.0,
+        "latency_ms": 18.8,
+        "monetary_cost": 0.0,
+        "physical_energy_j": 3.54,
+        "privacy_risk": 0.01,
+        "reliability": 0.998,
+        "semantic_loss": 0.0
+      },
+      "selected": "cap.csv.generated-local",
+      "status": "ROUTE_SELECTED",
+      "task_id": "04_permission_wall_preserved"
+    },
+    {
+      "ledger_valid": true,
+      "resource_vector": {
+        "data_egress_bytes": 64,
+        "evidence_class": "DECLARED_OR_MODELLED",
+        "expected_quality": 1.0,
+        "human_minutes": 0.0,
+        "irreversibility": 0,
+        "latency_ms": 180.01,
+        "monetary_cost": 0.003,
+        "physical_energy_j": 10.001128,
+        "privacy_risk": 0.2,
+        "reliability": 0.995,
+        "semantic_loss": 0
+      },
+      "selected": "cap.temperature.remote",
+      "status": "ROUTE_SELECTED",
+      "task_id": "05_pre_internalization_remote_only"
+    },
+    {
+      "ledger_valid": true,
+      "resource_vector": {
+        "data_egress_bytes": 0,
+        "evidence_class": "DECLARED_OR_MODELLED",
+        "expected_quality": 1.0,
+        "human_minutes": 0.0,
+        "irreversibility": 0,
+        "latency_ms": 0.801,
+        "monetary_cost": 0.0,
+        "physical_energy_j": 0.7001,
+        "privacy_risk": 0,
+        "reliability": 0.9999,
+        "semantic_loss": 0
+      },
+      "selected": "cap.temperature.internalized",
+      "status": "ROUTE_SELECTED",
+      "task_id": "06_post_internalization_local"
+    },
+    {
+      "ledger_valid": true,
+      "resource_vector": {
+        "data_egress_bytes": 4096,
+        "evidence_class": "DECLARED_OR_MODELLED",
+        "expected_quality": 1.0,
+        "human_minutes": 0.0,
+        "irreversibility": 0,
+        "latency_ms": 90.2,
+        "monetary_cost": 0.001,
+        "physical_energy_j": 2.516288,
+        "privacy_risk": 0.25,
+        "reliability": 0.999,
+        "semantic_loss": 0
+      },
+      "selected": "cap.hash.federated",
+      "status": "ROUTE_SELECTED",
+      "task_id": "07_federated_function_borrowing"
+    },
+    {
+      "ledger_valid": true,
+      "resource_vector": {
+        "data_egress_bytes": 0,
+        "evidence_class": "DECLARED_OR_MODELLED",
+        "expected_quality": 0.89,
+        "human_minutes": 0.0,
+        "irreversibility": 0.0,
+        "latency_ms": 705.0,
+        "monetary_cost": 0.004,
+        "physical_energy_j": 58.3,
+        "privacy_risk": 0.05,
+        "reliability": 0.94,
+        "semantic_loss": 0.08
+      },
+      "selected": "cap.summary.model-native",
+      "status": "ROUTE_SELECTED",
+      "task_id": "08_model_vs_software_summary"
+    },
+    {
+      "ledger_valid": true,
+      "resource_vector": {
+        "data_egress_bytes": 0,
+        "evidence_class": "COMPOSED",
+        "expected_quality": 0.99,
+        "human_minutes": 0.0,
+        "irreversibility": 0.0,
+        "latency_ms": 18.4,
+        "monetary_cost": 0.0,
+        "physical_energy_j": 6.8505,
+        "privacy_risk": 0.01,
+        "reliability": 0.998,
+        "semantic_loss": 0.01
+      },
+      "selected": "parallel plan",
+      "status": "COMPOSITE",
+      "task_id": "09_parallel_composite_workflow"
+    },
+    {
+      "ledger_valid": true,
+      "resource_vector": null,
+      "selected": null,
+      "status": "NO_FEASIBLE_ROUTE",
+      "task_id": "10_no_feasible_route_due_to_rights"
+    },
+    {
+      "ledger_valid": true,
+      "resource_vector": {
+        "data_egress_bytes": 0,
+        "evidence_class": "DECLARED_OR_MODELLED",
+        "expected_quality": 0.99,
+        "human_minutes": 0.0,
+        "irreversibility": 0,
+        "latency_ms": 10.6,
+        "monetary_cost": 0.0,
+        "physical_energy_j": 2.56,
+        "privacy_risk": 0.01,
+        "reliability": 0.999,
+        "semantic_loss": 0.01
+      },
+      "selected": "cap.report.local",
+      "status": "ROUTE_SELECTED",
+      "task_id": "11_direct_report_without_app"
+    },
+    {
+      "ledger_valid": true,
+      "resource_vector": {
+        "data_egress_bytes": 0,
+        "evidence_class": "DECLARED_OR_MODELLED",
+        "expected_quality": 0.83,
+        "human_minutes": 0.0,
+        "irreversibility": 0.0,
+        "latency_ms": 29.0,
+        "monetary_cost": 0.0,
+        "physical_energy_j": 4.4,
+        "privacy_risk": 0.01,
+        "reliability": 0.995,
+        "semantic_loss": 0.14
+      },
+      "selected": "cap.summary.generated-local",
+      "status": "ROUTE_SELECTED",
+      "task_id": "12_energy_budget_blocks_gui"
+    }
+  ]
+}

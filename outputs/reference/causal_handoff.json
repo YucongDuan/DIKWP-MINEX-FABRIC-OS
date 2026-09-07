@@ -1,0 +1,29 @@
+{
+  "system": "DIKWP-MINEX-FABRIC-OS",
+  "version": "1.0.0",
+  "completed": [
+    "constraint-first planner",
+    "eight execution surfaces",
+    "licensed function internalization reference",
+    "localhost federated capability node",
+    "dry-run market receipts",
+    "append-only evidence ledgers",
+    "twelve deterministic scenarios"
+  ],
+  "reality_debts": [
+    "measure physical energy on representative CPUs, GPUs and network paths",
+    "integrate at least two real model providers behind the adapter boundary",
+    "perform independent security review of the federation protocol",
+    "evaluate GUI recovery energy under application drift",
+    "conduct legal review before enabling real monetary settlement"
+  ],
+  "next_named_owner": "deployment operator or research team adopting the release",
+  "stop_conditions": [
+    "authorization ambiguity",
+    "quality below declared threshold",
+    "unbounded data egress",
+    "unmeasured high-impact external action",
+    "payment or licensing uncertainty"
+  ],
+  "automatic_external_action_authority": 0
+}

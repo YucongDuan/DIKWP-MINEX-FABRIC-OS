@@ -1,0 +1,43 @@
+{
+  "task_id": "02_high_quality_paid_translation",
+  "purpose": "Obtain a high-quality translation through an authorized paid capability when local routes do not meet quality.",
+  "operation": "text.translate.demo",
+  "work_units": 800,
+  "input_bytes": 8000,
+  "input_data_class": "INTERNAL",
+  "inputs": {
+    "text": "A fictional technical passage for a controlled translation benchmark.",
+    "from": "en",
+    "to": "zh"
+  },
+  "constraints": {
+    "min_quality": 0.97,
+    "min_reliability": 0.98,
+    "max_semantic_loss": 0.03,
+    "max_privacy_risk": 0.5,
+    "max_cost": 0.5,
+    "max_energy_j": 200,
+    "max_latency_ms": 10000
+  },
+  "requester": "federated-client",
+  "_authorization": {
+    "principal": "federated-client",
+    "scopes": [
+      "federation:borrow",
+      "billing:paid"
+    ],
+    "allowed_nodes": [
+      "node-lingua",
+      "node-utility"
+    ],
+    "allowed_data_classes": [
+      "PUBLIC",
+      "INTERNAL"
+    ],
+    "expires_at_epoch": 4102444800,
+    "max_calls": 20,
+    "allow_paid": true,
+    "max_payment": 1.0,
+    "lease_id": "federation-demo"
+  }
+}

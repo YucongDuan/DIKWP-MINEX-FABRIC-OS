@@ -1,0 +1,37 @@
+{
+  "constraints": {
+    "max_privacy_risk": 0.1,
+    "max_semantic_loss": 0.02,
+    "min_quality": 0.98
+  },
+  "input_bytes": 2000,
+  "input_data_class": "INTERNAL",
+  "inputs": {
+    "sections": [
+      {
+        "body": "A direct function route was selected.",
+        "heading": "Decision"
+      },
+      {
+        "body": "No external action or payment occurred.",
+        "heading": "Boundary"
+      }
+    ],
+    "title": "Capability Fabric Result"
+  },
+  "operation": "report.compose.markdown",
+  "output_requirements": {},
+  "parallel_group": null,
+  "purpose": "Generate a structured report without opening a desktop word processor.",
+  "requester": "demo-owner",
+  "selection_order": [
+    "physical_energy_j",
+    "monetary_cost",
+    "latency_ms",
+    "human_minutes",
+    "data_egress_bytes"
+  ],
+  "subtasks": [],
+  "task_id": "11_direct_report_without_app",
+  "work_units": 60
+}

@@ -1,0 +1,53 @@
+{
+  "allowed_data_classes": [
+    "PUBLIC",
+    "INTERNAL",
+    "SENSITIVE"
+  ],
+  "base_energy_j": 56.875,
+  "base_latency_ms": 660.0,
+  "capability_id": "cap.summary.model-native",
+  "description": "Direct model-side summarization path represented by an allowlisted deterministic demo executor.",
+  "enabled": true,
+  "endpoint": null,
+  "energy_per_work_unit_j": 0.015,
+  "executor": "builtin",
+  "expected_quality": 0.895,
+  "human_minutes_base": 0.0,
+  "input_schema": {},
+  "internalizable": false,
+  "irreversibility": 0.0,
+  "latency_per_work_unit_ms": 0.25,
+  "license": "MODEL-PROVIDER-TERMS",
+  "lineage": {
+    "calibration_history": [
+      {
+        "measured_energy_j": 62.5,
+        "measured_latency_ms": 690.0,
+        "measured_quality": 0.91,
+        "prior_version": "1.0.0",
+        "success": true
+      }
+    ]
+  },
+  "mode": "MODEL_NATIVE",
+  "monetary_cost_base": 0.004,
+  "monetary_cost_per_unit": 0.0,
+  "name": "Model-native concise summarization",
+  "network_energy_per_mb_j": 0.0,
+  "node_id": "local",
+  "operation": "text.summarize.extractive",
+  "output_schema": {},
+  "privacy_risk": 0.05,
+  "provider_id": "local-model-owner",
+  "reliability": 0.955,
+  "required_scopes": [
+    "model:invoke"
+  ],
+  "semantic_loss": 0.08,
+  "tags": [
+    "model-native",
+    "local"
+  ],
+  "version": "1.0.1-calibrated"
+}

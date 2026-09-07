@@ -1,0 +1,1254 @@
+{
+  "system": "DIKWP-MINEX-FABRIC-OS",
+  "version": "1.0.0",
+  "generated_at_utc": "2026-09-07T01:45:51Z",
+  "hash_algorithm": "SHA-256",
+  "file_count": 248,
+  "tree_merkle_root": "fdda9234ba41ccb7ccfce2437328d5b53aacf2be1608822339db33a13ca5298b",
+  "excluded_from_root": [
+    "RELEASE_MANIFEST.json",
+    "RELEASE_VERIFICATION.json"
+  ],
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "33823c2a82e22f77a35cb4d59d2f69dd1a773899c4f34e76c8ea63807219fa9a",
+      "size_bytes": 349
+    },
+    {
+      "path": "CITATION.cff",
+      "sha256": "668012e1b4d30608273526e550bcb1a28fab9b27b3c1f12858fedc80b221f073",
+      "size_bytes": 258
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "cc2f9ca708910c02a0ffd2f49ffee28fa43f153d3c142c4237ca976f5bfada26",
+      "size_bytes": 333
+    },
+    {
+      "path": "GOVERNANCE.md",
+      "sha256": "28c8976282e6ec6a3d94cdf575c7bd1f9ff744254097343665bc05f7a0013482",
+      "size_bytes": 515
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "size_bytes": 11358
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "0c5907138925f58e403b9e0592bbe34363eabc70ad0810d7d921f8f691d2c85a",
+      "size_bytes": 288
+    },
+    {
+      "path": "README.md",
+      "sha256": "928d605d97c38c2fc3834488a29968f3f1983c663707b768eb8ffa9b1631bfe5",
+      "size_bytes": 3898
+    },
+    {
+      "path": "README.zh-CN.md",
+      "sha256": "9810a323ac454bcb3495fdb9ec664f8282235f2374d848814f0a3cf547380f37",
+      "size_bytes": 2954
+    },
+    {
+      "path": "SBOM.spdx.json",
+      "sha256": "3af6dea33ec64a1465909a40ce54e1e216623bd02f54324ed59208449e2bf1ca",
+      "size_bytes": 33294
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "823fb87aa5c823de81de9567838eec7213be19f4f0b56ef839daeada567b70f3",
+      "size_bytes": 1003
+    },
+    {
+      "path": "assets/DIKWP_MINEX_Decision_Loop.png",
+      "sha256": "e8d1349c2dc2da04afe5350c37950c626a3a8358ef1ce64e997aae5f9cd10d42",
+      "size_bytes": 131260
+    },
+    {
+      "path": "assets/DIKWP_MINEX_Decision_Loop.svg",
+      "sha256": "97fa8a35f96eaf6a4fcfeb7cdc7dc785b76b7c3bec2e296aed0d98186bf0a4bd",
+      "size_bytes": 84251
+    },
+    {
+      "path": "assets/DIKWP_MINEX_FABRIC_OS_Architecture.png",
+      "sha256": "1b1ea891f06c9aaf015e9f3429adf334c203b80ad6900c0af90e6f862b29d75b",
+      "size_bytes": 280147
+    },
+    {
+      "path": "assets/DIKWP_MINEX_FABRIC_OS_Architecture.svg",
+      "sha256": "87ea9658fb1e43b08548f43157acfe9f6467f258fa19ce1b7f4db694906a4f6e",
+      "size_bytes": 144718
+    },
+    {
+      "path": "assets/DIKWP_MINEX_Internalization_Comparison.png",
+      "sha256": "37a1bc7745390508a7d86ca7e53c55d2ee24208cb3115759e83a2870f57f72f6",
+      "size_bytes": 58000
+    },
+    {
+      "path": "codemeta.json",
+      "sha256": "8941b0274539076fc7201583c7ca3786f477159a833f2ba8fcd41a6874fe2358",
+      "size_bytes": 496
+    },
+    {
+      "path": "configs/default_policy.json",
+      "sha256": "7632f598048ea7440fb9c4566d8b176a176d92342930dfd68b607bf0ad194d7b",
+      "size_bytes": 609
+    },
+    {
+      "path": "configs/world_models.json",
+      "sha256": "97eeb736ed9a32209e92dbd4e9a20c8b05a226b3400c1f1166f6aa6bc6ffbed9",
+      "size_bytes": 3125
+    },
+    {
+      "path": "dist/DIKWP_MINEX_FABRIC_OS.pyz",
+      "sha256": "4992a76efd0879b2b046378754b560131eba6a264af499df2450854a03733299",
+      "size_bytes": 79457
+    },
+    {
+      "path": "docs/API.md",
+      "sha256": "42f7db80935802a342b62419f5613ba8cf61b83668929b7aa75aeea247393338",
+      "size_bytes": 675
+    },
+    {
+      "path": "docs/DEPLOYMENT.md",
+      "sha256": "c734ca368d4907d27791be68e0c25053ae6e0ea7e43a18809282ca1017948d40",
+      "size_bytes": 948
+    },
+    {
+      "path": "docs/ENERGY_ACCOUNTING.md",
+      "sha256": "578be774489adad1248cd5cf2e81bee95b84e7e884a616b120aca8a2b5bb0ac3",
+      "size_bytes": 904
+    },
+    {
+      "path": "docs/FEDERATION_AND_MARKET.md",
+      "sha256": "ceabb43636b880fe96429287ed9764f4f40cc9ed1b7b6f75777e5556483d807d",
+      "size_bytes": 835
+    },
+    {
+      "path": "docs/INTERNALIZATION_POLICY.md",
+      "sha256": "c9aeb04c35c0c9edf7cdfd05defeda7e3d294cb7cbf26c00e4be6ee74fb2327d",
+      "size_bytes": 873
+    },
+    {
+      "path": "docs/MATHEMATICAL_SPEC.md",
+      "sha256": "825000736a4daa281c440fe07ae4d3b2b6f43f6dac18ddff2333f4a6f7090899",
+      "size_bytes": 1930
+    },
+    {
+      "path": "docs/THREAT_MODEL.md",
+      "sha256": "35cc27ef6eb2e22a41b27e40d4e3cb7bf7ec8d11b17767fc4c505addec0d48d2",
+      "size_bytes": 1658
+    },
+    {
+      "path": "examples/capabilities/cap_csv_generated-local.json",
+      "sha256": "70b2f87afca2d5a9b1dd18ceeb1ea2b278dff1566ded64b38dec15f35080e004",
+      "size_bytes": 801
+    },
+    {
+      "path": "examples/capabilities/cap_csv_local-api.json",
+      "sha256": "1aa9baa5c57c21ea3e064c23e3ff38fe8fec1b242797a000fc4f126aa80eb94b",
+      "size_bytes": 742
+    },
+    {
+      "path": "examples/capabilities/cap_csv_remote-api.json",
+      "sha256": "4d147b8d11717fd7e3dee1438818a80d12b5dd3e47726030b4e9909c14b4d672",
+      "size_bytes": 855
+    },
+    {
+      "path": "examples/capabilities/cap_csv_spreadsheet-gui.json",
+      "sha256": "445615bdd38b89c4bc81a47e66bea633a8dc5cfeb42c31c7a46feaa602d92234",
+      "size_bytes": 806
+    },
+    {
+      "path": "examples/capabilities/cap_hash_federated.json",
+      "sha256": "398b8d619afa4454960fa31bd2ffea05bb4cfe7d5b98092d9a39c99d0bf8967a",
+      "size_bytes": 793
+    },
+    {
+      "path": "examples/capabilities/cap_hash_local.json",
+      "sha256": "64e0b5a24a9914009b88f7f9512c2e9d56d550cec970bc645b22978ccdabc747",
+      "size_bytes": 723
+    },
+    {
+      "path": "examples/capabilities/cap_json_local.json",
+      "sha256": "05be7c1e1fb0151f9de1724607443c5903512a12e66e68ebe2f9205291776cdc",
+      "size_bytes": 719
+    },
+    {
+      "path": "examples/capabilities/cap_math_local.json",
+      "sha256": "1347994a6d92aeec68c6a10825e69da786cd52d75154a9b171ce87753cd8ae91",
+      "size_bytes": 783
+    },
+    {
+      "path": "examples/capabilities/cap_report_gui.json",
+      "sha256": "7dab2ea530a1f1fc879197d396e613afc3556f8a865f850bf5f10990e11be99a",
+      "size_bytes": 800
+    },
+    {
+      "path": "examples/capabilities/cap_report_local.json",
+      "sha256": "c071e1b1827b32003d04662258bf5a6adb3ccbd76444e105aee720865bacf02f",
+      "size_bytes": 787
+    },
+    {
+      "path": "examples/capabilities/cap_summary_generated-local.json",
+      "sha256": "b9f5f349bb8c2ed9ad36c4f3fbd7e97fd022b190920f71247cea7a59ffdfacb9",
+      "size_bytes": 832
+    },
+    {
+      "path": "examples/capabilities/cap_summary_model-native.json",
+      "sha256": "ec8fde4b9510707b407c60d2dabdb0fb31e97144d1550e9453f4c12dde9669e6",
+      "size_bytes": 907
+    },
+    {
+      "path": "examples/capabilities/cap_summary_office-gui.json",
+      "sha256": "63bde92e051e93260e8deec0ef5c87a09435a03211d879eb3ec16bf7cd5df15b",
+      "size_bytes": 865
+    },
+    {
+      "path": "examples/capabilities/cap_summary_remote-premium.json",
+      "sha256": "cb4989eef9c596d01c75dc66fb1b28c6df9cf7b1cdda8a86688b7743b7c1f7f7",
+      "size_bytes": 966
+    },
+    {
+      "path": "examples/capabilities/cap_temperature_internalized.json",
+      "sha256": "ced006bd393e8339a02183d39319b3acf41d11feb56584e6ad2d6ea7853ee969",
+      "size_bytes": 979
+    },
+    {
+      "path": "examples/capabilities/cap_temperature_remote.json",
+      "sha256": "fa99741c7288b4604845f316e21ae3926cd7ee97eebbba91c8e469bbb4065da8",
+      "size_bytes": 891
+    },
+    {
+      "path": "examples/capabilities/cap_translate_browser.json",
+      "sha256": "79957e61e14f015d38afb2932ebe6126e28510e5a7c0a5ea187122cce80d61a7",
+      "size_bytes": 786
+    },
+    {
+      "path": "examples/capabilities/cap_translate_model-native.json",
+      "sha256": "b55ec7ccf2e8ac3bf3bc4fa7808d7bcc5bf237d0723434ffdd7cb38c7b2d1008",
+      "size_bytes": 818
+    },
+    {
+      "path": "examples/capabilities/cap_translate_remote-expert.json",
+      "sha256": "44635ca4b682e74cc63012ac44fbafb637ec34300da9c302d62f8ee602bc8875",
+      "size_bytes": 914
+    },
+    {
+      "path": "examples/internalization/temperature_recipe.json",
+      "sha256": "8e6b4fd08b9350e73737325426938455fa7921c375371213552fe9852e5d1da3",
+      "size_bytes": 1233
+    },
+    {
+      "path": "examples/node_capabilities/utility/cap_hash_federated.json",
+      "sha256": "398b8d619afa4454960fa31bd2ffea05bb4cfe7d5b98092d9a39c99d0bf8967a",
+      "size_bytes": 793
+    },
+    {
+      "path": "examples/nodes/node-lingua.json",
+      "sha256": "dd70c5c89356bfdb585e5a6918df57b4950fa47afb1a0d8a0739a13b0dc6d544",
+      "size_bytes": 306
+    },
+    {
+      "path": "examples/nodes/node-utility.json",
+      "sha256": "f24c866c3c67a3dbd7c415829b6914b3acb6f7210c63dea891b56738800928d9",
+      "size_bytes": 299
+    },
+    {
+      "path": "examples/tasks/01_csv_profile_direct_function.json",
+      "sha256": "950c7f365b2b4dd668d2e38cc5ec11ff745f5b6c7407c410e9b4f614cc15e86f",
+      "size_bytes": 957
+    },
+    {
+      "path": "examples/tasks/02_high_quality_paid_translation.json",
+      "sha256": "8c5a47df4ca6f52ceb822250c206977b4f116ac31023be494514e9187ad4c607",
+      "size_bytes": 1095
+    },
+    {
+      "path": "examples/tasks/03_sensitive_local_only.json",
+      "sha256": "ad365518f794a47983136177b7c0a8233ad16edf49f77b3d11c481d4971ca14a",
+      "size_bytes": 1105
+    },
+    {
+      "path": "examples/tasks/04_permission_wall_preserved.json",
+      "sha256": "9edb9080f72c9bf22e7656cd876063d3708280e50fdc9b1796625b34fcbe9ecf",
+      "size_bytes": 842
+    },
+    {
+      "path": "examples/tasks/05_pre_internalization_remote_only.json",
+      "sha256": "233be22a9d240a66a095befb24b400901d448f6261e401f0d45519ed68220b14",
+      "size_bytes": 828
+    },
+    {
+      "path": "examples/tasks/06_post_internalization_local.json",
+      "sha256": "655a8f98a33e6f9f732c16737ce33c46fd6ccc4c689e1f167f2135df1b24afec",
+      "size_bytes": 836
+    },
+    {
+      "path": "examples/tasks/07_federated_function_borrowing.json",
+      "sha256": "57da4d59527876580f2f046161633f9a6690c31cbc817808cf0762107ba80681",
+      "size_bytes": 1005
+    },
+    {
+      "path": "examples/tasks/08_model_vs_software_summary.json",
+      "sha256": "8d8c5f94477e027a6e322fbb49156f51703da38eaeb9b91be0717819de316fc3",
+      "size_bytes": 1086
+    },
+    {
+      "path": "examples/tasks/09_parallel_composite_workflow.json",
+      "sha256": "43f19d8dd0c47e6767700c731b05a29c1628c51c8e0e1bca4fd5e9ddca37c2c9",
+      "size_bytes": 1731
+    },
+    {
+      "path": "examples/tasks/10_no_feasible_route_due_to_rights.json",
+      "sha256": "d6dcb115f355fc1637adc3cef454dd08daa5bb656c6ae64345b7b145098d44d4",
+      "size_bytes": 988
+    },
+    {
+      "path": "examples/tasks/11_direct_report_without_app.json",
+      "sha256": "4168cedaae89bad08b5f4a14b27f1b9aea52712efe368e2f9e7a4f33eb92305b",
+      "size_bytes": 998
+    },
+    {
+      "path": "examples/tasks/12_energy_budget_blocks_gui.json",
+      "sha256": "0d8216c63d00de339fd4756d51d949701cc4c1f81c1b794b6977ef4b474d2d6f",
+      "size_bytes": 923
+    },
+    {
+      "path": "outputs/reference/01_csv_profile_direct_function/authorization.json",
+      "sha256": "4140d7f2b2ea2fbfa85f4f9cfd02ca584463111814dd010b6f4214d4646e668f",
+      "size_bytes": 261
+    },
+    {
+      "path": "outputs/reference/01_csv_profile_direct_function/evidence_ledger.jsonl",
+      "sha256": "a88ea8b2abe92cf10278f68c5050f2d67af8b843b9d9b4d5e2d57cf8937fe42f",
+      "size_bytes": 11269
+    },
+    {
+      "path": "outputs/reference/01_csv_profile_direct_function/execution_result.json",
+      "sha256": "88f3863c25ead2f3f9976d9294cd2507e31481a489adcc75b89d1ab397d4a67c",
+      "size_bytes": 1055
+    },
+    {
+      "path": "outputs/reference/01_csv_profile_direct_function/ledger_verification.json",
+      "sha256": "16ced01ac064d782670c19334f20f9d7a6421e394df6bad66bfc28a513ca400e",
+      "size_bytes": 139
+    },
+    {
+      "path": "outputs/reference/01_csv_profile_direct_function/minex_certificate.json",
+      "sha256": "530e341046953f91577b4cebf0d8ad59ddebf3bcdcf2db98a071005f3a644f4c",
+      "size_bytes": 2455
+    },
+    {
+      "path": "outputs/reference/01_csv_profile_direct_function/plan_decision.json",
+      "sha256": "692991c9b60270e35bc22adb49737c71eeae021b0430ef173ee8734d3a948a50",
+      "size_bytes": 4980
+    },
+    {
+      "path": "outputs/reference/01_csv_profile_direct_function/residual_queue.json",
+      "sha256": "4ce0830bf5e2ab6c4df005f21b5a7816744ed81f26d5cbe8547ec428d77f2870",
+      "size_bytes": 142
+    },
+    {
+      "path": "outputs/reference/01_csv_profile_direct_function/semantic_graph.json",
+      "sha256": "91988b36dcc0caafc7a9c1b8e8696c781e22d530970b0fb5851715fe183c7524",
+      "size_bytes": 5997
+    },
+    {
+      "path": "outputs/reference/01_csv_profile_direct_function/task_contract.json",
+      "sha256": "32d70a7ee13d94114fd175448ec48932c9dd37a819d5a35d7b538b5e4f435a98",
+      "size_bytes": 853
+    },
+    {
+      "path": "outputs/reference/02_high_quality_paid_translation/authorization.json",
+      "sha256": "d623b5a5c2aae03910586859e280794cc63058ed599f0b3e72beaf178bc45d62",
+      "size_bytes": 357
+    },
+    {
+      "path": "outputs/reference/02_high_quality_paid_translation/evidence_ledger.jsonl",
+      "sha256": "d00307129a791b356178dc9175403dd2fd0422dbc25865a54c17dbab09bf274f",
+      "size_bytes": 11446
+    },
+    {
+      "path": "outputs/reference/02_high_quality_paid_translation/execution_result.json",
+      "sha256": "4b412b52313b3b01b25e60113559576009cdf56fd00ad67f288ab90a4c038fc5",
+      "size_bytes": 429
+    },
+    {
+      "path": "outputs/reference/02_high_quality_paid_translation/ledger_verification.json",
+      "sha256": "2eec75e206d860eaea5d59065f0f6d852c4d54db4c79f8141031ce23795b97b9",
+      "size_bytes": 139
+    },
+    {
+      "path": "outputs/reference/02_high_quality_paid_translation/minex_certificate.json",
+      "sha256": "e0af828ca6c67766877d6eb25d33297ec6c52dcb801816e3dbf05a7eb850949d",
+      "size_bytes": 2344
+    },
+    {
+      "path": "outputs/reference/02_high_quality_paid_translation/plan_decision.json",
+      "sha256": "4992a7a82bfa71b6a4957d9ecf0d17418fdce92242ae080b68969e5ba27caf7c",
+      "size_bytes": 4452
+    },
+    {
+      "path": "outputs/reference/02_high_quality_paid_translation/residual_queue.json",
+      "sha256": "9955aad0b1412e64d50c1b372f000ec94567b19bdb1ad9cbc516baa44d1f21ab",
+      "size_bytes": 278
+    },
+    {
+      "path": "outputs/reference/02_high_quality_paid_translation/semantic_graph.json",
+      "sha256": "6dcc1a4d080cea4ff060f40c5a613a2ceb5dcd0c50db5404f1a1c329461c3758",
+      "size_bytes": 5897
+    },
+    {
+      "path": "outputs/reference/02_high_quality_paid_translation/task_contract.json",
+      "sha256": "7eb571673a99b60b09353defab4da09bb601cc7a80af24a45c577800ecd79ea7",
+      "size_bytes": 889
+    },
+    {
+      "path": "outputs/reference/03_sensitive_local_only/authorization.json",
+      "sha256": "ac3bbb71052ca8662fec1bbfa92a4b4f9ac1cefd0505793782c1c1300fd1e096",
+      "size_bytes": 404
+    },
+    {
+      "path": "outputs/reference/03_sensitive_local_only/evidence_ledger.jsonl",
+      "sha256": "b8801108ae58c6489ff1968ce17e4cc800e298813795b65fa892f60d9963fafc",
+      "size_bytes": 11899
+    },
+    {
+      "path": "outputs/reference/03_sensitive_local_only/execution_result.json",
+      "sha256": "ea20f8b4f6d159c41e38099f90def575a05aef098ea564e35a4dcb2a15d99346",
+      "size_bytes": 443
+    },
+    {
+      "path": "outputs/reference/03_sensitive_local_only/ledger_verification.json",
+      "sha256": "82fe67de1b1efeb6130825b0ab4a30fc0647dcd4a94ed09d75a19e2162ab89dd",
+      "size_bytes": 139
+    },
+    {
+      "path": "outputs/reference/03_sensitive_local_only/minex_certificate.json",
+      "sha256": "81105329e32f0e5159e8826520f02102754b0cfb5a93523a36d337d4fed110ac",
+      "size_bytes": 1753
+    },
+    {
+      "path": "outputs/reference/03_sensitive_local_only/plan_decision.json",
+      "sha256": "bd77d3fb202ce5d3d3fb6a3c35635fab6007b9af5d25e2ec9cf38a3ee336aefc",
+      "size_bytes": 5491
+    },
+    {
+      "path": "outputs/reference/03_sensitive_local_only/residual_queue.json",
+      "sha256": "4ce0830bf5e2ab6c4df005f21b5a7816744ed81f26d5cbe8547ec428d77f2870",
+      "size_bytes": 142
+    },
+    {
+      "path": "outputs/reference/03_sensitive_local_only/semantic_graph.json",
+      "sha256": "55539d731a33a5c9667e6f8ec5d23db9f08817345f5ef20d9542bdf5270edee2",
+      "size_bytes": 6512
+    },
+    {
+      "path": "outputs/reference/03_sensitive_local_only/task_contract.json",
+      "sha256": "b0c4580d00e961934ab35b656fbec3d7a86a15967e75fa67fc2ad53197be4caa",
+      "size_bytes": 846
+    },
+    {
+      "path": "outputs/reference/04_permission_wall_preserved/authorization.json",
+      "sha256": "357d01697a0112c575e2c0de33e97f3d68bbcec879b106a9f5bb3e59d34ff0a8",
+      "size_bytes": 354
+    },
+    {
+      "path": "outputs/reference/04_permission_wall_preserved/evidence_ledger.jsonl",
+      "sha256": "3d23b439c5675921cb5e891b22a9aa064495c5e63e2962e0c5c4ea733bf9726d",
+      "size_bytes": 11194
+    },
+    {
+      "path": "outputs/reference/04_permission_wall_preserved/execution_result.json",
+      "sha256": "cd750fe3863eb703f7b37092c698cb4b9700e741494d406a11838b18faca3add",
+      "size_bytes": 682
+    },
+    {
+      "path": "outputs/reference/04_permission_wall_preserved/ledger_verification.json",
+      "sha256": "348fea23d36634f875027d246a1bd2ffe14c1359e0c658af97e7aed3670d7fcc",
+      "size_bytes": 139
+    },
+    {
+      "path": "outputs/reference/04_permission_wall_preserved/minex_certificate.json",
+      "sha256": "33164530ef34706cf8188a4ccb56f533214f7ea36a855d4ace995263c291330a",
+      "size_bytes": 2038
+    },
+    {
+      "path": "outputs/reference/04_permission_wall_preserved/plan_decision.json",
+      "sha256": "dce2384ee82e40f6fbb5dbac77207e6aea0dc38090fa9ec9f700ccdf75860720",
+      "size_bytes": 5198
+    },
+    {
+      "path": "outputs/reference/04_permission_wall_preserved/residual_queue.json",
+      "sha256": "4ce0830bf5e2ab6c4df005f21b5a7816744ed81f26d5cbe8547ec428d77f2870",
+      "size_bytes": 142
+    },
+    {
+      "path": "outputs/reference/04_permission_wall_preserved/semantic_graph.json",
+      "sha256": "a7aeb2f917b35128519b6a6e2f58d99f47cab6c21ce3ba6f60b10351d651ab5b",
+      "size_bytes": 6091
+    },
+    {
+      "path": "outputs/reference/04_permission_wall_preserved/task_contract.json",
+      "sha256": "2625ab321277ce712dee2ff2c66ee4012bf66b57911de0b56de88468c181157a",
+      "size_bytes": 637
+    },
+    {
+      "path": "outputs/reference/05_pre_internalization_remote_only/authorization.json",
+      "sha256": "4140d7f2b2ea2fbfa85f4f9cfd02ca584463111814dd010b6f4214d4646e668f",
+      "size_bytes": 261
+    },
+    {
+      "path": "outputs/reference/05_pre_internalization_remote_only/evidence_ledger.jsonl",
+      "sha256": "fcb0528b59114d39b07ddf8552d63c350d9f8017e20b73701f444ec921b7067c",
+      "size_bytes": 9095
+    },
+    {
+      "path": "outputs/reference/05_pre_internalization_remote_only/execution_result.json",
+      "sha256": "f20a4a9698027c4af0e7123d8cba8d11c52c1b9ad662e8b4a6c9ae349cf8f9e9",
+      "size_bytes": 322
+    },
+    {
+      "path": "outputs/reference/05_pre_internalization_remote_only/ledger_verification.json",
+      "sha256": "dca0f61e6530afea638f6c50dec95c4a152e00a1a3ae07c2132917227bc05492",
+      "size_bytes": 139
+    },
+    {
+      "path": "outputs/reference/05_pre_internalization_remote_only/minex_certificate.json",
+      "sha256": "464b7627484cfffdfa08c3506936d057df24120d2177a11944cbf7ff3bc75209",
+      "size_bytes": 2086
+    },
+    {
+      "path": "outputs/reference/05_pre_internalization_remote_only/plan_decision.json",
+      "sha256": "7af2c8d81779d15123d9ab3b92bf796ec347a9a75cc3593ed992698c1febf9c3",
+      "size_bytes": 3097
+    },
+    {
+      "path": "outputs/reference/05_pre_internalization_remote_only/residual_queue.json",
+      "sha256": "4ce0830bf5e2ab6c4df005f21b5a7816744ed81f26d5cbe8547ec428d77f2870",
+      "size_bytes": 142
+    },
+    {
+      "path": "outputs/reference/05_pre_internalization_remote_only/semantic_graph.json",
+      "sha256": "917a7c364e1780412f56acf45ed1d020a252f76fbdbc02c43571f03ae0ee9795",
+      "size_bytes": 4710
+    },
+    {
+      "path": "outputs/reference/05_pre_internalization_remote_only/task_contract.json",
+      "sha256": "006f4eac283297b7d6fd96db9d9e1321aa835c139079df8eab09216f618d52aa",
+      "size_bytes": 724
+    },
+    {
+      "path": "outputs/reference/06_post_internalization_local/authorization.json",
+      "sha256": "4140d7f2b2ea2fbfa85f4f9cfd02ca584463111814dd010b6f4214d4646e668f",
+      "size_bytes": 261
+    },
+    {
+      "path": "outputs/reference/06_post_internalization_local/evidence_ledger.jsonl",
+      "sha256": "3d126fa11e035b5367557e5b0a1d51a737a75d4d31563929742fce5995b027cb",
+      "size_bytes": 8547
+    },
+    {
+      "path": "outputs/reference/06_post_internalization_local/execution_result.json",
+      "sha256": "02e1047b00d1d423856f9963f4dec75832311a54b65e924339b8e366396a3d02",
+      "size_bytes": 332
+    },
+    {
+      "path": "outputs/reference/06_post_internalization_local/ledger_verification.json",
+      "sha256": "48c425d1b63f3d1f5fa695204cde093866810e9722e7e614eb90e68e56e9c3c4",
+      "size_bytes": 139
+    },
+    {
+      "path": "outputs/reference/06_post_internalization_local/minex_certificate.json",
+      "sha256": "950b144353fec50e351627f935308d9a3655787a19927ac0b8970aad31df947b",
+      "size_bytes": 1647
+    },
+    {
+      "path": "outputs/reference/06_post_internalization_local/plan_decision.json",
+      "sha256": "d2430e469404a293d18de80c10607653329bbd6ecdd4cc163e27c0adb5d1e14a",
+      "size_bytes": 3132
+    },
+    {
+      "path": "outputs/reference/06_post_internalization_local/residual_queue.json",
+      "sha256": "4ce0830bf5e2ab6c4df005f21b5a7816744ed81f26d5cbe8547ec428d77f2870",
+      "size_bytes": 142
+    },
+    {
+      "path": "outputs/reference/06_post_internalization_local/semantic_graph.json",
+      "sha256": "71ec8ba07b7818acba0a2331aa3a0d99acfbaa8a05cb017f2685a427878f7319",
+      "size_bytes": 4757
+    },
+    {
+      "path": "outputs/reference/06_post_internalization_local/task_contract.json",
+      "sha256": "b435cee65711a88be8bbdf0c3304deef9017d4b697f093c63e2e430506e3a2d7",
+      "size_bytes": 732
+    },
+    {
+      "path": "outputs/reference/07_federated_function_borrowing/authorization.json",
+      "sha256": "d623b5a5c2aae03910586859e280794cc63058ed599f0b3e72beaf178bc45d62",
+      "size_bytes": 357
+    },
+    {
+      "path": "outputs/reference/07_federated_function_borrowing/evidence_ledger.jsonl",
+      "sha256": "1679be5723329fa7ed20bac451469e4cb3b0bd1abb3cb0a7a736ddcf64dae072",
+      "size_bytes": 9312
+    },
+    {
+      "path": "outputs/reference/07_federated_function_borrowing/execution_result.json",
+      "sha256": "034f557f937bee8a32702dcad0b8a528bf0051ada45d0dc2225d81bb49b23fe0",
+      "size_bytes": 340
+    },
+    {
+      "path": "outputs/reference/07_federated_function_borrowing/ledger_verification.json",
+      "sha256": "bce21d4d8cace99898a32b789b9e78b25c4128f14ca8d42aae4ba4362990a101",
+      "size_bytes": 139
+    },
+    {
+      "path": "outputs/reference/07_federated_function_borrowing/minex_certificate.json",
+      "sha256": "351abc1bed6b767ff88831a42f291bddaf23d25e8a02a76a522499dacf3be6cd",
+      "size_bytes": 2093
+    },
+    {
+      "path": "outputs/reference/07_federated_function_borrowing/plan_decision.json",
+      "sha256": "83c77ee527167a5eab92c2ddb1efb779e756afcc482471e9255b4b4c7eb6b508",
+      "size_bytes": 3101
+    },
+    {
+      "path": "outputs/reference/07_federated_function_borrowing/residual_queue.json",
+      "sha256": "4ce0830bf5e2ab6c4df005f21b5a7816744ed81f26d5cbe8547ec428d77f2870",
+      "size_bytes": 142
+    },
+    {
+      "path": "outputs/reference/07_federated_function_borrowing/semantic_graph.json",
+      "sha256": "4147719b482d3637754d7913564a244b214b10f9a4bb18052a27db21e2b8f8e0",
+      "size_bytes": 4758
+    },
+    {
+      "path": "outputs/reference/07_federated_function_borrowing/task_contract.json",
+      "sha256": "92d1712a3789eb647369a8734e2c95bd9bcde6e6d148510a52c279d00b523ca4",
+      "size_bytes": 799
+    },
+    {
+      "path": "outputs/reference/08_model_vs_software_summary/authorization.json",
+      "sha256": "4140d7f2b2ea2fbfa85f4f9cfd02ca584463111814dd010b6f4214d4646e668f",
+      "size_bytes": 261
+    },
+    {
+      "path": "outputs/reference/08_model_vs_software_summary/evidence_ledger.jsonl",
+      "sha256": "f318ac4c16418acc11db3f32849ff1aa0ef00d7f1acfec7df5a141f9d8fd7871",
+      "size_bytes": 12010
+    },
+    {
+      "path": "outputs/reference/08_model_vs_software_summary/execution_result.json",
+      "sha256": "4c6b6421e1bb8c9e74742359892b23c77936f0a5c2ab1933249b8941770d8e00",
+      "size_bytes": 442
+    },
+    {
+      "path": "outputs/reference/08_model_vs_software_summary/ledger_verification.json",
+      "sha256": "47297873a7fb0fb43fbaf8ed01941979b8645b2285514bde03858cd183e925fd",
+      "size_bytes": 139
+    },
+    {
+      "path": "outputs/reference/08_model_vs_software_summary/minex_certificate.json",
+      "sha256": "8b1707d580d950740d0d4c91865882c47fb82b85de338f21089fc7c4673f3ee4",
+      "size_bytes": 2199
+    },
+    {
+      "path": "outputs/reference/08_model_vs_software_summary/plan_decision.json",
+      "sha256": "ce1423e30b91198baf4f9a0099a74fcac6630a46132a5fc80e42fa603c59f905",
+      "size_bytes": 5141
+    },
+    {
+      "path": "outputs/reference/08_model_vs_software_summary/residual_queue.json",
+      "sha256": "4ce0830bf5e2ab6c4df005f21b5a7816744ed81f26d5cbe8547ec428d77f2870",
+      "size_bytes": 142
+    },
+    {
+      "path": "outputs/reference/08_model_vs_software_summary/semantic_graph.json",
+      "sha256": "c71c0c57c8eb36f6750400417da758e89fe93cdc287e1d5af9ccf2e651dbc9bd",
+      "size_bytes": 6193
+    },
+    {
+      "path": "outputs/reference/08_model_vs_software_summary/task_contract.json",
+      "sha256": "9c4ccec18c4772f25523f96117fd23e8295d0f3427777b029281ba2e9e1c694e",
+      "size_bytes": 982
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step1/authorization.json",
+      "sha256": "4140d7f2b2ea2fbfa85f4f9cfd02ca584463111814dd010b6f4214d4646e668f",
+      "size_bytes": 261
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step1/evidence_ledger.jsonl",
+      "sha256": "f12ebb3adbe2c2b56cdfcf97e0d4d40d05cd9f9f50a3e79cf8bac435edb4b7dd",
+      "size_bytes": 10581
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step1/execution_result.json",
+      "sha256": "43752534954067e2cc42c2859118f51d66a876cb94af037993087945a936e9c2",
+      "size_bytes": 682
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step1/ledger_verification.json",
+      "sha256": "97bb2d2f52fa2bc0cfcb81b1bb7f7c6aca99c86284d670db9a9f11c1af5d361b",
+      "size_bytes": 139
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step1/minex_certificate.json",
+      "sha256": "b982c248dc3f653ecc768a1b13cce5ae114e4bb74e32c80306d6dc77d15789c0",
+      "size_bytes": 2046
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step1/plan_decision.json",
+      "sha256": "0f0b0f524a7962906dbb755af6747a762fc7d40fb2fbbed31f39f23ce60ec0d4",
+      "size_bytes": 4948
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step1/residual_queue.json",
+      "sha256": "4ce0830bf5e2ab6c4df005f21b5a7816744ed81f26d5cbe8547ec428d77f2870",
+      "size_bytes": 142
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step1/semantic_graph.json",
+      "sha256": "6f47f1d759980c031e4469dea111313ab2b9ec1a37b83327d572b09e5439b4d0",
+      "size_bytes": 5694
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step1/task_contract.json",
+      "sha256": "d681e296e0be2f2355691ffb831155aa96d99b170de17d0a78843666d25b03e4",
+      "size_bytes": 561
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step2/authorization.json",
+      "sha256": "4140d7f2b2ea2fbfa85f4f9cfd02ca584463111814dd010b6f4214d4646e668f",
+      "size_bytes": 261
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step2/evidence_ledger.jsonl",
+      "sha256": "6d897144983396ac8c564450fbf6d32e48359fcc6f3a8d1eb22c087113bff190",
+      "size_bytes": 7955
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step2/execution_result.json",
+      "sha256": "9bf5e8a705f74d7d1923693db89cf6721e3ddb400ed685ef63765bcfa70250fb",
+      "size_bytes": 331
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step2/ledger_verification.json",
+      "sha256": "e5ee4d684b93191c311b8e620b43490b40887d711de0187e78e8ebc27571b3c3",
+      "size_bytes": 139
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step2/minex_certificate.json",
+      "sha256": "56db4d39342683e850ea84a50cf0adf24d500dfef71eb77fa79ba40816e36bb5",
+      "size_bytes": 1632
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step2/plan_decision.json",
+      "sha256": "5031453a4dbf6bb0b03a94c6dfbefb19396fec17a03e375d4b72c9c59c25e809",
+      "size_bytes": 2991
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step2/residual_queue.json",
+      "sha256": "4ce0830bf5e2ab6c4df005f21b5a7816744ed81f26d5cbe8547ec428d77f2870",
+      "size_bytes": 142
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step2/semantic_graph.json",
+      "sha256": "74613979b5ef5dc19783189e36db59e9ed20b1abe47e7c1aec2a1f1cd6a1660d",
+      "size_bytes": 4314
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step2/task_contract.json",
+      "sha256": "d8555a9e3e8489ce4212063273bda1824c73613fcac4d069e8eaf9e02c7ffb57",
+      "size_bytes": 531
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step3/authorization.json",
+      "sha256": "4140d7f2b2ea2fbfa85f4f9cfd02ca584463111814dd010b6f4214d4646e668f",
+      "size_bytes": 261
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step3/evidence_ledger.jsonl",
+      "sha256": "c6b63c4985737d336cc035f752dfb17f29423fe41cafdf0c98595135dc46c9bd",
+      "size_bytes": 8174
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step3/execution_result.json",
+      "sha256": "0f74fc38fe0a96aa2bebebefc0a49237e82894e92aca63d688ea2cec8b8e7255",
+      "size_bytes": 346
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step3/ledger_verification.json",
+      "sha256": "66046b4b3cc40edb73855db7a2261fb756a64117505ced86faa5f46b42f1009a",
+      "size_bytes": 139
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step3/minex_certificate.json",
+      "sha256": "03b096fd14ebc0f01355524ab4cb0becdec6d1127ad8328c278dc980fb993330",
+      "size_bytes": 1655
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step3/plan_decision.json",
+      "sha256": "c2bd1d8f961bc2953ef67dfe672fccfd61fd52b314d79f20d336fc61b29b472d",
+      "size_bytes": 3056
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step3/residual_queue.json",
+      "sha256": "4ce0830bf5e2ab6c4df005f21b5a7816744ed81f26d5cbe8547ec428d77f2870",
+      "size_bytes": 142
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step3/semantic_graph.json",
+      "sha256": "b53546fd11080b851fac3bb18bad2b9e26e84c4d00408ea719fedf2c335b423b",
+      "size_bytes": 4445
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/09_parallel_composite_workflow.step3/task_contract.json",
+      "sha256": "f5111285ff8d921944cd5f11947e3d36e80c2d05cbbaa35098193f48ec93fa06",
+      "size_bytes": 649
+    },
+    {
+      "path": "outputs/reference/09_parallel_composite_workflow/composite_certificate.json",
+      "sha256": "ae50cf77d122591930f21393cfe5aabdd89a2ade01bf7f749d7292b5e2caf327",
+      "size_bytes": 6620
+    },
+    {
+      "path": "outputs/reference/10_no_feasible_route_due_to_rights/authorization.json",
+      "sha256": "357d01697a0112c575e2c0de33e97f3d68bbcec879b106a9f5bb3e59d34ff0a8",
+      "size_bytes": 354
+    },
+    {
+      "path": "outputs/reference/10_no_feasible_route_due_to_rights/evidence_ledger.jsonl",
+      "sha256": "7a95fca4af4690a7396b7dbade85707058bb9824eb8803d2eae9f264c9c7d30e",
+      "size_bytes": 9567
+    },
+    {
+      "path": "outputs/reference/10_no_feasible_route_due_to_rights/execution_result.json",
+      "sha256": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed",
+      "size_bytes": 5
+    },
+    {
+      "path": "outputs/reference/10_no_feasible_route_due_to_rights/ledger_verification.json",
+      "sha256": "d688138a02542fcf2c873acfb055424d151284f2a4dfff702db47e15caf7fec6",
+      "size_bytes": 139
+    },
+    {
+      "path": "outputs/reference/10_no_feasible_route_due_to_rights/minex_certificate.json",
+      "sha256": "f7e2ebce12675707d60e306a9fb32ec840c659cd9c567612aceeb67646e05be5",
+      "size_bytes": 1096
+    },
+    {
+      "path": "outputs/reference/10_no_feasible_route_due_to_rights/plan_decision.json",
+      "sha256": "d57a6549a6c93955386431e23496eae5997769538fe7bcfd8c12a11a2f1724e3",
+      "size_bytes": 4134
+    },
+    {
+      "path": "outputs/reference/10_no_feasible_route_due_to_rights/residual_queue.json",
+      "sha256": "423dd8bc469617685b41800e64f4af7e08479bc9d79e0da015552bd36f71e22e",
+      "size_bytes": 266
+    },
+    {
+      "path": "outputs/reference/10_no_feasible_route_due_to_rights/semantic_graph.json",
+      "sha256": "18525da1738437dd2a3d3e6f77469f3448c27c95ef923aa6ec5257da609c847e",
+      "size_bytes": 5668
+    },
+    {
+      "path": "outputs/reference/10_no_feasible_route_due_to_rights/task_contract.json",
+      "sha256": "2186baffb55023d4478f3d6e41e32ce9d33409cf2cc09c30816df771098cde66",
+      "size_bytes": 783
+    },
+    {
+      "path": "outputs/reference/11_direct_report_without_app/authorization.json",
+      "sha256": "4140d7f2b2ea2fbfa85f4f9cfd02ca584463111814dd010b6f4214d4646e668f",
+      "size_bytes": 261
+    },
+    {
+      "path": "outputs/reference/11_direct_report_without_app/evidence_ledger.jsonl",
+      "sha256": "326317fd41a1e7fa072ac562f276b219a8fe3bca195b3fba5cb6c84f4a02eab8",
+      "size_bytes": 8611
+    },
+    {
+      "path": "outputs/reference/11_direct_report_without_app/execution_result.json",
+      "sha256": "f995845d7f89d3c794309106c3abf19d5ade41358e69574dc8f027c699b3caef",
+      "size_bytes": 432
+    },
+    {
+      "path": "outputs/reference/11_direct_report_without_app/ledger_verification.json",
+      "sha256": "658c7cf7096db6b1314d8d211a8831bc260a899875d6ee5206be5bfa6c630d6c",
+      "size_bytes": 139
+    },
+    {
+      "path": "outputs/reference/11_direct_report_without_app/minex_certificate.json",
+      "sha256": "9079f0965bbf435bd9df4c1bf0afeab6472f71532c4a14d3301f2aac3227b226",
+      "size_bytes": 1733
+    },
+    {
+      "path": "outputs/reference/11_direct_report_without_app/plan_decision.json",
+      "sha256": "8b499875fefcc0ff3a5d4a5a63e7b49a542d3d8506f6a13093a768c931b35113",
+      "size_bytes": 3086
+    },
+    {
+      "path": "outputs/reference/11_direct_report_without_app/residual_queue.json",
+      "sha256": "4ce0830bf5e2ab6c4df005f21b5a7816744ed81f26d5cbe8547ec428d77f2870",
+      "size_bytes": 142
+    },
+    {
+      "path": "outputs/reference/11_direct_report_without_app/semantic_graph.json",
+      "sha256": "8722efe4ffd1d652c7e5a4e07126126ce3367748ed069b46c63fb2a83f1f7f64",
+      "size_bytes": 4599
+    },
+    {
+      "path": "outputs/reference/11_direct_report_without_app/task_contract.json",
+      "sha256": "e049d0fbd6d973e21d559c22769723bd4f70edc88c7d935ff3311c147e565fc6",
+      "size_bytes": 894
+    },
+    {
+      "path": "outputs/reference/12_energy_budget_blocks_gui/authorization.json",
+      "sha256": "4140d7f2b2ea2fbfa85f4f9cfd02ca584463111814dd010b6f4214d4646e668f",
+      "size_bytes": 261
+    },
+    {
+      "path": "outputs/reference/12_energy_budget_blocks_gui/evidence_ledger.jsonl",
+      "sha256": "ac94093a2f9a184b6e471f75c06bae04520a5258211e15dc802d4f5919cd1fef",
+      "size_bytes": 11066
+    },
+    {
+      "path": "outputs/reference/12_energy_budget_blocks_gui/execution_result.json",
+      "sha256": "a2cf4c95fd5c37a9826a328de6a179c9d1c85742f1a28cc15fba5c5d27590dc3",
+      "size_bytes": 434
+    },
+    {
+      "path": "outputs/reference/12_energy_budget_blocks_gui/ledger_verification.json",
+      "sha256": "5573cba80a13de9fbaf159f190152a08c07258417950677ab9b103611a00639e",
+      "size_bytes": 139
+    },
+    {
+      "path": "outputs/reference/12_energy_budget_blocks_gui/minex_certificate.json",
+      "sha256": "695725ab13ae5fab10797d29212cc4bef301a4613d3af7274a9ed866069bb013",
+      "size_bytes": 1748
+    },
+    {
+      "path": "outputs/reference/12_energy_budget_blocks_gui/plan_decision.json",
+      "sha256": "7bb8e3f967c97b97c6c616c173dc66a65115bdfdbeec2013c2c1345c0302d5d1",
+      "size_bytes": 5078
+    },
+    {
+      "path": "outputs/reference/12_energy_budget_blocks_gui/residual_queue.json",
+      "sha256": "4ce0830bf5e2ab6c4df005f21b5a7816744ed81f26d5cbe8547ec428d77f2870",
+      "size_bytes": 142
+    },
+    {
+      "path": "outputs/reference/12_energy_budget_blocks_gui/semantic_graph.json",
+      "sha256": "495d707314269a7066a2b4ce96b22b4aa3b9f7a3c9fbe306665edeeafb7a61d0",
+      "size_bytes": 5989
+    },
+    {
+      "path": "outputs/reference/12_energy_budget_blocks_gui/task_contract.json",
+      "sha256": "273a7b5d4cb9ff29e3410e3dbeeec3b320c0cd74f5beee29314ba44e5452693b",
+      "size_bytes": 819
+    },
+    {
+      "path": "outputs/reference/calibration_demo/outcome.json",
+      "sha256": "dc1e4b232a37281b8f4eccefa593171d636e9e7aebef76733d77ab03db49c6a6",
+      "size_bytes": 205
+    },
+    {
+      "path": "outputs/reference/calibration_demo/prior_manifest.json",
+      "sha256": "4be288f72b7d3ef45ddc0d017c7266203144cbb8e131d363ead756acae163624",
+      "size_bytes": 1104
+    },
+    {
+      "path": "outputs/reference/calibration_demo/successor_manifest.json",
+      "sha256": "fabc0e69c64980d5fab4fffae89ac1159b2f78a9da73874c76f03d7086b938df",
+      "size_bytes": 1342
+    },
+    {
+      "path": "outputs/reference/capability_matrix.csv",
+      "sha256": "52bfc681247d04fd8453e4b3457ab54ae411544aa11a4b07d5e2c05fe09de40d",
+      "size_bytes": 3724
+    },
+    {
+      "path": "outputs/reference/causal_handoff.json",
+      "sha256": "8fc40bbc3edf1c88815731532f782f8e81a7df55577137ea89d10546dc3061e0",
+      "size_bytes": 1067
+    },
+    {
+      "path": "outputs/reference/federated_http_demo/result.json",
+      "sha256": "dbf1f1d8b7f64481ba613f9bb5732e914fc89bb8b1f676ae7634b5fe693dfb21",
+      "size_bytes": 3192
+    },
+    {
+      "path": "outputs/reference/internalization_result.json",
+      "sha256": "1cba2b9dd2f2dee1fe70724513e4e3a228387e66941f2bda741504f0d56f6300",
+      "size_bytes": 2456
+    },
+    {
+      "path": "outputs/reference/market_demo/quotes.json",
+      "sha256": "2813e5aa28a56e3a6cb0b527838b160fcf617b4749077312b5e522ff12795503",
+      "size_bytes": 2509
+    },
+    {
+      "path": "outputs/reference/reference_results.json",
+      "sha256": "fe958a1fb7529d01bb81ff657973d2ea1b79d6047d6621e5b2f73562c7c89fe6",
+      "size_bytes": 6844
+    },
+    {
+      "path": "outputs/reference/suite_summary.json",
+      "sha256": "9cc3e1958c726064d04533b905cff0a2cc7452c4984cdeccbd17027913232f61",
+      "size_bytes": 1658
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "762e2bfdf8f6db44e8be3dea68441495dcde689f002e860f62acc99aaf880001",
+      "size_bytes": 547
+    },
+    {
+      "path": "reports/DIKWP_MINEX_FABRIC_OS_System_Report_EN.docx",
+      "sha256": "75bf4d19e852df29e24277846900c1b4a5851ba3d8b78ec6de15298991f3cca3",
+      "size_bytes": 442747
+    },
+    {
+      "path": "reports/DIKWP_MINEX_FABRIC_OS_系统报告_CN.docx",
+      "sha256": "d84486321b033ace15c4c2fb1f8132ae1281cbc6b7d2922775e8cc491e23b19c",
+      "size_bytes": 443006
+    },
+    {
+      "path": "run_demo.bat",
+      "sha256": "636b3fa7f6da9706182f1b66a6a60e7b61e46809d6475e39a39425c774e923fa",
+      "size_bytes": 187
+    },
+    {
+      "path": "run_demo.sh",
+      "sha256": "a30cd677433831f1ff50c9cfc78f87b78c3477929a4db6a5d1ea43587ede7ce5",
+      "size_bytes": 175
+    },
+    {
+      "path": "schemas/authorization_context.schema.json",
+      "sha256": "0f212c8f9b8929f006e8a8d8c5018108f6112b45a665419c970852817cb312c3",
+      "size_bytes": 786
+    },
+    {
+      "path": "schemas/capability_manifest.schema.json",
+      "sha256": "78ead393aae7ebaa6a37d06c9c019a46703aa734f4345d0407dae090ed1630d5",
+      "size_bytes": 1462
+    },
+    {
+      "path": "schemas/internalization_recipe.schema.json",
+      "sha256": "4fac06d1ea0406a68328fd3c1e09c13d5dffe1e7f5379225011489b55a5c4a14",
+      "size_bytes": 609
+    },
+    {
+      "path": "schemas/minex_certificate.schema.json",
+      "sha256": "3dbd7548fda3784f717359a5ceef1f0bb1264c3e517d16fe873b80886aaffd1f",
+      "size_bytes": 943
+    },
+    {
+      "path": "schemas/task_contract.schema.json",
+      "sha256": "292df33b8910292beac26ef0bd27f23e6e7c7c879c4841ad5f47f1d20eb0e711",
+      "size_bytes": 800
+    },
+    {
+      "path": "src/minex_fabric/__init__.py",
+      "sha256": "428f5dfb14f1179c9be974df9e805ba6612258bc773f3c4db24dc3153b2ca92a",
+      "size_bytes": 273
+    },
+    {
+      "path": "src/minex_fabric/__main__.py",
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "size_bytes": 48
+    },
+    {
+      "path": "src/minex_fabric/authorization.py",
+      "sha256": "ff1aab9cdd15bd7322db3dcd9d9b077c370d7f28d51ff3b7d37e6edb953163f5",
+      "size_bytes": 2636
+    },
+    {
+      "path": "src/minex_fabric/calibration.py",
+      "sha256": "a70777eaf43e1056b13c1d75d5a89385640c52f8817bf347a6ee5ea746b89343",
+      "size_bytes": 1538
+    },
+    {
+      "path": "src/minex_fabric/cli.py",
+      "sha256": "83d7a64e2215e55f28e0dbe0cebfc9855e696556eb032f1505fa456b12fa03cf",
+      "size_bytes": 7748
+    },
+    {
+      "path": "src/minex_fabric/energy.py",
+      "sha256": "d45430d3d7dc1e848775f81b93f096cf0c4c7a8b54201208655d00330d146d51",
+      "size_bytes": 3774
+    },
+    {
+      "path": "src/minex_fabric/executors.py",
+      "sha256": "594eaa5217791c71cf146374a435991f3346ae4493924a8bbeec3cb7625bcaa2",
+      "size_bytes": 8001
+    },
+    {
+      "path": "src/minex_fabric/federation.py",
+      "sha256": "26bc09f03875f0d8c9b248f11fa7bca94d9f151b85eaba52d2e55ca720354c50",
+      "size_bytes": 8457
+    },
+    {
+      "path": "src/minex_fabric/internalizer.py",
+      "sha256": "881c73b658997e73f313552a94174e1f9aed5fe1fafefcb40b95e652a2fe9469",
+      "size_bytes": 3723
+    },
+    {
+      "path": "src/minex_fabric/io_utils.py",
+      "sha256": "ee59e17e204f281ddc77da899ad47b3fda8dc7e36d0d43630151a8294b20a584",
+      "size_bytes": 1303
+    },
+    {
+      "path": "src/minex_fabric/ledger.py",
+      "sha256": "d98c1691684e79d397dda6537a7821e5e2e80f7fd92c5aa756e80b33104e69a4",
+      "size_bytes": 2491
+    },
+    {
+      "path": "src/minex_fabric/market.py",
+      "sha256": "445fbbd584a0ff46b362c6522e7e61f1ead0bfe6ddb5cd25e5fa0008acab9553",
+      "size_bytes": 2074
+    },
+    {
+      "path": "src/minex_fabric/models.py",
+      "sha256": "2cd3e7363852c264190cbdefb3f23538666a5b1bd2ffeff9b9c92a5bde2d817b",
+      "size_bytes": 5994
+    },
+    {
+      "path": "src/minex_fabric/planner.py",
+      "sha256": "ac01f358cf4ad2436a26a11df470a78332f3912573a18e2da51d1c55010da8f3",
+      "size_bytes": 5780
+    },
+    {
+      "path": "src/minex_fabric/registry.py",
+      "sha256": "5d13cbfa3ecb5ce20b6dc24fd27209ee570d672836caeca3c54bdb1bad515a50",
+      "size_bytes": 1560
+    },
+    {
+      "path": "src/minex_fabric/semantic.py",
+      "sha256": "1a277d304ab17dae910b025fcc4415baf6f48b5b95307597f164d9d958b4e691",
+      "size_bytes": 3123
+    },
+    {
+      "path": "src/minex_fabric/workflow.py",
+      "sha256": "0295b258cba0a19ef9c0cb687b18a226f6ed692af94d500a17bf973d0d9e63a3",
+      "size_bytes": 6326
+    },
+    {
+      "path": "tests/test_authorization.py",
+      "sha256": "db815dc467aebcffd6e81f65006d0ed3cc97c99397866d97bef8af9ceda5f1c0",
+      "size_bytes": 3062
+    },
+    {
+      "path": "tests/test_calibration_semantic_workflow.py",
+      "sha256": "ea95e815036a57366e30034fbc724192eb748e31cb65da51cb404f9a020d1b0f",
+      "size_bytes": 3691
+    },
+    {
+      "path": "tests/test_energy.py",
+      "sha256": "5c78ad36d594f2499afac8d2bea7a22e47f43dcf45d839004763238f4bcb0084",
+      "size_bytes": 2127
+    },
+    {
+      "path": "tests/test_executors.py",
+      "sha256": "31e50b8187d4da1c3cad2be120c376c32ca0f6066e0bc6e766608558d85f7ba9",
+      "size_bytes": 1966
+    },
+    {
+      "path": "tests/test_ledger_market_internalizer.py",
+      "sha256": "63b2a07809711bd3e6453ecf8b99e12c5ea5f41a7cdd7ea576f429e0decf90bd",
+      "size_bytes": 2773
+    },
+    {
+      "path": "tests/test_models.py",
+      "sha256": "efb20e261c9427ea65528a5fb14a060eab7b6667614341a798fb5605c88a8be7",
+      "size_bytes": 1481
+    },
+    {
+      "path": "tests/test_planner.py",
+      "sha256": "86af6c8c84e95bbc7601d14100de669358f162ebb95bb6d91b0b903d01cd5122",
+      "size_bytes": 3865
+    },
+    {
+      "path": "tests/test_registry.py",
+      "sha256": "09179625a6a76fe543adb8f7ff9f878d02381a5ed8ab1d256dcc5274f0b8f041",
+      "size_bytes": 1283
+    },
+    {
+      "path": "tools/build_zipapp.py",
+      "sha256": "310a27dd98de93b34e4020efa9a7320cad44286f87be180fb95619141416474f",
+      "size_bytes": 1114
+    },
+    {
+      "path": "tools/run_federation_demo.py",
+      "sha256": "04db663241266723eb4d02247b55b2e29ee1c7f4bb36b8bc60e8b197de410eb7",
+      "size_bytes": 3526
+    },
+    {
+      "path": "tools/verify_reference.py",
+      "sha256": "27418d066390fcf086c4d376de06a363d2135fb3803c138a130ff75154e377ef",
+      "size_bytes": 1239
+    },
+    {
+      "path": "validation/DASHBOARD_QA.json",
+      "sha256": "f175794b909137577d7a7bfafbbbd215d10072008dd3491045adbc7252a94570",
+      "size_bytes": 113
+    },
+    {
+      "path": "validation/DOCX_A11Y_CN.json",
+      "sha256": "0f0685d7df053facdab2a65eae1e0fd39fba6d9e268435ad498449a2a37168be",
+      "size_bytes": 188
+    },
+    {
+      "path": "validation/DOCX_A11Y_EN.json",
+      "sha256": "66cc12bc7dd5670e16e180df82db843e5eb6cc9221e959aef79f17f7e66251e1",
+      "size_bytes": 189
+    },
+    {
+      "path": "validation/DOCX_RENDER_QA.json",
+      "sha256": "4c9947ee68e0a3c30eb7d6ffd857d02d4b4152888d3fb3e368d8d1f54718df00",
+      "size_bytes": 429
+    },
+    {
+      "path": "validation/FEDERATION_DEMO_RESULT.json",
+      "sha256": "76f142d144d04c09541c9bb8b36fcf0916533caa0052003de6f902300fe576eb",
+      "size_bytes": 3372
+    },
+    {
+      "path": "validation/FEDERATION_DEMO_STDOUT.json",
+      "sha256": "e1a2d9b608008e5da533efbebd3de9b49a2fd303cc99c4fc4dc839bf37163fd9",
+      "size_bytes": 3372
+    },
+    {
+      "path": "validation/PYTHON_COMPILE.txt",
+      "sha256": "85b17dc2a035608933febc0191550e42fd4e7fef2c8639157459cb207579c0f7",
+      "size_bytes": 24
+    },
+    {
+      "path": "validation/PYZ_INSPECT.json",
+      "sha256": "e8776baca853584d2154b3d1bed51596ed74284b401e365aab0c28ab4c365686",
+      "size_bytes": 776
+    },
+    {
+      "path": "validation/PYZ_SUITE_STDOUT.json",
+      "sha256": "75a5a534cb1f2f617cab0fbac621346727a7d06d07597766a68dc4f5cecfb833",
+      "size_bytes": 1658
+    },
+    {
+      "path": "validation/REFERENCE_VERIFY.json",
+      "sha256": "09f17fd369b1fb9ee1fc11ff17bf1083d09cefb3b9799a10c5f5d3940e608ca7",
+      "size_bytes": 83
+    },
+    {
+      "path": "validation/UNITTEST.txt",
+      "sha256": "59f2c41dce5b8a7af49363527a92caf652a0dda85b3a3632456854aa9a6fe311",
+      "size_bytes": 6457
+    },
+    {
+      "path": "web/DIKWP_MINEX_FABRIC_OS_Dashboard.html",
+      "sha256": "a4f54f417edec299db9c23c5d216cfaf49ad690203bc9b0a34e04d08e62ec245",
+      "size_bytes": 36779
+    }
+  ]
+}

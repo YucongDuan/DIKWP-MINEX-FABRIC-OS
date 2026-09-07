@@ -1,0 +1,14 @@
+{
+  "node_id": "node-lingua",
+  "operator": "lingua-node",
+  "endpoint": "http://127.0.0.1:8766",
+  "capabilities": [
+    "cap.translate.remote-expert"
+  ],
+  "payment_mode": "dry-run in reference release",
+  "authorization": "bearer + signed lease",
+  "data_classes": [
+    "PUBLIC",
+    "INTERNAL"
+  ]
+}

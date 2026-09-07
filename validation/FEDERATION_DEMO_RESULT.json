@@ -1,0 +1,112 @@
+{
+  "boundary": {
+    "automatic_external_action_authority": 0,
+    "internet_grade_security_certified": false,
+    "real_funds_moved": false,
+    "transport": "localhost only"
+  },
+  "execution": {
+    "receipt": {
+      "capability_id": "cap.hash.federated",
+      "execution_state": "EXECUTED_LOCALLY",
+      "lease_id": "lease-federated-reference",
+      "node_id": "node-utility",
+      "output_hash": "e097d9976164759a4fa1744482db40f3e12c99eb41a4e19a3c26a1da0d3f7655",
+      "receipt_hash": "234bc6f7e43bc4f3647053877f8c95dc44412be9bdc5d6b312a0d52178ea96d5",
+      "task_id": "federated-http-demo"
+    },
+    "result": {
+      "capability_id": "cap.hash.federated",
+      "execution_state": "EXECUTED_LOCALLY",
+      "external_action_performed": false,
+      "measured_wall_time_ms": 0.011543,
+      "mode": "FEDERATED_NODE",
+      "operation": "data.hash.sha256",
+      "output": {
+        "bytes": 26,
+        "sha256": "a944d46c7f1b6012054fc94a65c0ecad1793565ea7b849ec1706e9b4b8b1b209"
+      }
+    }
+  },
+  "health": {
+    "allow_execution": true,
+    "node_id": "node-utility",
+    "status": "ok"
+  },
+  "manifest": {
+    "capabilities": [
+      {
+        "allowed_data_classes": [
+          "PUBLIC",
+          "INTERNAL"
+        ],
+        "base_energy_j": 2.5,
+        "base_latency_ms": 90,
+        "capability_id": "cap.hash.federated",
+        "description": "Remote capability borrowing example.",
+        "enabled": true,
+        "endpoint": null,
+        "energy_per_work_unit_j": 0.0002,
+        "executor": "builtin",
+        "expected_quality": 1.0,
+        "human_minutes_base": 0.0,
+        "input_schema": {},
+        "internalizable": false,
+        "irreversibility": 0,
+        "latency_per_work_unit_ms": 0.01,
+        "license": "METERED-SERVICE",
+        "lineage": {},
+        "mode": "FEDERATED_NODE",
+        "monetary_cost_base": 0.001,
+        "monetary_cost_per_unit": 0.0,
+        "name": "Federated hash service",
+        "network_energy_per_mb_j": 3,
+        "node_id": "node-utility",
+        "operation": "data.hash.sha256",
+        "output_schema": {},
+        "privacy_risk": 0.25,
+        "provider_id": "utility-node",
+        "reliability": 0.999,
+        "required_scopes": [
+          "federation:borrow"
+        ],
+        "semantic_loss": 0,
+        "tags": [
+          "federated"
+        ],
+        "version": "1.0.0"
+      }
+    ],
+    "execution_requires_bearer_and_lease": true,
+    "node_id": "node-utility"
+  },
+  "quote": {
+    "node_id": "node-utility",
+    "quotes": [
+      {
+        "capability_id": "cap.hash.federated",
+        "currency": "USD",
+        "expires_at_epoch": 1788745799,
+        "node_id": "node-utility",
+        "price": 0.001,
+        "provider_id": "utility-node",
+        "quote_id": "quote-5035c7f59d3040ef",
+        "resource_vector": {
+          "data_egress_bytes": 24,
+          "evidence_class": "DECLARED_OR_MODELLED",
+          "expected_quality": 1.0,
+          "human_minutes": 0.0,
+          "irreversibility": 0,
+          "latency_ms": 90.03,
+          "monetary_cost": 0.001,
+          "physical_energy_j": 2.500672,
+          "privacy_risk": 0.25,
+          "reliability": 0.999,
+          "semantic_loss": 0
+        },
+        "task_id": "federated-http-demo",
+        "terms_hash": "5035c7f59d3040efa38681b440d199da4cd6086dc742ceb85f49c6d3238baf75"
+      }
+    ]
+  }
+}

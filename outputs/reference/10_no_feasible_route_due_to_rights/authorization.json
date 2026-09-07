@@ -1,0 +1,21 @@
+{
+  "allow_paid": false,
+  "allowed_data_classes": [
+    "PUBLIC",
+    "INTERNAL"
+  ],
+  "allowed_nodes": [
+    "local",
+    "workstation-a"
+  ],
+  "expires_at_epoch": 4102444800,
+  "lease_id": "no-gui",
+  "max_calls": 100,
+  "max_payment": 0,
+  "principal": "analyst",
+  "scopes": [
+    "code:allowlisted",
+    "api:analytics",
+    "model:invoke"
+  ]
+}

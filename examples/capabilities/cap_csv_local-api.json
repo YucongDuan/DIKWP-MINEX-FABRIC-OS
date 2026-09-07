@@ -1,0 +1,32 @@
+{
+  "capability_id": "cap.csv.local-api",
+  "name": "Local analytics API CSV profiler",
+  "operation": "csv.profile",
+  "mode": "LOCAL_API",
+  "provider_id": "analytics-service",
+  "node_id": "workstation-a",
+  "version": "2.1.0",
+  "description": "Local service API path.",
+  "required_scopes": [
+    "api:analytics"
+  ],
+  "allowed_data_classes": [
+    "PUBLIC",
+    "INTERNAL",
+    "SENSITIVE"
+  ],
+  "base_energy_j": 8.0,
+  "energy_per_work_unit_j": 0.0015,
+  "base_latency_ms": 55,
+  "latency_per_work_unit_ms": 0.03,
+  "expected_quality": 0.999,
+  "reliability": 0.999,
+  "semantic_loss": 0.0,
+  "privacy_risk": 0.02,
+  "irreversibility": 0.0,
+  "license": "INTERNAL-SERVICE",
+  "executor": "builtin",
+  "tags": [
+    "local-api"
+  ]
+}

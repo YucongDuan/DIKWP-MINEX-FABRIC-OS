@@ -1,0 +1,41 @@
+{
+  "task_id": "07_federated_function_borrowing",
+  "purpose": "Borrow a deterministic hashing capability from an authorized remote node when local execution is administratively unavailable.",
+  "operation": "data.hash.sha256",
+  "work_units": 20,
+  "input_bytes": 4096,
+  "input_data_class": "INTERNAL",
+  "inputs": {
+    "data": "federated capability borrowing demo"
+  },
+  "constraints": {
+    "allowed_modes": [
+      "FEDERATED_NODE"
+    ],
+    "min_quality": 1.0,
+    "min_reliability": 0.99,
+    "max_privacy_risk": 0.3,
+    "max_cost": 0.1
+  },
+  "requester": "federated-client",
+  "_authorization": {
+    "principal": "federated-client",
+    "scopes": [
+      "federation:borrow",
+      "billing:paid"
+    ],
+    "allowed_nodes": [
+      "node-lingua",
+      "node-utility"
+    ],
+    "allowed_data_classes": [
+      "PUBLIC",
+      "INTERNAL"
+    ],
+    "expires_at_epoch": 4102444800,
+    "max_calls": 20,
+    "allow_paid": true,
+    "max_payment": 1.0,
+    "lease_id": "federation-demo"
+  }
+}

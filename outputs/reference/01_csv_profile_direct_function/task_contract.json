@@ -1,0 +1,32 @@
+{
+  "constraints": {
+    "max_cost": 1,
+    "max_energy_j": 500,
+    "max_irreversibility": 0.05,
+    "max_latency_ms": 20000,
+    "max_privacy_risk": 0.55,
+    "max_semantic_loss": 0.01,
+    "min_quality": 0.99,
+    "min_reliability": 0.98
+  },
+  "input_bytes": 52000,
+  "input_data_class": "INTERNAL",
+  "inputs": {
+    "csv_text": "region,revenue,orders\nNorth,120,3\nSouth,90,2\nNorth,150,4\nWest,80,2\n"
+  },
+  "operation": "csv.profile",
+  "output_requirements": {},
+  "parallel_group": null,
+  "purpose": "Profile a CSV with minimum physical energy while preserving exact column statistics.",
+  "requester": "demo-owner",
+  "selection_order": [
+    "physical_energy_j",
+    "monetary_cost",
+    "latency_ms",
+    "human_minutes",
+    "data_egress_bytes"
+  ],
+  "subtasks": [],
+  "task_id": "01_csv_profile_direct_function",
+  "work_units": 120
+}

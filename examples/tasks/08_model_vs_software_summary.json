@@ -1,0 +1,40 @@
+{
+  "task_id": "08_model_vs_software_summary",
+  "purpose": "Choose whether the model should directly summarize or launch conventional software.",
+  "operation": "text.summarize.extractive",
+  "work_units": 220,
+  "input_bytes": 9000,
+  "input_data_class": "PUBLIC",
+  "inputs": {
+    "text": "Models can sometimes complete the function directly. APIs can be preferable when stable and authorized. GUI interaction remains a fallback. The selected route should preserve permission and quality while minimizing energy.",
+    "sentences": 2
+  },
+  "constraints": {
+    "min_quality": 0.86,
+    "min_reliability": 0.9,
+    "max_semantic_loss": 0.1,
+    "max_privacy_risk": 0.5,
+    "allowed_modes": [
+      "MODEL_NATIVE",
+      "GUI"
+    ]
+  },
+  "requester": "demo-owner",
+  "_authorization": {
+    "principal": "demo-owner",
+    "scopes": [
+      "*"
+    ],
+    "allowed_nodes": [
+      "*"
+    ],
+    "allowed_data_classes": [
+      "*"
+    ],
+    "expires_at_epoch": 4102444800,
+    "max_calls": 1000,
+    "allow_paid": true,
+    "max_payment": 100.0,
+    "lease_id": "demo-all"
+  }
+}

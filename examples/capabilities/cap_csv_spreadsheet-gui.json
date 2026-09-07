@@ -1,0 +1,33 @@
+{
+  "capability_id": "cap.csv.spreadsheet-gui",
+  "name": "Spreadsheet GUI data profiling",
+  "operation": "csv.profile",
+  "mode": "GUI",
+  "provider_id": "desktop-owner",
+  "node_id": "workstation-a",
+  "version": "1.0.0",
+  "description": "Human-style GUI route through a spreadsheet; dry-run only.",
+  "required_scopes": [
+    "gui:spreadsheet",
+    "desktop:control"
+  ],
+  "allowed_data_classes": [
+    "PUBLIC",
+    "INTERNAL"
+  ],
+  "base_energy_j": 230,
+  "energy_per_work_unit_j": 0.04,
+  "base_latency_ms": 11000,
+  "latency_per_work_unit_ms": 1.5,
+  "human_minutes_base": 0.8,
+  "expected_quality": 0.98,
+  "reliability": 0.9,
+  "semantic_loss": 0.01,
+  "privacy_risk": 0.15,
+  "irreversibility": 0.03,
+  "license": "DESKTOP-SOFTWARE-EULA",
+  "executor": "dry_run",
+  "tags": [
+    "gui"
+  ]
+}

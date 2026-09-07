@@ -1,0 +1,58 @@
+{
+  "automatic_external_action_authority": 0,
+  "claim_boundary": "The certificate proves only the declared planner/executor run. It does not certify an external model, software vendor, energy meter, or market.",
+  "execution_result": {
+    "capability_id": "cap.hash.federated",
+    "execution_state": "EXECUTED_LOCALLY",
+    "external_action_performed": false,
+    "measured_wall_time_ms": 0.005992,
+    "mode": "FEDERATED_NODE",
+    "operation": "data.hash.sha256",
+    "output": {
+      "bytes": 35,
+      "sha256": "2b049d5c9fcca16c7e3bf48979c9354f6179f34e153bd8dd42d9bbf340f8c5f4"
+    }
+  },
+  "ledger_head_hash": "43b83ced3b48740fc3006dde78e93b6d6671e58192074b5041bdab9b66074f2f",
+  "ledger_valid": true,
+  "non_energy_costs_not_silently_converted_to_joules": true,
+  "permission_preserved": true,
+  "physical_energy_is_first_class": true,
+  "real_payment_performed": false,
+  "residuals": [
+    {
+      "next_action": "measure energy on the actual hardware and update the manifest lineage",
+      "type": "ENERGY_CALIBRATION_DEBT"
+    }
+  ],
+  "scalar_aggregate_used": false,
+  "selected_capability_id": "cap.hash.federated",
+  "selected_resource_vector": {
+    "data_egress_bytes": 4096,
+    "evidence_class": "DECLARED_OR_MODELLED",
+    "expected_quality": 1.0,
+    "human_minutes": 0.0,
+    "irreversibility": 0,
+    "latency_ms": 90.2,
+    "monetary_cost": 0.001,
+    "physical_energy_j": 2.516288,
+    "privacy_risk": 0.25,
+    "reliability": 0.999,
+    "semantic_loss": 0
+  },
+  "settlement": {
+    "amount": 0.001,
+    "currency": "USD",
+    "output_hash": "79bd8d2d3060d6c85ece1f59c605a72a40b30be58a75474e42c92a9a9f8ddd77",
+    "payment_state": "DRY_RUN_SETTLED",
+    "quote_id": "quote-7e59f34bf54cce6b",
+    "real_funds_moved": false,
+    "settlement_hash": "007ee4b0c779bede333ee53ec8d10c1dbb0e914c1b84254c9b16481759246cce",
+    "success": true,
+    "terms_hash": "7e59f34bf54cce6b74f8cb6d619831654ad35cd67c2117c71749d22dea14e49f"
+  },
+  "status": "ROUTE_SELECTED",
+  "system": "DIKWP-MINEX-FABRIC-OS",
+  "task_id": "07_federated_function_borrowing",
+  "version": "1.0.0"
+}

@@ -1,0 +1,44 @@
+{
+  "task_id": "11_direct_report_without_app",
+  "purpose": "Generate a structured report without opening a desktop word processor.",
+  "operation": "report.compose.markdown",
+  "work_units": 60,
+  "input_bytes": 2000,
+  "input_data_class": "INTERNAL",
+  "inputs": {
+    "title": "Capability Fabric Result",
+    "sections": [
+      {
+        "heading": "Decision",
+        "body": "A direct function route was selected."
+      },
+      {
+        "heading": "Boundary",
+        "body": "No external action or payment occurred."
+      }
+    ]
+  },
+  "constraints": {
+    "min_quality": 0.98,
+    "max_privacy_risk": 0.1,
+    "max_semantic_loss": 0.02
+  },
+  "requester": "demo-owner",
+  "_authorization": {
+    "principal": "demo-owner",
+    "scopes": [
+      "*"
+    ],
+    "allowed_nodes": [
+      "*"
+    ],
+    "allowed_data_classes": [
+      "*"
+    ],
+    "expires_at_epoch": 4102444800,
+    "max_calls": 1000,
+    "allow_paid": true,
+    "max_payment": 100.0,
+    "lease_id": "demo-all"
+  }
+}

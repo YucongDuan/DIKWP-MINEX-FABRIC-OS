@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/minex/minex_certificate.schema.json",
+  "title": "MINEX Bounded Execution Certificate",
+  "type": "object",
+  "required": ["system", "version", "task_id", "status", "scalar_aggregate_used", "automatic_external_action_authority", "ledger_valid"],
+  "properties": {
+    "system": {"const": "DIKWP-MINEX-FABRIC-OS"},
+    "version": {"type": "string"},
+    "task_id": {"type": "string"},
+    "status": {"enum": ["ROUTE_SELECTED", "NO_FEASIBLE_ROUTE"]},
+    "selected_capability_id": {"type": ["string", "null"]},
+    "selected_resource_vector": {"type": ["object", "null"]},
+    "permission_preserved": {"type": "boolean"},
+    "scalar_aggregate_used": {"const": false},
+    "automatic_external_action_authority": {"const": 0},
+    "real_payment_performed": {"const": false},
+    "ledger_valid": {"type": "boolean"}
+  },
+  "additionalProperties": true
+}

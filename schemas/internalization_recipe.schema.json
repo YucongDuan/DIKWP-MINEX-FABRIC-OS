@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/minex/internalization_recipe.schema.json",
+  "title": "MINEX Function Internalization Recipe",
+  "type": "object",
+  "required": ["capability_id", "operation", "expression", "license_permission_confirmed", "tests"],
+  "properties": {
+    "capability_id": {"type": "string"},
+    "operation": {"type": "string"},
+    "expression": {"type": "string"},
+    "license_permission_confirmed": {"const": true},
+    "tests": {"type": "array", "minItems": 1, "items": {"type": "object"}}
+  },
+  "additionalProperties": true
+}

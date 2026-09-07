@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/minex/capability_manifest.schema.json",
+  "title": "MINEX Capability Manifest",
+  "type": "object",
+  "required": ["capability_id", "name", "operation", "mode", "provider_id", "node_id", "version", "expected_quality", "reliability"],
+  "properties": {
+    "capability_id": {"type": "string", "minLength": 1},
+    "name": {"type": "string", "minLength": 1},
+    "operation": {"type": "string", "minLength": 1},
+    "mode": {"enum": ["MODEL_NATIVE", "GENERATED_CODE", "LOCAL_API", "REMOTE_API", "BROWSER", "GUI", "FEDERATED_NODE", "HUMAN"]},
+    "provider_id": {"type": "string"},
+    "node_id": {"type": "string"},
+    "version": {"type": "string"},
+    "required_scopes": {"type": "array", "items": {"type": "string"}},
+    "allowed_data_classes": {"type": "array", "items": {"type": "string"}},
+    "base_energy_j": {"type": "number", "minimum": 0},
+    "energy_per_work_unit_j": {"type": "number", "minimum": 0},
+    "expected_quality": {"type": "number", "minimum": 0, "maximum": 1},
+    "reliability": {"type": "number", "minimum": 0, "maximum": 1},
+    "semantic_loss": {"type": "number", "minimum": 0, "maximum": 1},
+    "privacy_risk": {"type": "number", "minimum": 0, "maximum": 1},
+    "irreversibility": {"type": "number", "minimum": 0, "maximum": 1},
+    "license": {"type": "string"},
+    "lineage": {"type": "object"}
+  },
+  "additionalProperties": true
+}

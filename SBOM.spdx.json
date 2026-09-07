@@ -1,0 +1,1019 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "DIKWP-MINEX-FABRIC-OS-v1.0.0-SBOM",
+  "documentNamespace": "https://github.com/YucongDuan/DIKWP-MINEX-FABRIC-OS/sbom/v1.0.0/bcf1f5f09d447835872b6f49effd58af8722b88c",
+  "creationInfo": {
+    "created": "2026-09-07T01:45:02Z",
+    "creators": [
+      "Person: Yucong Duan",
+      "Tool: OpenAI GPT-5.6 Pro-assisted release construction"
+    ]
+  },
+  "packages": [
+    {
+      "name": "DIKWP-MINEX-FABRIC-OS",
+      "SPDXID": "SPDXRef-Package-MINEX",
+      "versionInfo": "1.0.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": true,
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "bcf1f5f09d447835872b6f49effd58af8722b88c"
+      },
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0",
+      "copyrightText": "Copyright 2026 Yucong Duan",
+      "externalRefs": []
+    }
+  ],
+  "files": [
+    {
+      "fileName": "./pyproject.toml",
+      "SPDXID": "SPDXRef-File-pyproject.toml",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "762e2bfdf8f6db44e8be3dea68441495dcde689f002e860f62acc99aaf880001"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./run_demo.bat",
+      "SPDXID": "SPDXRef-File-run-demo.bat",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "636b3fa7f6da9706182f1b66a6a60e7b61e46809d6475e39a39425c774e923fa"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./run_demo.sh",
+      "SPDXID": "SPDXRef-File-run-demo.sh",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a30cd677433831f1ff50c9cfc78f87b78c3477929a4db6a5d1ea43587ede7ce5"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./schemas/authorization_context.schema.json",
+      "SPDXID": "SPDXRef-File-schemas-authorization-context.schema.json",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0f212c8f9b8929f006e8a8d8c5018108f6112b45a665419c970852817cb312c3"
+        }
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./schemas/capability_manifest.schema.json",
+      "SPDXID": "SPDXRef-File-schemas-capability-manifest.schema.json",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "78ead393aae7ebaa6a37d06c9c019a46703aa734f4345d0407dae090ed1630d5"
+        }
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./schemas/internalization_recipe.schema.json",
+      "SPDXID": "SPDXRef-File-schemas-internalization-recipe.schema.json",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4fac06d1ea0406a68328fd3c1e09c13d5dffe1e7f5379225011489b55a5c4a14"
+        }
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./schemas/minex_certificate.schema.json",
+      "SPDXID": "SPDXRef-File-schemas-minex-certificate.schema.json",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3dbd7548fda3784f717359a5ceef1f0bb1264c3e517d16fe873b80886aaffd1f"
+        }
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./schemas/task_contract.schema.json",
+      "SPDXID": "SPDXRef-File-schemas-task-contract.schema.json",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "292df33b8910292beac26ef0bd27f23e6e7c7c879c4841ad5f47f1d20eb0e711"
+        }
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/__init__.py",
+      "SPDXID": "SPDXRef-File-src-minex-fabric---init--.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "428f5dfb14f1179c9be974df9e805ba6612258bc773f3c4db24dc3153b2ca92a"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/__main__.py",
+      "SPDXID": "SPDXRef-File-src-minex-fabric---main--.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/__pycache__/__init__.cpython-313.pyc",
+      "SPDXID": "SPDXRef-File-src-minex-fabric---pycache-----init--.cpython-313.pyc",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8769a8611e975958e0202b42f071910c3fac0360928653b3f9f4abf13e77ae5d"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/__pycache__/__main__.cpython-313.pyc",
+      "SPDXID": "SPDXRef-File-src-minex-fabric---pycache-----main--.cpython-313.pyc",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "050776962d7d100072fe62c8918dd9d548af876f3c8fa75ee0cbacfe5d949d55"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/__pycache__/authorization.cpython-313.pyc",
+      "SPDXID": "SPDXRef-File-src-minex-fabric---pycache---authorization.cpython-313.pyc",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "aebabbdc8ee69c6a0ada98e09e559c512022e2da84e4a3675506125893d5cf5c"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/__pycache__/calibration.cpython-313.pyc",
+      "SPDXID": "SPDXRef-File-src-minex-fabric---pycache---calibration.cpython-313.pyc",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cb5106bbbf8af36606b66c3cad4f43c542cd16b37bde205b2fbed2bec50cb58e"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/__pycache__/cli.cpython-313.pyc",
+      "SPDXID": "SPDXRef-File-src-minex-fabric---pycache---cli.cpython-313.pyc",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8552eb4e067b32c92156bcde45abc6dce30ce7aa5cd061a18da4799834695bda"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/__pycache__/energy.cpython-313.pyc",
+      "SPDXID": "SPDXRef-File-src-minex-fabric---pycache---energy.cpython-313.pyc",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0c1c671417ea871db52201cc3488eac8432f9932e94b063453111dfc6da9ea9f"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/__pycache__/executors.cpython-313.pyc",
+      "SPDXID": "SPDXRef-File-src-minex-fabric---pycache---executors.cpython-313.pyc",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "db3f65e1d2584723186c71bdc27940e1c4d23fcd97db6fca29ba53c11031ba85"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/__pycache__/federation.cpython-313.pyc",
+      "SPDXID": "SPDXRef-File-src-minex-fabric---pycache---federation.cpython-313.pyc",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fc4685dbf30817ebc03bd0554702abacfdc3bedead4dde4efabb5ba9881d2ed4"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/__pycache__/internalizer.cpython-313.pyc",
+      "SPDXID": "SPDXRef-File-src-minex-fabric---pycache---internalizer.cpython-313.pyc",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "873648310ebecce80a568e3a05a987abc01860694310d1d9056b3ef5133a557b"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/__pycache__/io_utils.cpython-313.pyc",
+      "SPDXID": "SPDXRef-File-src-minex-fabric---pycache---io-utils.cpython-313.pyc",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "84b97269a82235049e50f3157dc4aa7f26678faa59b3bd18c5af473c7f06a5cf"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/__pycache__/ledger.cpython-313.pyc",
+      "SPDXID": "SPDXRef-File-src-minex-fabric---pycache---ledger.cpython-313.pyc",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "11211e690abb16bae3bfda5c48039187e6d1d55e980fac179ab913f3b634b2eb"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/__pycache__/market.cpython-313.pyc",
+      "SPDXID": "SPDXRef-File-src-minex-fabric---pycache---market.cpython-313.pyc",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ae5579387e45fe7c9a31655353472d1fbf4735ba5c116dbe270262fba3bbfc93"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/__pycache__/models.cpython-313.pyc",
+      "SPDXID": "SPDXRef-File-src-minex-fabric---pycache---models.cpython-313.pyc",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "df64a218afc6a3dbe8a3341f4802e03c05f11bfda3e57eca3ee46d83b4a55a4d"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/__pycache__/planner.cpython-313.pyc",
+      "SPDXID": "SPDXRef-File-src-minex-fabric---pycache---planner.cpython-313.pyc",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1cd9bc91741afe4117625792215bd6d118918a7f37ac47afd5309c99debec9ac"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/__pycache__/registry.cpython-313.pyc",
+      "SPDXID": "SPDXRef-File-src-minex-fabric---pycache---registry.cpython-313.pyc",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ff1688350a61830f0079f486ef2b6d5d6af96047437fff507b1f8a77bcc5b403"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/__pycache__/semantic.cpython-313.pyc",
+      "SPDXID": "SPDXRef-File-src-minex-fabric---pycache---semantic.cpython-313.pyc",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "71df215f22361deb625d4a8f8e585c4134ae1c4f0c33c6a7c55cb7b9269be8ba"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/__pycache__/workflow.cpython-313.pyc",
+      "SPDXID": "SPDXRef-File-src-minex-fabric---pycache---workflow.cpython-313.pyc",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "37b1453ec5a530c5033eae9eb255b1e1ff166636c211e6c2d22739940217be27"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/authorization.py",
+      "SPDXID": "SPDXRef-File-src-minex-fabric-authorization.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ff1aab9cdd15bd7322db3dcd9d9b077c370d7f28d51ff3b7d37e6edb953163f5"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/calibration.py",
+      "SPDXID": "SPDXRef-File-src-minex-fabric-calibration.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a70777eaf43e1056b13c1d75d5a89385640c52f8817bf347a6ee5ea746b89343"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/cli.py",
+      "SPDXID": "SPDXRef-File-src-minex-fabric-cli.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "83d7a64e2215e55f28e0dbe0cebfc9855e696556eb032f1505fa456b12fa03cf"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/energy.py",
+      "SPDXID": "SPDXRef-File-src-minex-fabric-energy.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d45430d3d7dc1e848775f81b93f096cf0c4c7a8b54201208655d00330d146d51"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/executors.py",
+      "SPDXID": "SPDXRef-File-src-minex-fabric-executors.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "594eaa5217791c71cf146374a435991f3346ae4493924a8bbeec3cb7625bcaa2"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/federation.py",
+      "SPDXID": "SPDXRef-File-src-minex-fabric-federation.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "26bc09f03875f0d8c9b248f11fa7bca94d9f151b85eaba52d2e55ca720354c50"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/internalizer.py",
+      "SPDXID": "SPDXRef-File-src-minex-fabric-internalizer.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "881c73b658997e73f313552a94174e1f9aed5fe1fafefcb40b95e652a2fe9469"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/io_utils.py",
+      "SPDXID": "SPDXRef-File-src-minex-fabric-io-utils.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ee59e17e204f281ddc77da899ad47b3fda8dc7e36d0d43630151a8294b20a584"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/ledger.py",
+      "SPDXID": "SPDXRef-File-src-minex-fabric-ledger.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d98c1691684e79d397dda6537a7821e5e2e80f7fd92c5aa756e80b33104e69a4"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/market.py",
+      "SPDXID": "SPDXRef-File-src-minex-fabric-market.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "445fbbd584a0ff46b362c6522e7e61f1ead0bfe6ddb5cd25e5fa0008acab9553"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/models.py",
+      "SPDXID": "SPDXRef-File-src-minex-fabric-models.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2cd3e7363852c264190cbdefb3f23538666a5b1bd2ffeff9b9c92a5bde2d817b"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/planner.py",
+      "SPDXID": "SPDXRef-File-src-minex-fabric-planner.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ac01f358cf4ad2436a26a11df470a78332f3912573a18e2da51d1c55010da8f3"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/registry.py",
+      "SPDXID": "SPDXRef-File-src-minex-fabric-registry.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5d13cbfa3ecb5ce20b6dc24fd27209ee570d672836caeca3c54bdb1bad515a50"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/semantic.py",
+      "SPDXID": "SPDXRef-File-src-minex-fabric-semantic.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1a277d304ab17dae910b025fcc4415baf6f48b5b95307597f164d9d958b4e691"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./src/minex_fabric/workflow.py",
+      "SPDXID": "SPDXRef-File-src-minex-fabric-workflow.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0295b258cba0a19ef9c0cb687b18a226f6ed692af94d500a17bf973d0d9e63a3"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./tools/__pycache__/build_zipapp.cpython-313.pyc",
+      "SPDXID": "SPDXRef-File-tools---pycache---build-zipapp.cpython-313.pyc",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0ab83fed153335dea6646a4e240960b573bd4f50aa1e15fc1e60c79659f3f441"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./tools/__pycache__/run_federation_demo.cpython-313.pyc",
+      "SPDXID": "SPDXRef-File-tools---pycache---run-federation-demo.cpython-313.pyc",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "43add6c4d0040cd094097a72a3ae882e7c323bb92dae53264f9a22a10c797cb2"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./tools/__pycache__/verify_reference.cpython-313.pyc",
+      "SPDXID": "SPDXRef-File-tools---pycache---verify-reference.cpython-313.pyc",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d0888d9241e2ff2de82fbf4025e765918db215535cafa9b9ddc07599d2fa0cb6"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./tools/build_zipapp.py",
+      "SPDXID": "SPDXRef-File-tools-build-zipapp.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "310a27dd98de93b34e4020efa9a7320cad44286f87be180fb95619141416474f"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./tools/run_federation_demo.py",
+      "SPDXID": "SPDXRef-File-tools-run-federation-demo.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "04db663241266723eb4d02247b55b2e29ee1c7f4bb36b8bc60e8b197de410eb7"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./tools/verify_reference.py",
+      "SPDXID": "SPDXRef-File-tools-verify-reference.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "27418d066390fcf086c4d376de06a363d2135fb3803c138a130ff75154e377ef"
+        }
+      ],
+      "licenseConcluded": "Apache-2.0",
+      "licenseInfoInFiles": [
+        "Apache-2.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    },
+    {
+      "fileName": "./web/DIKWP_MINEX_FABRIC_OS_Dashboard.html",
+      "SPDXID": "SPDXRef-File-web-DIKWP-MINEX-FABRIC-OS-Dashboard.html",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a4f54f417edec299db9c23c5d216cfaf49ad690203bc9b0a34e04d08e62ec245"
+        }
+      ],
+      "licenseConcluded": "CC-BY-4.0",
+      "licenseInfoInFiles": [
+        "CC-BY-4.0"
+      ],
+      "copyrightText": "Copyright 2026 Yucong Duan"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-MINEX"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-pyproject.toml"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-run-demo.bat"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-run-demo.sh"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-schemas-authorization-context.schema.json"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-schemas-capability-manifest.schema.json"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-schemas-internalization-recipe.schema.json"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-schemas-minex-certificate.schema.json"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-schemas-task-contract.schema.json"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric---init--.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric---main--.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric---pycache-----init--.cpython-313.pyc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric---pycache-----main--.cpython-313.pyc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric---pycache---authorization.cpython-313.pyc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric---pycache---calibration.cpython-313.pyc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric---pycache---cli.cpython-313.pyc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric---pycache---energy.cpython-313.pyc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric---pycache---executors.cpython-313.pyc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric---pycache---federation.cpython-313.pyc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric---pycache---internalizer.cpython-313.pyc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric---pycache---io-utils.cpython-313.pyc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric---pycache---ledger.cpython-313.pyc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric---pycache---market.cpython-313.pyc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric---pycache---models.cpython-313.pyc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric---pycache---planner.cpython-313.pyc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric---pycache---registry.cpython-313.pyc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric---pycache---semantic.cpython-313.pyc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric---pycache---workflow.cpython-313.pyc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric-authorization.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric-calibration.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric-cli.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric-energy.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric-executors.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric-federation.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric-internalizer.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric-io-utils.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric-ledger.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric-market.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric-models.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric-planner.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric-registry.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric-semantic.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-src-minex-fabric-workflow.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tools---pycache---build-zipapp.cpython-313.pyc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tools---pycache---run-federation-demo.cpython-313.pyc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tools---pycache---verify-reference.cpython-313.pyc"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tools-build-zipapp.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tools-run-federation-demo.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-tools-verify-reference.py"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-MINEX",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-File-web-DIKWP-MINEX-FABRIC-OS-Dashboard.html"
+    }
+  ]
+}

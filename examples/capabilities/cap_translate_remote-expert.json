@@ -1,0 +1,36 @@
+{
+  "capability_id": "cap.translate.remote-expert",
+  "name": "Remote expert-grade translation service",
+  "operation": "text.translate.demo",
+  "mode": "FEDERATED_NODE",
+  "provider_id": "lingua-node",
+  "node_id": "node-lingua",
+  "version": "1.4.0",
+  "description": "Metered remote capability provided by a federated node.",
+  "required_scopes": [
+    "federation:borrow",
+    "billing:paid"
+  ],
+  "allowed_data_classes": [
+    "PUBLIC",
+    "INTERNAL"
+  ],
+  "base_energy_j": 20,
+  "energy_per_work_unit_j": 0.012,
+  "network_energy_per_mb_j": 5,
+  "base_latency_ms": 520,
+  "latency_per_work_unit_ms": 0.18,
+  "monetary_cost_base": 0.06,
+  "monetary_cost_per_unit": 0.00015,
+  "expected_quality": 0.985,
+  "reliability": 0.99,
+  "semantic_loss": 0.018,
+  "privacy_risk": 0.38,
+  "irreversibility": 0.01,
+  "license": "METERED-SERVICE",
+  "executor": "dry_run",
+  "tags": [
+    "federated",
+    "paid"
+  ]
+}

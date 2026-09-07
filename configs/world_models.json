@@ -1,0 +1,44 @@
+[
+  {
+    "world_model_id": "WM1_MODEL_NATIVE_DOMINANCE",
+    "assumption": "Frontier models directly complete a growing share of digital functions without launching conventional applications.",
+    "leading_signals": ["measured model-native quality exceeds software route", "lower energy and latency on repeated tasks", "stable structured output"],
+    "planner_implication": "admit MODEL_NATIVE as a first-class route but require task-specific quality evidence",
+    "retirement_trigger": "persistent failure, high rework energy, or loss of reproducibility"
+  },
+  {
+    "world_model_id": "WM2_FORMAL_INTERFACE_DOMINANCE",
+    "assumption": "APIs and agent protocols remain the most reliable and governable machine interfaces.",
+    "leading_signals": ["lower error rate than GUI", "strong permission and audit controls", "stable metering"],
+    "planner_implication": "prefer API when it is feasible and resource-efficient",
+    "retirement_trigger": "interface unavailable, excessive price, or direct route materially outperforms it"
+  },
+  {
+    "world_model_id": "WM3_GUI_PARITY_AND_FALLBACK",
+    "assumption": "Computer-use routes become reliable enough to serve as normal fallbacks or, in some tasks, primary routes.",
+    "leading_signals": ["multi-step GUI success", "robust state recognition", "low recovery and supervision burden"],
+    "planner_implication": "treat GUI as a capability surface, never as a permission grant",
+    "retirement_trigger": "error compounding, interface drift, or excess energy relative to alternatives"
+  },
+  {
+    "world_model_id": "WM4_FEDERATED_CAPABILITY_ECONOMY",
+    "assumption": "Authorized machines and organizations expose metered functions that other agents can borrow.",
+    "leading_signals": ["portable manifests", "signed leases", "cross-node receipts", "usage-based pricing"],
+    "planner_implication": "discover and quote remote capabilities under explicit data and payment limits",
+    "retirement_trigger": "trust failure, adverse economics, jurisdictional conflict, or unreliable delivery"
+  },
+  {
+    "world_model_id": "WM5_LOCALITY_AND_ENERGY_SCARCITY",
+    "assumption": "Energy, privacy, bandwidth, or resilience constraints make local compact functions preferable.",
+    "leading_signals": ["high network energy", "data-egress restrictions", "service outages", "hardware energy measurement"],
+    "planner_implication": "prioritize licensed internalization and local execution after correctness gates",
+    "retirement_trigger": "local route fails quality, safety, or maintenance economics"
+  },
+  {
+    "world_model_id": "WM6_INTERFACE_PERMISSION_DIVERGENCE",
+    "assumption": "Models can traverse more interfaces while identity, data, legal, and payment rights remain independently controlled.",
+    "leading_signals": ["GUI access without data scope", "multi-tenant authorization conflicts", "revoked or expired leases"],
+    "planner_implication": "block any route that confuses operability with authority",
+    "retirement_trigger": "none as a default safety invariant; revise only if the permission model itself changes by explicit contract"
+  }
+]

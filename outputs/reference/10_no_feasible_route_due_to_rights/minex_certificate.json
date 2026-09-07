@@ -1,0 +1,29 @@
+{
+  "automatic_external_action_authority": 0,
+  "claim_boundary": "The certificate proves only the declared planner/executor run. It does not certify an external model, software vendor, energy meter, or market.",
+  "execution_result": null,
+  "ledger_head_hash": "48db5e1181cddb3363d6e29ccfd8cd7432353f3d1e9565377ab07b2efa6f91f5",
+  "ledger_valid": true,
+  "non_energy_costs_not_silently_converted_to_joules": true,
+  "permission_preserved": false,
+  "physical_energy_is_first_class": true,
+  "real_payment_performed": false,
+  "residuals": [
+    {
+      "next_action": "add an authorized capability or revise a declared constraint",
+      "type": "NO_FEASIBLE_ROUTE"
+    },
+    {
+      "next_action": "measure energy on the actual hardware and update the manifest lineage",
+      "type": "ENERGY_CALIBRATION_DEBT"
+    }
+  ],
+  "scalar_aggregate_used": false,
+  "selected_capability_id": null,
+  "selected_resource_vector": null,
+  "settlement": null,
+  "status": "NO_FEASIBLE_ROUTE",
+  "system": "DIKWP-MINEX-FABRIC-OS",
+  "task_id": "10_no_feasible_route_due_to_rights",
+  "version": "1.0.0"
+}

@@ -1,0 +1,35 @@
+{
+  "task_id": "12_energy_budget_blocks_gui",
+  "purpose": "Complete a summary within a strict energy budget that excludes GUI workflows.",
+  "operation": "text.summarize.extractive",
+  "work_units": 100,
+  "input_bytes": 2000,
+  "input_data_class": "PUBLIC",
+  "inputs": {
+    "text": "A short source with enough content to demonstrate energy-aware routing. The GUI route is available but too energy intensive. The direct route should be preferred.",
+    "sentences": 2
+  },
+  "constraints": {
+    "min_quality": 0.82,
+    "max_semantic_loss": 0.15,
+    "max_energy_j": 10
+  },
+  "requester": "demo-owner",
+  "_authorization": {
+    "principal": "demo-owner",
+    "scopes": [
+      "*"
+    ],
+    "allowed_nodes": [
+      "*"
+    ],
+    "allowed_data_classes": [
+      "*"
+    ],
+    "expires_at_epoch": 4102444800,
+    "max_calls": 1000,
+    "allow_paid": true,
+    "max_payment": 100.0,
+    "lease_id": "demo-all"
+  }
+}

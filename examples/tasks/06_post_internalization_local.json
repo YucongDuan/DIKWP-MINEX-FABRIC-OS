@@ -1,0 +1,39 @@
+{
+  "task_id": "06_post_internalization_local",
+  "purpose": "Use a conformance-tested local implementation to avoid network and recurring energy/cost.",
+  "operation": "unit.convert.temperature",
+  "work_units": 1,
+  "input_bytes": 64,
+  "input_data_class": "PUBLIC",
+  "inputs": {
+    "value": 100,
+    "from": "C",
+    "to": "F"
+  },
+  "constraints": {
+    "allowed_modes": [
+      "GENERATED_CODE"
+    ],
+    "min_quality": 1.0,
+    "max_semantic_loss": 0,
+    "require_local": true
+  },
+  "requester": "demo-owner",
+  "_authorization": {
+    "principal": "demo-owner",
+    "scopes": [
+      "*"
+    ],
+    "allowed_nodes": [
+      "*"
+    ],
+    "allowed_data_classes": [
+      "*"
+    ],
+    "expires_at_epoch": 4102444800,
+    "max_calls": 1000,
+    "allow_paid": true,
+    "max_payment": 100.0,
+    "lease_id": "demo-all"
+  }
+}

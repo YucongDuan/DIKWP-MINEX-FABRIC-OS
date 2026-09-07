@@ -1,0 +1,106 @@
+{
+  "execution": {
+    "receipt": {
+      "capability_id": "cap.hash.federated",
+      "execution_state": "EXECUTED_LOCALLY",
+      "lease_id": "lease-federated-reference",
+      "node_id": "node-utility",
+      "output_hash": "df49aeaaefdc9d81b2545d6be9a96f728dc7b30ea7cc6d0e82d303c153134b59",
+      "receipt_hash": "2c3251d930db2e9ed48238af6a3034debc6c7f6439f709c7d6f1b7c82021112c",
+      "task_id": "federated-http-demo"
+    },
+    "result": {
+      "capability_id": "cap.hash.federated",
+      "execution_state": "EXECUTED_LOCALLY",
+      "external_action_performed": false,
+      "measured_wall_time_ms": 0.011106,
+      "mode": "FEDERATED_NODE",
+      "operation": "data.hash.sha256",
+      "output": {
+        "bytes": 27,
+        "sha256": "34c0a94db6363505c36116a4857ffa48431960e8d998bca803907ac3362ac826"
+      }
+    }
+  },
+  "health": {
+    "allow_execution": true,
+    "node_id": "node-utility",
+    "status": "ok"
+  },
+  "manifest": {
+    "capabilities": [
+      {
+        "allowed_data_classes": [
+          "PUBLIC",
+          "INTERNAL"
+        ],
+        "base_energy_j": 2.5,
+        "base_latency_ms": 90,
+        "capability_id": "cap.hash.federated",
+        "description": "Remote capability borrowing example.",
+        "enabled": true,
+        "endpoint": null,
+        "energy_per_work_unit_j": 0.0002,
+        "executor": "builtin",
+        "expected_quality": 1.0,
+        "human_minutes_base": 0.0,
+        "input_schema": {},
+        "internalizable": false,
+        "irreversibility": 0,
+        "latency_per_work_unit_ms": 0.01,
+        "license": "METERED-SERVICE",
+        "lineage": {},
+        "mode": "FEDERATED_NODE",
+        "monetary_cost_base": 0.001,
+        "monetary_cost_per_unit": 0.0,
+        "name": "Federated hash service",
+        "network_energy_per_mb_j": 3,
+        "node_id": "node-utility",
+        "operation": "data.hash.sha256",
+        "output_schema": {},
+        "privacy_risk": 0.25,
+        "provider_id": "utility-node",
+        "reliability": 0.999,
+        "required_scopes": [
+          "federation:borrow"
+        ],
+        "semantic_loss": 0,
+        "tags": [
+          "federated"
+        ],
+        "version": "1.0.0"
+      }
+    ],
+    "execution_requires_bearer_and_lease": true,
+    "node_id": "node-utility"
+  },
+  "quote": {
+    "node_id": "node-utility",
+    "quotes": [
+      {
+        "capability_id": "cap.hash.federated",
+        "currency": "USD",
+        "expires_at_epoch": 1788744530,
+        "node_id": "node-utility",
+        "price": 0.001,
+        "provider_id": "utility-node",
+        "quote_id": "quote-6f8d18cde8d00117",
+        "resource_vector": {
+          "data_egress_bytes": 24,
+          "evidence_class": "DECLARED_OR_MODELLED",
+          "expected_quality": 1.0,
+          "human_minutes": 0.0,
+          "irreversibility": 0,
+          "latency_ms": 90.03,
+          "monetary_cost": 0.001,
+          "physical_energy_j": 2.500672,
+          "privacy_risk": 0.25,
+          "reliability": 0.999,
+          "semantic_loss": 0
+        },
+        "task_id": "federated-http-demo",
+        "terms_hash": "6f8d18cde8d00117bf192317c2a10fd8a8a381a881ee4460f0a6fd630fb59f57"
+      }
+    ]
+  }
+}

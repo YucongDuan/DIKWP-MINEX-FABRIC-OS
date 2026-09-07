@@ -1,0 +1,32 @@
+{
+  "constraints": {
+    "allowed_modes": [
+      "GENERATED_CODE"
+    ],
+    "max_semantic_loss": 0,
+    "min_quality": 1.0,
+    "require_local": true
+  },
+  "input_bytes": 64,
+  "input_data_class": "PUBLIC",
+  "inputs": {
+    "from": "C",
+    "to": "F",
+    "value": 100
+  },
+  "operation": "unit.convert.temperature",
+  "output_requirements": {},
+  "parallel_group": null,
+  "purpose": "Use a conformance-tested local implementation to avoid network and recurring energy/cost.",
+  "requester": "demo-owner",
+  "selection_order": [
+    "physical_energy_j",
+    "monetary_cost",
+    "latency_ms",
+    "human_minutes",
+    "data_egress_bytes"
+  ],
+  "subtasks": [],
+  "task_id": "06_post_internalization_local",
+  "work_units": 1
+}

@@ -1,0 +1,78 @@
+{
+  "task_id": "09_parallel_composite_workflow",
+  "purpose": "Execute independent analysis, hashing, and report composition with asynchronous planning.",
+  "operation": "composite",
+  "work_units": 1,
+  "input_bytes": 0,
+  "input_data_class": "PUBLIC",
+  "inputs": {},
+  "constraints": {
+    "parallel": true
+  },
+  "requester": "demo-owner",
+  "_authorization": {
+    "principal": "demo-owner",
+    "scopes": [
+      "*"
+    ],
+    "allowed_nodes": [
+      "*"
+    ],
+    "allowed_data_classes": [
+      "*"
+    ],
+    "expires_at_epoch": 4102444800,
+    "max_calls": 1000,
+    "allow_paid": true,
+    "max_payment": 100.0,
+    "lease_id": "demo-all"
+  },
+  "subtasks": [
+    {
+      "purpose": "Profile data",
+      "operation": "csv.profile",
+      "work_units": 20,
+      "input_bytes": 1000,
+      "input_data_class": "PUBLIC",
+      "inputs": {
+        "csv_text": "x,y\n1,2\n3,4\n"
+      },
+      "constraints": {
+        "min_quality": 0.99,
+        "max_semantic_loss": 0.01
+      }
+    },
+    {
+      "purpose": "Hash evidence",
+      "operation": "data.hash.sha256",
+      "work_units": 5,
+      "input_bytes": 100,
+      "input_data_class": "PUBLIC",
+      "inputs": {
+        "data": "parallel evidence"
+      },
+      "constraints": {
+        "min_quality": 1.0
+      }
+    },
+    {
+      "purpose": "Compose report",
+      "operation": "report.compose.markdown",
+      "work_units": 30,
+      "input_bytes": 500,
+      "input_data_class": "PUBLIC",
+      "inputs": {
+        "title": "Parallel Workflow",
+        "sections": [
+          {
+            "heading": "Finding",
+            "body": "Reference output."
+          }
+        ]
+      },
+      "constraints": {
+        "min_quality": 0.98
+      }
+    }
+  ]
+}

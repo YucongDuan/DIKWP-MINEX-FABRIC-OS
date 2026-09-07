@@ -1,0 +1,33 @@
+{
+  "capability_id": "cap.report.local",
+  "name": "Local Markdown report composer",
+  "operation": "report.compose.markdown",
+  "mode": "GENERATED_CODE",
+  "provider_id": "local-owner",
+  "node_id": "local",
+  "version": "1.0.0",
+  "description": "Direct report composition without a word processor GUI.",
+  "required_scopes": [
+    "code:allowlisted"
+  ],
+  "allowed_data_classes": [
+    "PUBLIC",
+    "INTERNAL",
+    "SENSITIVE"
+  ],
+  "base_energy_j": 2.5,
+  "energy_per_work_unit_j": 0.001,
+  "base_latency_ms": 10,
+  "latency_per_work_unit_ms": 0.01,
+  "expected_quality": 0.99,
+  "reliability": 0.999,
+  "semantic_loss": 0.01,
+  "privacy_risk": 0.01,
+  "irreversibility": 0,
+  "license": "Apache-2.0",
+  "executor": "builtin",
+  "tags": [
+    "local",
+    "direct-function"
+  ]
+}

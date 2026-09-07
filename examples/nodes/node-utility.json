@@ -1,0 +1,14 @@
+{
+  "node_id": "node-utility",
+  "operator": "utility-node",
+  "endpoint": "http://127.0.0.1:8767",
+  "capabilities": [
+    "cap.hash.federated"
+  ],
+  "payment_mode": "dry-run in reference release",
+  "authorization": "bearer + signed lease",
+  "data_classes": [
+    "PUBLIC",
+    "INTERNAL"
+  ]
+}

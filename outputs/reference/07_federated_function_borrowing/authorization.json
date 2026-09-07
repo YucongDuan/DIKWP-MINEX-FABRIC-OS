@@ -1,0 +1,20 @@
+{
+  "allow_paid": true,
+  "allowed_data_classes": [
+    "PUBLIC",
+    "INTERNAL"
+  ],
+  "allowed_nodes": [
+    "node-lingua",
+    "node-utility"
+  ],
+  "expires_at_epoch": 4102444800,
+  "lease_id": "federation-demo",
+  "max_calls": 20,
+  "max_payment": 1.0,
+  "principal": "federated-client",
+  "scopes": [
+    "federation:borrow",
+    "billing:paid"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "count": 12,
+  "tasks": [
+    {
+      "selected": "cap.csv.generated-local",
+      "status": "ROUTE_SELECTED",
+      "task": "01_csv_profile_direct_function"
+    },
+    {
+      "selected": "cap.translate.remote-expert",
+      "status": "ROUTE_SELECTED",
+      "task": "02_high_quality_paid_translation"
+    },
+    {
+      "selected": "cap.summary.generated-local",
+      "status": "ROUTE_SELECTED",
+      "task": "03_sensitive_local_only"
+    },
+    {
+      "selected": "cap.csv.generated-local",
+      "status": "ROUTE_SELECTED",
+      "task": "04_permission_wall_preserved"
+    },
+    {
+      "selected": "cap.temperature.remote",
+      "status": "ROUTE_SELECTED",
+      "task": "05_pre_internalization_remote_only"
+    },
+    {
+      "selected": "cap.temperature.internalized",
+      "status": "ROUTE_SELECTED",
+      "task": "06_post_internalization_local"
+    },
+    {
+      "selected": "cap.hash.federated",
+      "status": "ROUTE_SELECTED",
+      "task": "07_federated_function_borrowing"
+    },
+    {
+      "selected": "cap.summary.model-native",
+      "status": "ROUTE_SELECTED",
+      "task": "08_model_vs_software_summary"
+    },
+    {
+      "selected": null,
+      "status": "COMPOSITE",
+      "task": "09_parallel_composite_workflow"
+    },
+    {
+      "selected": null,
+      "status": "NO_FEASIBLE_ROUTE",
+      "task": "10_no_feasible_route_due_to_rights"
+    },
+    {
+      "selected": "cap.report.local",
+      "status": "ROUTE_SELECTED",
+      "task": "11_direct_report_without_app"
+    },
+    {
+      "selected": "cap.summary.generated-local",
+      "status": "ROUTE_SELECTED",
+      "task": "12_energy_budget_blocks_gui"
+    }
+  ]
+}

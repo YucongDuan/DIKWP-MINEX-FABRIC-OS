@@ -1,0 +1,27 @@
+{
+  "constraints": {
+    "max_privacy_risk": 0.1,
+    "min_quality": 0.97,
+    "min_reliability": 0.98
+  },
+  "input_bytes": 2000,
+  "input_data_class": "INTERNAL",
+  "inputs": {
+    "csv_text": "a,b\n1,2\n3,4\n"
+  },
+  "operation": "csv.profile",
+  "output_requirements": {},
+  "parallel_group": null,
+  "purpose": "Profile a dataset without granting GUI or desktop control permissions.",
+  "requester": "analyst",
+  "selection_order": [
+    "physical_energy_j",
+    "monetary_cost",
+    "latency_ms",
+    "human_minutes",
+    "data_egress_bytes"
+  ],
+  "subtasks": [],
+  "task_id": "04_permission_wall_preserved",
+  "work_units": 40
+}

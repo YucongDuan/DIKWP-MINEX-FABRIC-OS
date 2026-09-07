@@ -1,0 +1,35 @@
+{
+  "capability_id": "cap.summary.office-gui",
+  "name": "Office GUI summarization workflow",
+  "operation": "text.summarize.extractive",
+  "mode": "GUI",
+  "provider_id": "desktop-owner",
+  "node_id": "workstation-a",
+  "version": "1.0.0",
+  "description": "Computer-use route through an office application; dry-run only.",
+  "required_scopes": [
+    "gui:office",
+    "desktop:control"
+  ],
+  "allowed_data_classes": [
+    "PUBLIC",
+    "INTERNAL"
+  ],
+  "base_energy_j": 190,
+  "energy_per_work_unit_j": 0.03,
+  "base_latency_ms": 9000,
+  "latency_per_work_unit_ms": 2.0,
+  "human_minutes_base": 0.4,
+  "expected_quality": 0.91,
+  "reliability": 0.88,
+  "semantic_loss": 0.06,
+  "privacy_risk": 0.18,
+  "irreversibility": 0.03,
+  "internalizable": false,
+  "license": "DESKTOP-SOFTWARE-EULA",
+  "executor": "dry_run",
+  "tags": [
+    "gui",
+    "fallback"
+  ]
+}

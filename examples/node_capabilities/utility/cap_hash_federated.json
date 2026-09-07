@@ -1,0 +1,33 @@
+{
+  "capability_id": "cap.hash.federated",
+  "name": "Federated hash service",
+  "operation": "data.hash.sha256",
+  "mode": "FEDERATED_NODE",
+  "provider_id": "utility-node",
+  "node_id": "node-utility",
+  "version": "1.0.0",
+  "description": "Remote capability borrowing example.",
+  "required_scopes": [
+    "federation:borrow"
+  ],
+  "allowed_data_classes": [
+    "PUBLIC",
+    "INTERNAL"
+  ],
+  "base_energy_j": 2.5,
+  "energy_per_work_unit_j": 0.0002,
+  "network_energy_per_mb_j": 3,
+  "base_latency_ms": 90,
+  "latency_per_work_unit_ms": 0.01,
+  "monetary_cost_base": 0.001,
+  "expected_quality": 1.0,
+  "reliability": 0.999,
+  "semantic_loss": 0,
+  "privacy_risk": 0.25,
+  "irreversibility": 0,
+  "license": "METERED-SERVICE",
+  "executor": "builtin",
+  "tags": [
+    "federated"
+  ]
+}

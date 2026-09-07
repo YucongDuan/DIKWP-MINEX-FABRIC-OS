@@ -1,0 +1,26 @@
+{
+  "constraints": {
+    "max_semantic_loss": 0.01,
+    "min_quality": 0.99
+  },
+  "input_bytes": 1000,
+  "input_data_class": "PUBLIC",
+  "inputs": {
+    "csv_text": "x,y\n1,2\n3,4\n"
+  },
+  "operation": "csv.profile",
+  "output_requirements": {},
+  "parallel_group": null,
+  "purpose": "Profile data",
+  "requester": "demo-owner",
+  "selection_order": [
+    "physical_energy_j",
+    "monetary_cost",
+    "latency_ms",
+    "human_minutes",
+    "data_egress_bytes"
+  ],
+  "subtasks": [],
+  "task_id": "09_parallel_composite_workflow.step1",
+  "work_units": 20
+}

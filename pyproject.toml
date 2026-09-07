@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dikwp-minex-fabric-os"
+version = "1.0.0"
+description = "Minimum-energy capability routing, permitted function internalization, federated borrowing, and metered exchange runtime"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "Yucong Duan"}]
+dependencies = []
+
+[project.scripts]
+minex-fabric = "minex_fabric.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

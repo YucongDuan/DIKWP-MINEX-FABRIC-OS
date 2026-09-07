@@ -1,0 +1,166 @@
+{
+  "candidates": [
+    {
+      "authorization_checks": {
+        "data_class_allowed_by_auth": true,
+        "data_class_allowed_by_capability": true,
+        "lease_not_expired": true,
+        "node_allowed": true,
+        "paid_route_authorized": true,
+        "required_scopes_present": true
+      },
+      "capability_id": "cap.summary.generated-local",
+      "feasible": false,
+      "mode": "GENERATED_CODE",
+      "node_id": "local",
+      "operation": "text.summarize.extractive",
+      "provider_id": "local-owner",
+      "rejection_reasons": [
+        "mode_not_allowed",
+        "quality_below_minimum",
+        "semantic_loss_above_maximum"
+      ],
+      "resource_vector": {
+        "data_egress_bytes": 0,
+        "evidence_class": "DECLARED_OR_MODELLED",
+        "expected_quality": 0.83,
+        "human_minutes": 0.0,
+        "irreversibility": 0.0,
+        "latency_ms": 33.8,
+        "monetary_cost": 0.0,
+        "physical_energy_j": 4.64,
+        "privacy_risk": 0.01,
+        "reliability": 0.995,
+        "semantic_loss": 0.14
+      }
+    },
+    {
+      "authorization_checks": {
+        "data_class_allowed_by_auth": true,
+        "data_class_allowed_by_capability": true,
+        "lease_not_expired": true,
+        "node_allowed": true,
+        "paid_route_authorized": true,
+        "required_scopes_present": true
+      },
+      "capability_id": "cap.summary.model-native",
+      "feasible": true,
+      "mode": "MODEL_NATIVE",
+      "node_id": "local",
+      "operation": "text.summarize.extractive",
+      "provider_id": "local-model-owner",
+      "rejection_reasons": [],
+      "resource_vector": {
+        "data_egress_bytes": 0,
+        "evidence_class": "DECLARED_OR_MODELLED",
+        "expected_quality": 0.89,
+        "human_minutes": 0.0,
+        "irreversibility": 0.0,
+        "latency_ms": 705.0,
+        "monetary_cost": 0.004,
+        "physical_energy_j": 58.3,
+        "privacy_risk": 0.05,
+        "reliability": 0.94,
+        "semantic_loss": 0.08
+      }
+    },
+    {
+      "authorization_checks": {
+        "data_class_allowed_by_auth": true,
+        "data_class_allowed_by_capability": true,
+        "lease_not_expired": true,
+        "node_allowed": true,
+        "paid_route_authorized": true,
+        "required_scopes_present": true
+      },
+      "capability_id": "cap.summary.office-gui",
+      "feasible": false,
+      "mode": "GUI",
+      "node_id": "workstation-a",
+      "operation": "text.summarize.extractive",
+      "provider_id": "desktop-owner",
+      "rejection_reasons": [
+        "reliability_below_minimum"
+      ],
+      "resource_vector": {
+        "data_egress_bytes": 0,
+        "evidence_class": "DECLARED_OR_MODELLED",
+        "expected_quality": 0.91,
+        "human_minutes": 0.4,
+        "irreversibility": 0.03,
+        "latency_ms": 9440.0,
+        "monetary_cost": 0.0,
+        "physical_energy_j": 196.6,
+        "privacy_risk": 0.18,
+        "reliability": 0.88,
+        "semantic_loss": 0.06
+      }
+    },
+    {
+      "authorization_checks": {
+        "data_class_allowed_by_auth": true,
+        "data_class_allowed_by_capability": true,
+        "lease_not_expired": true,
+        "node_allowed": true,
+        "paid_route_authorized": true,
+        "required_scopes_present": true
+      },
+      "capability_id": "cap.summary.remote-premium",
+      "feasible": false,
+      "mode": "REMOTE_API",
+      "node_id": "cloud-premium",
+      "operation": "text.summarize.extractive",
+      "provider_id": "provider-premium-ai",
+      "rejection_reasons": [
+        "mode_not_allowed"
+      ],
+      "resource_vector": {
+        "data_egress_bytes": 9000,
+        "evidence_class": "DECLARED_OR_MODELLED",
+        "expected_quality": 0.97,
+        "human_minutes": 0.0,
+        "irreversibility": 0.02,
+        "latency_ms": 513.0,
+        "monetary_cost": 0.042,
+        "physical_energy_j": 20.016,
+        "privacy_risk": 0.42,
+        "reliability": 0.985,
+        "semantic_loss": 0.03
+      }
+    }
+  ],
+  "pareto_frontier": [
+    "cap.summary.model-native"
+  ],
+  "permission_bypass_attempted": false,
+  "rationale": [
+    "Hard authorization and quality/risk constraints were applied before resource optimization.",
+    "Non-dominated routes were retained on a Pareto frontier.",
+    "The selected route minimizes the declared lexicographic order; physical energy is first by default.",
+    "No permission, privacy, semantic-loss, or irreversibility deficit was traded away for lower energy."
+  ],
+  "scalar_aggregate_used": false,
+  "selected_capability_id": "cap.summary.model-native",
+  "selected_resource_vector": {
+    "data_egress_bytes": 0,
+    "evidence_class": "DECLARED_OR_MODELLED",
+    "expected_quality": 0.89,
+    "human_minutes": 0.0,
+    "irreversibility": 0.0,
+    "latency_ms": 705.0,
+    "monetary_cost": 0.004,
+    "physical_energy_j": 58.3,
+    "privacy_risk": 0.05,
+    "reliability": 0.94,
+    "semantic_loss": 0.08
+  },
+  "selection_order": [
+    "physical_energy_j",
+    "monetary_cost",
+    "latency_ms",
+    "human_minutes",
+    "data_egress_bytes"
+  ],
+  "status": "ROUTE_SELECTED",
+  "task_id": "08_model_vs_software_summary"
+}

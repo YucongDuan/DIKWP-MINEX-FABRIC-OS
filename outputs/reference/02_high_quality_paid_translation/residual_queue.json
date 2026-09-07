@@ -1,0 +1,10 @@
+[
+  {
+    "next_action": "measure energy on the actual hardware and update the manifest lineage",
+    "type": "ENERGY_CALIBRATION_DEBT"
+  },
+  {
+    "next_action": "obtain named authority and execute through a verified adapter",
+    "type": "REAL_EXECUTION_NOT_PERFORMED"
+  }
+]
