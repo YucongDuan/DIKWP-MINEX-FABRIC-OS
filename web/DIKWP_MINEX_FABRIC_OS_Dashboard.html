@@ -16,8 +16,10 @@ input,select,textarea{width:100%;background:#081727;color:var(--ink);border:1px 
 pre{background:#06111e;border:1px solid var(--line);border-radius:10px;padding:14px;overflow:auto;white-space:pre-wrap} .bar{height:8px;border-radius:8px;background:#223e57;overflow:hidden} .bar span{display:block;height:100%;background:var(--accent)}
 .mode{font-weight:700;color:#d7efff} .route{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #27435e;padding:9px 0} .route:last-child{border:0} .lang{margin-left:auto}
 footer{padding:28px 5vw;border-top:1px solid var(--line);color:var(--muted)}
-</style></head>
-<body><header><h1>DIKWP-MINEX-FABRIC-OS</h1><div class="subtitle" data-en="Minimum-Energy Capability Fabric" data-zh="最小能耗能力网格">Minimum-Energy Capability Fabric</div>
+</style><meta name="author" content="Yucong Duan (段玉聪)">
+</head>
+<body><header><h1>DIKWP-MINEX-FABRIC-OS</h1>
+<p data-project-creator="true" style="font-size:.9rem;line-height:1.5;opacity:.85;margin:.5rem 0 1rem">Created by Yucong Duan (段玉聪).</p><div class="subtitle" data-en="Minimum-Energy Capability Fabric" data-zh="最小能耗能力网格">Minimum-Energy Capability Fabric</div>
 <p class="lead" data-en="Route a purpose across model-native execution, generated code, APIs, browsers, GUIs and federated nodes. Permission and correctness are hard gates; physical energy is the first optimization objective by default." data-zh="在模型原生、生成代码、API、浏览器、GUI和联邦节点之间路由目的。权限与正确性是硬门槛；物理能耗默认是首要优化目标。">Route a purpose across model-native execution, generated code, APIs, browsers, GUIs and federated nodes. Permission and correctness are hard gates; physical energy is the first optimization objective by default.</p>
 <div class="badges"><span class="badge">v1.0.0</span><span class="badge">66 tests</span><span class="badge">12 reference scenarios</span><span class="badge">8 execution modes</span><span class="badge">0 external scripts</span><span class="badge">automatic external authority = 0</span></div></header>
 <nav><button class="tab active" data-tab="overview">Overview</button><button class="tab" data-tab="planner">Planner Lab</button><button class="tab" data-tab="capabilities">Capability Registry</button><button class="tab" data-tab="scenarios">Reference Runs</button><button class="tab" data-tab="federation">Federation & Market</button><button class="tab" data-tab="boundaries">Boundaries</button><button class="lang" id="lang">中文</button></nav>
@@ -49,4 +51,121 @@ function estimate(c){return {energy:c.base_energy_j+c.energy_per_work_unit_j*100
 function plan(){const op=opSel.value,q=+document.getElementById('quality').value,p=+document.getElementById('privacy').value,dc=document.getElementById('dataClass').value,allowed=document.getElementById('modes').value.split(',').map(x=>x.trim()).filter(Boolean);let rows=DATA.capabilities.filter(c=>c.operation===op).map(c=>{const e=estimate(c);let reasons=[];if(c.expected_quality<q)reasons.push('quality');if(c.privacy_risk>p)reasons.push('privacy');if(!c.allowed_data_classes.includes(dc)&&!c.allowed_data_classes.includes('*'))reasons.push('data class');if(allowed.length&&!allowed.includes(c.mode))reasons.push('mode');return {c,e,reasons}});let feasible=rows.filter(r=>!r.reasons.length).sort((a,b)=>a.e.energy-b.e.energy||a.e.cost-b.e.cost||a.e.latency-b.e.latency);document.getElementById('routes').innerHTML=rows.map(r=>`<div class="route"><div><span class="mode">${r.c.mode}</span><br>${r.c.capability_id}</div><div>${r.e.energy.toFixed(3)} J · $${r.e.cost.toFixed(3)} · ${r.e.latency.toFixed(1)} ms<br><span class="${r.reasons.length?'bad':'good'}">${r.reasons.length?'Rejected: '+r.reasons.join(', '):'Feasible'}</span></div></div>`).join('');document.getElementById('decision').innerHTML=feasible.length?`<div class="kpi">${feasible[0].c.mode}</div><b>${feasible[0].c.capability_id}</b><p>Energy-first among routes that passed declared gates.</p>`:`<div class="bad"><b>NO_FEASIBLE_ROUTE</b></div><p>No constraint was weakened.</p>`}
 document.getElementById('planBtn').onclick=plan;
 document.getElementById('capRows').innerHTML=DATA.capabilities.map(c=>`<tr><td>${c.capability_id}</td><td>${c.operation}</td><td>${c.mode}</td><td>${c.base_energy_j}</td><td>${c.expected_quality}</td><td>${c.reliability}</td><td>${c.monetary_cost_base}</td><td>${c.privacy_risk}</td><td>${c.required_scopes.join(', ')}</td></tr>`).join('');
-document.getElementById('scenarioGrid').innerHTML=DATA.scenarios.map(s=>`<div class="card"><h3>${s.task_id}</h3><div class="${s.status==='NO_FEASIBLE_ROUTE'?'bad':'good'}"><b>${s.status}</b></div><p>${s.selected||'No route selected'}</p>${s.vector?`<div class="bar"><span style="width:${Math.min(100,s.vector.expected_quality*100)}%"></span></div><p class="muted">${s.vector.physical_energy_j.toFixed(3)} J · $${s.vector.monetary_cost.toFixed(3)} · ${s.vector.latency_ms.toFixed(1)} ms</p>`:''}</div>`).join(''); plan(); t();</script></body></html>
+document.getElementById('scenarioGrid').innerHTML=DATA.scenarios.map(s=>`<div class="card"><h3>${s.task_id}</h3><div class="${s.status==='NO_FEASIBLE_ROUTE'?'bad':'good'}"><b>${s.status}</b></div><p>${s.selected||'No route selected'}</p>${s.vector?`<div class="bar"><span style="width:${Math.min(100,s.vector.expected_quality*100)}%"></span></div><p class="muted">${s.vector.physical_energy_j.toFixed(3)} J · $${s.vector.monetary_cost.toFixed(3)} · ${s.vector.latency_ms.toFixed(1)} ms</p>`:''}</div>`).join(''); plan(); t();</script>
+<script id="yd-interface-config" type="application/json">{"messages":{"最小能耗能力网格":"Minimum-Energy Capability Fabric","在模型原生、生成代码、API、浏览器、GUI和联邦节点之间路由目的。权限与正确性是硬门槛；物理能耗默认是首要优化目标。":"Route a purpose across model-native execution, generated code, APIs, browsers, GUIs and federated nodes. Permission and correctness are hard gates; physical energy is the first optimization objective by default.","执行表面":"Execution surfaces","硬约束门":"Hard gates","授权、数据等级、质量、可靠性、语义损失、隐私、不可逆性、能耗、成本和期限。":"Authority, data class, quality, reliability, semantic loss, privacy, irreversibility, energy, cost and deadline.","允许全部D/I/K/W/P记录级路径；实际路径必须有明确源、目标和生成内容。":"All record-level D/I/K/W/P route kinds are permitted; actual routes require explicit source, target and generated content.","权限绕过":"Permission bypass","会操作GUI不等于获得访问权。缺少有效权限范围、数据等级、节点和租约的路径会被拒绝。":"GUI capability never creates access rights. A route without a valid scope, data class, node and lease is rejected.","运行原则":"Operating principle","系统不把App本身当作任务。App、API、模型能力、生成函数或远程节点只是获得目标结果的不同载体。":"The system does not assume that an app is the task. An app, API, model capability, generated function or remote node is one possible carrier of the requested result.","交互式路径比较":"Interactive route comparison","最低质量":"Minimum quality","最大隐私风险":"Maximum privacy risk","数据等级":"Data class","允许模式（逗号分隔；空白为全部）":"Allowed modes (comma-separated; blank = all)","决策":"Decision","可行路径":"Feasible routes","能力清单":"Capability manifests","这些数值是声明值或建模参考值，不是独立硬件实测。":"Values are declared or modelled reference values, not independent hardware measurements.","功能借用":"Function borrowing","节点发布能力清单；请求方获取报价；执行必须同时具有Bearer凭证和限制节点、能力、到期时间与调用次数的签名租约。":"A node advertises a manifest; a requester obtains a quote; execution requires a bearer credential and a signed, expiring lease restricted to node, capability and call count.","计量交换":"Metered exchange","参考市场生成报价和绑定输出的结算凭证，但不移动真实资金。生产支付适配器需要独立法律、金融和安全审查。":"The reference market creates quotes and output-bound settlement receipts, but moves no real money. A production payment adapter would require independent legal, financial and security review.","功能内化":"Function internalization","只有开放许可或明确授权的规范才能被重新实现；一致性测试限定有效范围。专有权重、隐藏接口和商业秘密不属于本协议。":"Only an openly licensed or explicitly authorized specification may be reimplemented. Conformance tests define the valid scope. Proprietary weights, hidden endpoints and trade secrets are outside the protocol.","不可取消的发行边界":"Non-negotiable release boundaries","本发行版证明的是运行协议和参考实现可执行；它不证明任何具体未来模型、厂商API或GUI路径具有所声明的可靠性或能耗表现。":"The release demonstrates an operating protocol and reference implementation. It does not prove that any specific future model, vendor API or GUI route has the claimed reliability or energy profile.","权重":"Weight","模型":"Model","中文":"中文","能力":"Capability","目的":"Purpose","授权":"Authorization","数据":"Data","允许":"Allowed","生成":"Generate","目标":"Target","风险":"Risk","操作":"Actions","模式":"Mode","载体":"Entity","系统":"System","内容":"Content","金融":"Finance","可逆性":"Reversibility","边界":"Scope"}}</script>
+<script>
+/* Interface localization. Creator: Yucong Duan (段玉聪). */
+(() => {
+  'use strict';
+  const configuration = document.getElementById('yd-interface-config');
+  if (!configuration) return;
+  const config = JSON.parse(configuration.textContent);
+  const dictionary = new Map(Object.entries(config.messages || {}).map(([a, b]) => [a.trim().replace(/\s+/g, ' '), b]));
+  const numeric = /\d[\d,]*(?:\.\d+)?/g;
+  const templates = [];
+  const escapePattern = value => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  for (const [source, target] of dictionary) {
+    const a = source.match(numeric) || [], b = target.match(numeric) || [];
+    if (!a.length || a.length > 12 || a.length !== b.length || !a.every((v, i) => v.replace(/,/g, '') === b[i].replace(/,/g, ''))) continue;
+    const parts = source.split(numeric);
+    templates.push({pattern: new RegExp('^' + parts.map(escapePattern).join('(\\d[\\d,]*(?:\\.\\d+)?)') + '$'), parts: target.split(numeric)});
+  }
+  const textState = new WeakMap();
+  const attributeState = new WeakMap();
+  const attributes = ['title', 'placeholder', 'aria-label', 'alt', 'label'];
+  const excluded = 'script,style,pre,code,textarea,[contenteditable],[data-source-language],[data-project-creator]';
+  let language = 'en';
+  const originalTitle = document.title;
+
+  function translate(value) {
+    const key = value.trim().replace(/\s+/g, ' ');
+    let translated = dictionary.get(key);
+    if (translated === undefined && /[\u3400-\u9fff]/.test(key)) {
+      for (const template of templates) {
+        const match = key.match(template.pattern);
+        if (!match) continue;
+        translated = template.parts.map((part, i) => part + (match[i + 1] || '')).join('');
+        break;
+      }
+    }
+    if (translated === undefined) return value;
+    const leading = value.match(/^\s*/)[0];
+    const trailing = value.match(/\s*$/)[0];
+    return leading + translated + trailing;
+  }
+
+  function updateText(node) {
+    const parent = node.parentElement;
+    if (!parent || parent.closest(excluded)) return;
+    let saved = textState.get(node);
+    const current = node.nodeValue;
+    if (!saved || current !== saved.rendered) saved = { original: current, rendered: current };
+    const next = language === 'en' ? translate(saved.original) : saved.original;
+    if (next !== current) {
+      // Translating an option label must not change the value used by the application.
+      if (parent.tagName === 'OPTION' && !parent.hasAttribute('value')) parent.setAttribute('value', parent.textContent);
+      node.nodeValue = next;
+    }
+    saved.rendered = next;
+    textState.set(node, saved);
+  }
+
+  function updateAttributes(element) {
+    if (!element || element.closest(excluded)) return;
+    let saved = attributeState.get(element);
+    if (!saved) { saved = new Map(); attributeState.set(element, saved); }
+    for (const name of attributes) {
+      if (!element.hasAttribute(name)) continue;
+      // The label attribute is an interface label on these elements only.
+      if (name === 'label' && !['OPTION', 'OPTGROUP', 'TRACK'].includes(element.tagName)) continue;
+      const current = element.getAttribute(name);
+      let prior = saved.get(name);
+      if (!prior || current !== prior.rendered) prior = { original: current, rendered: current };
+      const next = language === 'en' ? translate(prior.original) : prior.original;
+      if (next !== current) element.setAttribute(name, next);
+      prior.rendered = next; saved.set(name, prior);
+    }
+  }
+
+  function visit(root) {
+    if (root.nodeType === Node.TEXT_NODE) { updateText(root); return; }
+    if (root.nodeType !== Node.ELEMENT_NODE || root.closest(excluded)) return;
+    updateAttributes(root);
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    while (walker.nextNode()) updateText(walker.currentNode);
+    for (const element of root.querySelectorAll('[title],[placeholder],[aria-label],[alt],[label]')) updateAttributes(element);
+  }
+
+  function setLanguage(next) {
+    language = next === 'zh' ? 'zh' : 'en';
+    document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
+    document.title = language === 'en' ? translate(originalTitle) : originalTitle;
+    visit(document.body);
+  }
+
+  function start() {
+    const select = config.nativeSelect ? document.querySelector(config.nativeSelect) : null;
+    const button = config.nativeButton ? document.querySelector(config.nativeButton) : null;
+    if (select) language = select.value === 'zh' ? 'zh' : 'en';
+    else if (config.storageKey) {
+      try { language = localStorage.getItem(config.storageKey) === 'zh' ? 'zh' : 'en'; } catch (_) { language = 'en'; }
+    }
+    setLanguage(language);
+    if (select) select.addEventListener('change', () => setLanguage(select.value));
+    if (button) button.addEventListener('click', () => setLanguage(language === 'en' ? 'zh' : 'en'));
+    const observer = new MutationObserver(records => {
+      for (const record of records) {
+        if (record.type === 'characterData') updateText(record.target);
+        else if (record.type === 'attributes') updateAttributes(record.target);
+        else for (const node of record.addedNodes) visit(node);
+      }
+    });
+    observer.observe(document.body, { childList: true, subtree: true, characterData: true, attributes: true, attributeFilter: attributes });
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start, { once: true });
+  else start();
+})();
+
+</script>
+</body></html>

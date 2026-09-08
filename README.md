@@ -1,6 +1,8 @@
 # DIKWP-MINEX-FABRIC-OS 1.0.0
 
-**Minimum-Energy and Minimum-Effective-Expenditure Capability Routing, Function Internalization, Federated Borrowing, and Metered Exchange Runtime**
+Created by Yucong Duan (段玉聪).
+
+Minimum-Energy and Minimum-Effective-Expenditure Capability Routing, Function Internalization, Federated Borrowing, and Metered Exchange Runtime
 
 The system treats software functions as permission-bound capabilities rather than forcing every task through a named application. For each declared purpose it can compare model-native execution, generated local code, local or remote APIs, browser routes, GUI/computer-use routes, federated nodes, and human execution.
 
@@ -13,7 +15,7 @@ The planner applies hard gates first: authorization, data class, quality, reliab
 - deterministic allowlisted execution for safe reference functions;
 - model-native, generated-code, API, browser, GUI, federated-node, and human execution modes;
 - permission scopes, data classes, node allowlists, expiring leases, and call limits;
-- a localhost capability-node server with bearer authentication and signed leases;
+- a localhost capability-node server with bearer YOUR_API_TOKEN and signed leases;
 - dry-run metered quotes and settlement receipts without moving real funds;
 - licensed declarative function internalization with conformance tests;
 - append-only SHA-256 evidence ledgers and DIKWP records;
@@ -62,7 +64,7 @@ The attached background article supplied for this project is treated as a scenar
 python tools/run_federation_demo.py --output outputs/federation-demo/result.json
 ```
 
-The demo opens an ephemeral loopback port, requests a manifest and quote, then executes one allowlisted hash operation under a bearer credential and an expiring signed lease.
+The demo opens an ephemeral loopback port, requests a manifest and quote, then executes one allowlisted hash operation under a bearer YOUR_API_TOKEN and an expiring signed lease.
 
 ## Portfolio connections
 
@@ -75,4 +77,8 @@ A portfolio link records research continuity or semantic proximity. It does not 
 
 ## Dedication
 
-This project is dedicated to **Duan Dikweipu (段迪克维普)** as a statement of care for a future in which human purpose, dignity, and continuity remain protected. This dedication does not assign authorship, ownership, operational authority, endorsement, or legal responsibility to the dedicatee.
+This project is dedicated to Duan Dikweipu (段迪克维普) as a statement of care for a future in which human purpose, dignity, and continuity remain protected. This dedication does not assign authorship, ownership, operational authority, endorsement, or legal responsibility to the dedicatee.
+
+## Current interface presentation
+
+[Open the interface source](web/DIKWP_MINEX_FABRIC_OS_Dashboard.html) from the current repository download. See [interface and authorship notes](INTERFACE_NOTES.md) for English coverage, report generation and validation scope.
